@@ -35,3 +35,17 @@ https://www.instructables.com/id/How-to-design-and-build-a-combat-robot/
 ## 3D Printable Designs
 https://combatrobotics.co.nz/build-guides/3d-printing-battlebots/ <br />
 https://www.thingiverse.com/search?q=robot+wars&type=things&sort=relevant
+
+## Design Ideas
+
+*
+*
+*
+*
+*
+*
+*
+*
+
+## Flamethrower Bot
+https://www.youtube.com/watch?v=2_MNmico78I
