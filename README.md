@@ -1,3 +1,5 @@
+![webot image](https://github.com/pangdw1/Battle-Bots-2020/blob/master/images/Battlebots_logo.jpg)
+
 # Battebots 2020
 Repo for BattleBots
 
