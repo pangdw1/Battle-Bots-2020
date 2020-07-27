@@ -49,3 +49,7 @@ https://www.thingiverse.com/search?q=robot+wars&type=things&sort=relevant
 
 ## Flamethrower Bot
 https://www.youtube.com/watch?v=2_MNmico78I
+
+## FlySky RC Links
+https://www.youtube.com/watch?v=LmyV9dwtMP8
+
