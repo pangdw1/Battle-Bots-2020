@@ -16,6 +16,10 @@ https://combatrobotics.co.nz/
 ## How to Design and Build a Combat Robot
 https://www.instructables.com/id/How-to-design-and-build-a-combat-robot/
 
+## Shopping list
+* 4x AA Baatteries(Remote)
+* arduino compatiable wires,
+
 ## Weight Class Reference
 
 * 75g- Fleaweight
@@ -52,4 +56,6 @@ https://www.youtube.com/watch?v=2_MNmico78I
 
 ## FlySky RC Links
 https://www.youtube.com/watch?v=LmyV9dwtMP8
+
+https://github.com/pangdw1/Battle-Bots-2020.git (Link for diagrams from sparkfun)
 
