@@ -19,6 +19,7 @@ https://www.instructables.com/id/How-to-design-and-build-a-combat-robot/
 ## Shopping list
 * 4x AA Baatteries(Remote)
 * arduino compatiable wires,
+* Aluminium Tread Sheet metal for body armour (https://www.mitre10.co.nz/shop/search?text=Aluminium%20Tread&q=Aluminium%20Tread)
 
 ## Weight Class Reference
 
@@ -42,7 +43,7 @@ https://www.thingiverse.com/search?q=robot+wars&type=things&sort=relevant
 
 ## Design Ideas
 
-*
+* https://github.com/pangdw1/Battle-Bots-2020/blob/master/images/2020-07-27%2013.34.33.jpg
 *
 *
 
