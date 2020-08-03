@@ -20,6 +20,8 @@ https://www.instructables.com/id/How-to-design-and-build-a-combat-robot/
 * 4x AA Baatteries(Remote)
 * arduino compatiable wires,
 * Aluminium Tread Sheet metal for body armour (https://www.mitre10.co.nz/shop/search?text=Aluminium%20Tread&q=Aluminium%20Tread)
+* https://www.jaycar.co.nz/servo-4-8v-6v/p/YM2760 1x strong servo
+* https://www.jaycar.co.nz/arduino-compatible-9g-micro-servo-motor/p/YM2758 1x weak servo
 
 ## Weight Class Reference
 
