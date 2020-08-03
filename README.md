@@ -19,6 +19,7 @@ https://www.instructables.com/id/How-to-design-and-build-a-combat-robot/
 ## Shopping list
 * 4x AA Baatteries(Remote)
 * arduino compatiable wires,
+* Aluminium Tread Sheet metal for body armour (https://www.mitre10.co.nz/shop/search?text=Aluminium%20Tread&q=Aluminium%20Tread)
 
 ## Weight Class Reference
 
@@ -42,12 +43,7 @@ https://www.thingiverse.com/search?q=robot+wars&type=things&sort=relevant
 
 ## Design Ideas
 
-*
-*
-*
-*
-*
-*
+* https://github.com/pangdw1/Battle-Bots-2020/blob/master/images/2020-07-27%2013.34.33.jpg
 *
 *
 
@@ -55,7 +51,19 @@ https://www.thingiverse.com/search?q=robot+wars&type=things&sort=relevant
 https://www.youtube.com/watch?v=2_MNmico78I
 
 ## FlySky RC Links
-https://www.youtube.com/watch?v=LmyV9dwtMP8
 
-https://github.com/pangdw1/Battle-Bots-2020.git (Link for diagrams from sparkfun)
+(Programming the FlySky FS-i6 Transmitter for Combat Robotics) <br />
+http://runamok.tech/RunAmok/flysky_i6.html?fbclid=IwAR1L2nuc4cM-ld_fbGHlfmBVknovFAnskZhAEQaG3IHzUQ5Xvw7QWmz_1qA <br />
+https://www.youtube.com/watch?v=LmyV9dwtMP8 <br />
+
+
+## Autonomous Robot Example
+
+https://www.instructables.com/id/Autonomous-Sumo-Battle-Bot-with-Pneumatic-Flipper-/?fbclid=IwAR2OSdrG9wDwjX8Jr_raP4FiZGDI92d9PpCSn2E4Z2HKiPBnwIioX4MQx2g <br />
+
+## Cardboard mock-up
+
+https://makezine.com/projects/combat-concepting-cardboard/?fbclid=IwAR3XP3rc87_g307p8VNTEb1fmYj9z3Wm77kpZgeivRRl63MD946CDGDcxhg <br />
+
+## Shopping list
 
