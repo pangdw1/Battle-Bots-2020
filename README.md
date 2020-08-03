@@ -65,3 +65,5 @@ https://www.instructables.com/id/Autonomous-Sumo-Battle-Bot-with-Pneumatic-Flipp
 
 https://makezine.com/projects/combat-concepting-cardboard/?fbclid=IwAR3XP3rc87_g307p8VNTEb1fmYj9z3Wm77kpZgeivRRl63MD946CDGDcxhg <br />
 
+## Shopping list
+
