@@ -46,8 +46,7 @@ void loop() {
   ch2 = (ch2 /100) - 9;
   ch3 = (ch3 /100) - 14; 
   ch4 = (ch4 /100) - 14;
-  
-  led = ch3 * 40; 
+   
   //test();
   //motorControl();
   printing();
@@ -72,12 +71,6 @@ void printing() {
 
 //Function for moving the robot around via the controller
 void motorControl() {
-//  //Backwards
-//    leftMotor = ch3 * -50;
-//    rightMotor = ch3 * -50;
-//    analogWrite('leftMotorPin', leftMotor);
-//    analogWrite('rightMotorPin', rightMotor);
-  //Forward
     leftMotor = ch3 * 50;
     rightMotor = ch3 * 50;
     analogWrite('leftMotorPin', leftMotor);
