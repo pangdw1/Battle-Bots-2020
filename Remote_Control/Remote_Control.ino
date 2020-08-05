@@ -9,11 +9,13 @@
  attribute. Let me know if you make hugely, awesome, great changes.
  */
  
-int ch1; // Here's where we'll keep our channel values
-int ch2;
-int ch3;
-int ch4;
+int ch1; // 
+int ch2; //
+int ch3; // Left stick Forward Backwards
+int ch4; // Left stick Left and Right
 int led;
+int leftMotor;
+int rightMotor;
 
 void setup() {
 
@@ -22,12 +24,19 @@ void setup() {
   pinMode(A3, INPUT);
   pinMode(A4, INPUT);
   pinMode(A0, OUTPUT);
+
+  pinMode(A6, OUTPUT);
+  pinMode(A7, OUTPUT);
+//  pinMode('leftMotorPin', OUTPUT); //Analog out pin for the motor control
+//  pinMode('rightMotorPin', OUTPUT); //Analog out pin for the motor control
   Serial.begin(9600); 
 
 }
 
-void loop() {
 
+//Baasic input control's getting data from the main channels of the 
+//joysticks and converting them to a useable interger for functionality.
+void loop() {
   ch1 = pulseIn(A1, HIGH); // Read the pulse width of 
   ch2 = pulseIn(A2, HIGH); // each channel
   ch3 = pulseIn(A3, HIGH);
@@ -39,7 +48,13 @@ void loop() {
   ch4 = (ch4 /100) - 9;
   
   led = ch3 * 40; 
-  
+  //test();
+  //motorControl();
+  printing();
+}
+
+//Simple logs to console window of the input from controller
+void printing() {
   Serial.print("Channel 1:"); // Print the value of 
   Serial.println(ch1);        // each channel
 
@@ -48,11 +63,40 @@ void loop() {
 
   Serial.print("Channel 3:");
   Serial.println(ch3);
-  analogWrite(A0,led);
   
   Serial.print("Channel 4:");
   Serial.println(ch4);
 
-  delay(200); // I put this here just to make the terminal 
-              // window happier
+  delay(200); 
 }
+
+//Function for moving the robot around via the controller
+void motorControl() {
+  //Backwards
+    leftMotor =  ch3 * -50;
+    rightMotor = ch3 * -50;
+    analogWrite('leftMotorPin', leftMotor);
+    analogWrite('rightMotorPin', rightMotor);
+  //Forward
+    leftMotor =  (ch3 - 5) * 50;
+    rightMotor = (ch3 - 5) * 50;
+    analogWrite('leftMotorPin', leftMotor);
+    analogWrite('rightMotorPin', rightMotor);
+  
+  //Left
+
+  //Right
+
+  
+}
+
+void test(){
+  if (ch3 > 5){
+    analogWrite(A6, 255);
+    analogWrite(A7, 255);
+  }
+  else {
+     analogWrite(A6, 155);
+    analogWrite(A7, 150);
+    }
+  }
