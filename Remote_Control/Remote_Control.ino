@@ -42,10 +42,10 @@ void loop() {
   ch3 = pulseIn(A3, HIGH);
   ch4 = pulseIn(A4, HIGH);
   
-  ch1 = (ch1 /100) - 9; //Rounding the channel input to a 0-10 scale for easy of use
+  ch1 = (ch1 /100) - 9; //Rounding the channel input to a -5 - 5 scale for easy of use
   ch2 = (ch2 /100) - 9;
-  ch3 = (ch3 /100) - 9;
-  ch4 = (ch4 /100) - 9;
+  ch3 = (ch3 /100) - 14; 
+  ch4 = (ch4 /100) - 14;
   
   led = ch3 * 40; 
   //test();
@@ -72,14 +72,14 @@ void printing() {
 
 //Function for moving the robot around via the controller
 void motorControl() {
-  //Backwards
-    leftMotor =  ch3 * -50;
-    rightMotor = ch3 * -50;
-    analogWrite('leftMotorPin', leftMotor);
-    analogWrite('rightMotorPin', rightMotor);
+//  //Backwards
+//    leftMotor = ch3 * -50;
+//    rightMotor = ch3 * -50;
+//    analogWrite('leftMotorPin', leftMotor);
+//    analogWrite('rightMotorPin', rightMotor);
   //Forward
-    leftMotor =  (ch3 - 5) * 50;
-    rightMotor = (ch3 - 5) * 50;
+    leftMotor = ch3 * 50;
+    rightMotor = ch3 * 50;
     analogWrite('leftMotorPin', leftMotor);
     analogWrite('rightMotorPin', rightMotor);
   
