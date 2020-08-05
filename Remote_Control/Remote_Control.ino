@@ -13,6 +13,8 @@ int ch1; //
 int ch2; //
 int ch3; // Left stick Forward Backwards
 int ch4; // Left stick Left and Right
+int ch5; // Far left switch
+int ch6; // Far right switch
 int led;
 int leftMotor;
 int rightMotor;
@@ -84,12 +86,14 @@ void motorControl() {
     }
     else if (ch4 > 0){ //Turn Right
       leftMotor = ch4 * 50; //Power the outside wheel the amount you wish to turn.
-      rightMotor = ch3 * 50; //Inside wheel powered by amount of throtle given, allows for tights or slacker turning.
+      rightMotor = ch3 * 50; //Inside whjeel powered by amount of throtle given, allows for tights or slacker turning.
       analogWrite('leftMotorPin', leftMotor);
       analogWrite('rightMotorPin', rightMotor);
     }
 }
 
+
+//method for basic tersting of controls via remote input
 void test(){
   if (ch3 > 5){
     analogWrite(A6, 255);
