@@ -82,12 +82,19 @@ void motorControl() {
     rightMotor = ch3 * 50;
     analogWrite('leftMotorPin', leftMotor);
     analogWrite('rightMotorPin', rightMotor);
-  
-  //Left
 
-  //Right
-
-  
+    if (ch4 < 0){ //Turn left
+      leftMotor = ch3 * 50; //Inside wheel powered by amount of throtle given, allows for tighter or slacker turning.
+      rightMotor = ch4 * 50; //Power outside wheel the amount you wish to turn.
+      analogWrite('leftMotorPin', leftMotor);
+      analogWrite('rightMotorPin', rightMotor);
+    }
+    else if (ch4 > 0){ //Turn Right
+      leftMotor = ch4 * 50; //Power the outside wheel the amount you wish to turn.
+      rightMotor = ch3 * 50; //Inside wheel powered by amount of throtle given, allows for tights or slacker turning.
+      analogWrite('leftMotorPin', leftMotor);
+      analogWrite('rightMotorPin', rightMotor);
+    }
 }
 
 void test(){
