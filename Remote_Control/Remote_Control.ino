@@ -44,8 +44,8 @@ void loop() {
   ch3 = pulseIn(A3, HIGH);
   ch4 = pulseIn(A4, HIGH);
   
-  ch1 = (ch1 /100) - 9; //Rounding the channel input to a -5 - 5 scale for easy of use
-  ch2 = (ch2 /100) - 9;
+  ch1 = (ch1 /100) - 14; //Rounding the channel input to a -5 - 5 scale for easy of use
+  ch2 = (ch2 /100) - 14;
   ch3 = (ch3 /100) - 14; 
   ch4 = (ch4 /100) - 14;
    
