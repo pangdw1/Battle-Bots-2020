@@ -2,6 +2,7 @@
 
 # Battebots 2020
 Repo for BattleBots
+Portfolio Site https://pangdw1.github.io/Battle-Bots-2020/index.html
 
 ### Members
 Anthony
@@ -19,9 +20,10 @@ https://www.instructables.com/id/How-to-design-and-build-a-combat-robot/
 ## Shopping list
 * 4x AA Baatteries(Remote)
 * arduino compatiable wires,
-* Aluminium Tread Sheet metal for body armour (https://www.mitre10.co.nz/shop/search?text=Aluminium%20Tread&q=Aluminium%20Tread)
+* https://www.mitre10.co.nz/shop/md-products-plain-aluminium-sheet-w-304mm-l-609mm/p/291140 2 x sheets Aluminium Sheet metal for body armour
 * https://www.jaycar.co.nz/servo-4-8v-6v/p/YM2760 1x strong servo
 * https://www.jaycar.co.nz/arduino-compatible-9g-micro-servo-motor/p/YM2758 1x weak servo
+* https://mecha4makers.co.nz/product/small-12v-dc-brushed-motor/ X 2 plz
 
 ## Weight Class Reference
 
@@ -46,7 +48,7 @@ https://www.thingiverse.com/search?q=robot+wars&type=things&sort=relevant
 ## Design Ideas
 
 * https://github.com/pangdw1/Battle-Bots-2020/blob/master/images/2020-07-27%2013.34.33.jpg
-*
+* https://www.hobbyist.co.nz/?q=dc-motor-pwm-speed-control
 *
 
 ## Flamethrower Bot
