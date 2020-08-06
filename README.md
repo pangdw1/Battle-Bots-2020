@@ -24,6 +24,7 @@ https://www.instructables.com/id/How-to-design-and-build-a-combat-robot/
 * https://www.jaycar.co.nz/servo-4-8v-6v/p/YM2760 1x strong servo
 * https://www.jaycar.co.nz/arduino-compatible-9g-micro-servo-motor/p/YM2758 1x weak servo
 * https://mecha4makers.co.nz/product/small-12v-dc-brushed-motor/ X 2 plz
+* https://www.jaycar.co.nz/arduino-compatible-stepper-motor-controller-module/p/XC4492 x1
 
 ## Weight Class Reference
 
