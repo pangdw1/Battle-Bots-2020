@@ -24,6 +24,7 @@ https://www.instructables.com/id/How-to-design-and-build-a-combat-robot/
 * https://www.jaycar.co.nz/servo-4-8v-6v/p/YM2760 1x strong servo
 * https://www.jaycar.co.nz/arduino-compatible-9g-micro-servo-motor/p/YM2758 1x weak servo
 * https://www.ullrich-aluminium.co.nz/pdfs/Brochure_pdfs/Sheet-Plate-Rolled-Metal.pdf  Ullrich Aluminium Catalogue
+* https://mecha4makers.co.nz/product/small-12v-dc-brushed-motor/ X 2 plz
 
 ## Weight Class Reference
 
