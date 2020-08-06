@@ -2,6 +2,7 @@
 
 # Battebots 2020
 Repo for BattleBots
+Portfolio Site https://pangdw1.github.io/Battle-Bots-2020/index.html
 
 ### Members
 Anthony
@@ -47,7 +48,7 @@ https://www.thingiverse.com/search?q=robot+wars&type=things&sort=relevant
 ## Design Ideas
 
 * https://github.com/pangdw1/Battle-Bots-2020/blob/master/images/2020-07-27%2013.34.33.jpg
-*
+* https://www.hobbyist.co.nz/?q=dc-motor-pwm-speed-control
 *
 
 ## Flamethrower Bot
