@@ -15,6 +15,8 @@ int ch3; // Left stick Forward Backwards
 int ch4; // Left stick Left and Right
 int ch5; // Far left switch
 int ch6; // Far right switch
+String ch5String;
+String ch6String;
 int led;
 int leftMotor;
 int rightMotor;
@@ -25,10 +27,11 @@ void setup() {
   pinMode(A2, INPUT);
   pinMode(A3, INPUT);
   pinMode(A4, INPUT);
+  pinMode(A5, INPUT);
+  pinMode(A6, INPUT);
   pinMode(A0, OUTPUT);
 
-  pinMode(A6, OUTPUT);
-  pinMode(A7, OUTPUT);
+  
 //  pinMode('leftMotorPin', OUTPUT); //Analog out pin for the motor control
 //  pinMode('rightMotorPin', OUTPUT); //Analog out pin for the motor control
   Serial.begin(9600); 
@@ -43,12 +46,28 @@ void loop() {
   ch2 = pulseIn(A2, HIGH); // each channel
   ch3 = pulseIn(A3, HIGH);
   ch4 = pulseIn(A4, HIGH);
+  ch5 = pulseIn(A5, HIGH);
+  ch6 = pulseIn(A6, HIGH);
+  
   
   ch1 = (ch1 /100) - 14; //Rounding the channel input to a -5 - 5 scale for easy of use
-  ch2 = (ch2 /100) - 14;
+  ch2 = (ch2 /100) - 14; //Joystick control reading
   ch3 = (ch3 /100) - 14; 
   ch4 = (ch4 /100) - 14;
-   
+  if(ch5 < 1000){//Channel 5 on off switch conversion
+      ch5String = "OFF";
+    }
+    else{
+      ch5String = "ON";
+    }
+  if(ch6 < 1000){//Channel 6 on off switch conversion
+      ch6String = "OFF";
+    }
+    else{
+      ch6String = "ON";
+    }
+  
+  
   //test();
   //motorControl();
   printing();
@@ -67,6 +86,12 @@ void printing() {
   
   Serial.print("Channel 4:");
   Serial.println(ch4);
+  
+  Serial.print("Channel 5 Left switch:");
+  Serial.println(ch5String);
+  
+  Serial.print("Channel 6 Right switch:");
+  Serial.println(ch6String);
 
   delay(200); 
 }
