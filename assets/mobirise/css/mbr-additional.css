@@ -1555,7 +1555,7 @@ section.lazy-placeholder:after {
   min-height: 1px;
 }
 .cid-s7jqGtLkF8 .media-container-row .img-item .img-caption {
-  background: #ffffff;
+  background: #5b686b;
   z-index: 2;
   padding: 1rem 1rem;
   word-break: break-word;
@@ -1576,6 +1576,9 @@ section.lazy-placeholder:after {
     padding: 0 0 2rem 0 !important;
     -webkit-flex-basis: initial !important;
   }
+}
+.cid-s7jqGtLkF8 P {
+  color: #ffffff;
 }
 .cid-s7jxMpJkrm {
   padding-top: 30px;
