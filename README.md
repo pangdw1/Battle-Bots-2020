@@ -29,6 +29,10 @@ https://www.instructables.com/id/How-to-design-and-build-a-combat-robot/
 * https://mecha4makers.co.nz/product/2020-profile-v-slot-aluminium-construction-extrusion/ 5 x 500mm 2020 extrusion pieces (MICO METALS?)
 * https://mecha4makers.co.nz/product/2020-internal-corner-bracket-2-x-m5/ X 30 corner angle brackets
 
+
+## EPICENTRE INDUCTION (Engineering School Resources)
+https://induct.whosonlocation.com/#/course/XwqTn7CDoE8TMVWg  (Mandatory induction to use machinery)
+
 ## Weight Class Reference
 
 * 75g- Fleaweight
