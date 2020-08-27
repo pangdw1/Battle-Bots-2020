@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "Battle Bots 2020",
-    "currentPage": "epicentreaccess.html",
+    "currentPage": "farmbotv2build.html",
     "theme": {
       "name": "mobirise4",
       "title": "Mobirise 4",
@@ -48,7 +48,7 @@
         "url": "https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i"
       }
     ],
-    "uniqCompNum": 71,
+    "uniqCompNum": 69,
     "versionPublish": "4.12.1",
     "screenshot": "screenshot.png",
     "imageResize": true,
@@ -59,7 +59,9 @@
     "siteUrl": false,
     "cookiesAlert": false,
     "gdpr": false,
-    "dppsSwitcher": true
+    "dppsSwitcher": true,
+    "publishType": "local",
+    "publishPath": "@PROJECT_PATH@"
   },
   "pages": {
     "index.html": {
@@ -1892,7 +1894,7 @@
             "slides__showBullets": true,
             "slides": [
               {
-                "image": "@PROJECT_PATH@/assets/images/2020-08-13-12.39.50-2000x2987.jpg",
+                "image": "@PROJECT_PATH@/assets/images/2020-08-13%2012.39.50-2000x2987.jpg",
                 "active": true,
                 "showButtons": false,
                 "showText": false,
@@ -1912,7 +1914,7 @@
                 "overlayOpacity": "0.1"
               },
               {
-                "image": "@PROJECT_PATH@/assets/images/2020-08-13-12.34.55-2000x2218.jpg",
+                "image": "@PROJECT_PATH@/assets/images/2020-08-13%2012.34.55-2000x2218.jpg",
                 "active": false,
                 "showButtons": false,
                 "showText": false,
@@ -1932,7 +1934,7 @@
                 "overlayOpacity": "0.1"
               },
               {
-                "image": "@PROJECT_PATH@/assets/images/2020-08-13-12.36.06-2000x2985.jpg",
+                "image": "@PROJECT_PATH@/assets/images/2020-08-13%2012.36.06-2000x2985.jpg",
                 "active": false,
                 "showButtons": false,
                 "showText": false,
@@ -1952,7 +1954,7 @@
                 "overlayOpacity": "0.1"
               },
               {
-                "image": "@PROJECT_PATH@/assets/images/2020-08-13-12.35.08-2000x2729.jpg",
+                "image": "@PROJECT_PATH@/assets/images/2020-08-13%2012.35.08-2000x2729.jpg",
                 "active": false,
                 "showButtons": false,
                 "showText": false,
@@ -1972,7 +1974,7 @@
                 "overlayOpacity": "0.1"
               },
               {
-                "image": "@PROJECT_PATH@/assets/images/2020-08-13-12.34.36-2000x2687.jpg",
+                "image": "@PROJECT_PATH@/assets/images/2020-08-13%2012.34.36-2000x2687.jpg",
                 "active": false,
                 "showButtons": false,
                 "showText": false,
@@ -3435,10 +3437,10 @@
             "& when not (@reverseContent)": {
               "@media (min-width: 992px)": {
                 ".mbr-figure": {
-                  "padding-right": "4rem"
+                  "padding-right": "10rem"
                 }
               },
-              "@media (max-width: 991px)": {
+              "@media (max-width: 2000px)": {
                 ".mbr-figure": {
                   "padding-bottom": "1rem"
                 }
@@ -3465,17 +3467,17 @@
               }
             },
             ".mbr-text": {
-              "color": "#ffffff"
+              "color": "#767676"
             }
           },
           "_name": "content6",
-          "_customHTML": "<section class=\"mbr-section content6\" group=\"Article\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n      <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n      <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n\n      <input type=\"range\" inline title=\"Media Size\" name=\"mediaSize\" min=\"10\" max=\"200\" step=\"5\" value=\"75\">\n        <input type=\"checkbox\" title=\"Text On Right/Left\" name=\"reverseContent\">  \n      <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#465052\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n    \n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"col-12 col-md-8\">\n                <div class=\"media-container-row\">\n                    <div class=\"mbr-figure\" mbr-style=\"{'width': mediaSize + '%'}\">\n                      <img src=\"@PROJECT_PATH@/assets/images/2020-08-10-14.23.38-2000x3556.jpg\" alt=\"Mobirise\" title>  \n                    </div>\n                    <div class=\"media-content\">\n                        <div class=\"mbr-section-text\">\n                            <p class=\"mbr-text mb-0 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">After getting the go ahead with building a Battlebot, &nbsp;we started dissembling 'farmbot' and started coming up with ideas&nbsp;</p>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
-          "_cid": "s8U7ETMwSN",
+          "_customHTML": "<section class=\"mbr-section content6\" group=\"Article\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n      <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n      <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n\n      <input type=\"range\" inline title=\"Media Size\" name=\"mediaSize\" min=\"10\" max=\"200\" step=\"5\" value=\"195\">\n        <input type=\"checkbox\" title=\"Text On Right/Left\" name=\"reverseContent\">  \n      <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n    \n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"col-12 col-md-8\">\n                <div class=\"media-container-row\">\n                    <div class=\"mbr-figure\" mbr-style=\"{'width': mediaSize + '%'}\">\n                      <img src=\"../_images/background1.jpg\" alt=\"Mobirise\">  \n                    </div>\n                    <div class=\"media-content\">\n                        <div class=\"mbr-section-text\">\n                            <p class=\"mbr-text mb-0 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                               <b>Make your own website in a few clicks!</b> Mobirise helps you cut down development time by providing you with a flexible website editor with a drag and drop interface. Mobirise Website Builder creates responsive, retina and <i>mobile friendly websites</i> in a few clicks. Mobirise is one of the easiest website development tools available today.\n                            </p>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "s8U6Lvi6wd",
+          "_anchor": "content6-1w",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
-          "_params": {},
-          "_anchor": "content6-1x"
+          "_params": {}
         }
       ]
     },
@@ -4134,7 +4136,7 @@
                 "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
                 "playVideo": false,
                 "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
-                "image": "@PROJECT_PATH@/assets/images/screen-shot-2020-08-27-at-9.31.17-pm-1060x678.png",
+                "image": "@PROJECT_PATH@/assets/images/screen%20shot%202020-08-27%20at%209.31.17%20pm-1060x678.png",
                 "thumb": "@PROJECT_PATH@/assets/images/screen-shot-2020-08-27-at-9.31.17-pm-1060x678-800x512.png",
                 "alt": "",
                 "title": "",
@@ -4147,8 +4149,8 @@
                 "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
                 "playVideo": false,
                 "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
-                "image": "@PROJECT_PATH@/assets/images/damiancertificate-1090x681.png",
-                "thumb": "@PROJECT_PATH@/assets/images/damiancertificate-1090x681-800x500.png",
+                "image": "@PROJECT_PATH@/assets/images/epicentre-certificate-676x431.png",
+                "thumb": "@PROJECT_PATH@/assets/images/epicentre-certificate-676x431-676x431.png",
                 "alt": "",
                 "title": "",
                 "customStyle1": "display-7",
