@@ -9,8 +9,8 @@
  attribute. Let me know if you make hugely, awesome, great changes.
  */
  
-int ch1; // 
-int ch2; //
+int ch1; // Right stick Forward Backwards
+int ch2; // Right stick Left Right
 int ch3; // Left stick Forward Backwards
 int ch4; // Left stick Left and Right
 int ch5; // Far left switch
@@ -21,6 +21,8 @@ int led;
 int leftMotor;
 int rightMotor;
 
+
+//Setup pins
 void setup() {
 
   pinMode(A1, INPUT); // Set our input pins as such
@@ -40,7 +42,7 @@ void setup() {
 
 
 //Baasic input control's getting data from the main channels of the 
-//joysticks and converting them to a useable interger for functionality.
+//joysticks  and switchs and converting them to a useable interger for functionality.
 void loop() {
   ch1 = pulseIn(A1, HIGH); // Read the pulse width of 
   ch2 = pulseIn(A2, HIGH); // each channel
@@ -54,11 +56,13 @@ void loop() {
   ch2 = (ch2 /100) - 14; //Joystick control reading
   ch3 = (ch3 /100) - 14; 
   ch4 = (ch4 /100) - 14;
-  if(ch5 < 1000){//Channel 5 on off switch conversion
+  if(ch5 < 1000){//Channel 5 on off switch conversion  Switch used for switching between AI mode and maual control
       ch5String = "OFF";
+      manualControl(); //Use the manual control method
     }
     else{
       ch5String = "ON";
+      AI(); // Call the AI method
     }
   if(ch6 < 1000){//Channel 6 on off switch conversion
       ch6String = "OFF";
@@ -69,7 +73,7 @@ void loop() {
   
   
   //test();
-  //motorControl();
+  //manualControl();
   //printing();
 }
 
@@ -97,7 +101,7 @@ void printing() {
 }
 
 //Function for moving the robot around via the controller
-void motorControl() {
+void manualControl() {
     leftMotor = ch3 * 50;
     rightMotor = ch3 * 50;
     analogWrite('leftMotorPin', leftMotor);
@@ -131,7 +135,8 @@ void test(){
   }
 
 
-//Method for swithcing to and from AI mode.
+//Method for AI.
 void AI(){
+  
   
   }
