@@ -137,6 +137,6 @@ void test(){
 
 //Method for AI.
 void AI(){
-  
-  
+  //have sensor input make thing do thing, and if thing hapens do other thing whilst killing other thing.
+  //Automomasly
   }
