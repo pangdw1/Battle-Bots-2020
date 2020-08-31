@@ -29,7 +29,7 @@ void setup() {
   pinMode(A4, INPUT);
   pinMode(A5, INPUT);
   pinMode(A6, INPUT);
-  pinMode(A0, OUTPUT);
+  pinMode(A0, OUTPUT); 
 
   
 //  pinMode('leftMotorPin', OUTPUT); //Analog out pin for the motor control
@@ -70,7 +70,7 @@ void loop() {
   
   //test();
   //motorControl();
-  printing();
+  //printing();
 }
 
 //Simple logs to console window of the input from controller
@@ -128,4 +128,10 @@ void test(){
      analogWrite(A6, 155);
     analogWrite(A7, 150);
     }
+  }
+
+
+//Method for swithcing to and from AI mode.
+void AI(){
+  
   }
