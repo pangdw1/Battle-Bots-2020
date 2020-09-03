@@ -70,7 +70,7 @@ void loop() {
   if(ch6 < 1000){//Channel 6 on off switch conversion
       ch6String = "OFF";
     }
-    else{
+    else{ 
       ch6String = "ON";
     }
   
