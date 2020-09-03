@@ -59,10 +59,13 @@ void loop() {
   if(ch5 < 1000){//Channel 5 on off switch conversion  Switch used for switching between AI mode and maual control
       ch5String = "OFF";
       manualControl(); //Use the manual control method
+      Serial.println("Assuming manual control")
     }
     else{
       ch5String = "ON";
       AI(); // Call the AI method
+      Serial.println("Assuming Artifical control")
+      
     }
   if(ch6 < 1000){//Channel 6 on off switch conversion
       ch6String = "OFF";
