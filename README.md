@@ -29,7 +29,7 @@ https://www.instructables.com/id/How-to-design-and-build-a-combat-robot/
 
 
 ## EPICENTRE INDUCTION (Engineering School Resources)
-https://induct.whosonlocation.com/#/course/XwqTn7CDoE8TMVWg  (Mandatory induction to use machinery)
+Personal Links sent via email for student to complete (Mandatory induction to use machinery)
 
 ## Weight Class Reference
 
