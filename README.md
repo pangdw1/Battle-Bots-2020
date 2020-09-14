@@ -27,6 +27,8 @@ https://www.instructables.com/id/How-to-design-and-build-a-combat-robot/
 * ~~https://mecha4makers.co.nz/product/2020-profile-v-slot-aluminium-construction-extrusion/ 5 x 500mm 2020 extrusion pieces (MICO METALS?)~~
 * ~~https://mecha4makers.co.nz/product/2020-internal-corner-bracket-2-x-m5/ X 30 corner angle brackets~~
 
+* https://www.aliexpress.com/item/32810354209.html?src=google&albch=shopping&acnt=494-037-6276&isdl=y&slnk=&plac=&mtctp=&albbt=Google_7_shopping&aff_platform=google&aff_short_key=UneMJZVf&&albagn=888888&albcp=9594012230&albag=94205055490&trgt=296904913880&crea=en32810354209&netw=u&device=c&albpg=296904913880&albpd=en32810354209&gclid=Cj0KCQjwhvf6BRCkARIsAGl1GGifgGS6_Re-yIhqrMJvuDL9KXsUziu_J_luQFFZ2suJtKLc3ogDVFUaAqJWEALw_wcB&gclsrc=aw.ds
+
 
 ## EPICENTRE INDUCTION (Engineering School Resources)
 Personal Links sent via email for student to complete (Mandatory induction to use machinery)
