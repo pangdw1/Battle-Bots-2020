@@ -26,7 +26,7 @@ https://www.instructables.com/id/How-to-design-and-build-a-combat-robot/
 * https://nz.dhgate.com/product/n6354-270kv-brushless-motor-high-power-for/561882570.html?skuid=749433543700910080#s1-20-1;nz|1215720175 These are the more powerful mototrs x3
 * ~~https://mecha4makers.co.nz/product/2020-profile-v-slot-aluminium-construction-extrusion/ 5 x 500mm 2020 extrusion pieces (MICO METALS?)~~
 * ~~https://mecha4makers.co.nz/product/2020-internal-corner-bracket-2-x-m5/ X 30 corner angle brackets~~
-
+* https://www.wheelco.co.nz/shop/Wheels/Rubber+Wheels/Zero+Pressure+Wheel+150mm+-+Offset+Hub+-+ZPM150B.html
 * https://www.aliexpress.com/item/32810354209.html?src=google&albch=shopping&acnt=494-037-6276&isdl=y&slnk=&plac=&mtctp=&albbt=Google_7_shopping&aff_platform=google&aff_short_key=UneMJZVf&&albagn=888888&albcp=9594012230&albag=94205055490&trgt=296904913880&crea=en32810354209&netw=u&device=c&albpg=296904913880&albpd=en32810354209&gclid=Cj0KCQjwhvf6BRCkARIsAGl1GGifgGS6_Re-yIhqrMJvuDL9KXsUziu_J_luQFFZ2suJtKLc3ogDVFUaAqJWEALw_wcB&gclsrc=aw.ds
 
 
