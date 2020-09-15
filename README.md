@@ -33,6 +33,9 @@ https://www.instructables.com/id/How-to-design-and-build-a-combat-robot/
 ## EPICENTRE INDUCTION (Engineering School Resources)
 Personal Links sent via email for student to complete (Mandatory induction to use machinery)
 
+## Battary Amps
+Our batteries require and ESC of a minimun of 112 Amps and 14.8 volts throughput
+
 ## Weight Class Reference
 
 * 75g- Fleaweight
