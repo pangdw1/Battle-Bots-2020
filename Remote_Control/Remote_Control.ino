@@ -8,8 +8,15 @@
  use this code however you'd like, just keep this license and
  attribute. Let me know if you make hugely, awesome, great changes.
  */
+<<<<<<< HEAD
 
  
+=======
+int trigPin A7; //
+int trigPin2 A9; //
+int echoPin A8; //
+int echoPin2 A10; //
+>>>>>>> 8cb508b948157b2642e79cdf780a24b0d50a9276
 int ch1; // Right stick Forward Backwards
 int ch2; // Right stick Left Right
 int ch3; // Left stick Forward Backwards
@@ -21,6 +28,8 @@ String ch6String;
 int led;
 int leftMotor;
 int rightMotor;
+long distance, duration;
+
 
 
 //Setup pins
@@ -33,6 +42,10 @@ void setup() {
   pinMode(A5, INPUT);
   pinMode(A6, INPUT);
   pinMode(A0, OUTPUT); 
+  pinMode(trigPin, OUTPUT);
+  pinMode(echoPin, INPUT);
+  pinMode(trigPin2, OUTPUT);
+  pinMode(echoPin2, INPUT);
 
   
 //  pinMode('leftMotorPin', OUTPUT); //Analog out pin for the motor control
@@ -123,6 +136,7 @@ void manualControl() {
       analogWrite('leftMotorPin', leftMotor);
       analogWrite('rightMotorPin', rightMotor);
     }
+    control()
 }
 
 
@@ -144,3 +158,30 @@ void AI(){
   //have sensor input make thing do thing, and if thing hapens do other thing whilst killing other thing.
   //Automomasly
   }
+  
+
+//void control() {
+//  if switch = ON manualControl = true 
+//  if switch = OFF AI = true
+//  }
+float getDistance()
+{
+  float echoTime;                   //variable to store the time it takes for a ping to bounce off an object
+  float calcualtedDistance;         //variable to store the distance calculated from the echo time
+  
+  //send out an ultrasonic pulse that's 10ms long
+  digitalWrite(trigPin, HIGH);
+  delayMicroseconds(10); 
+  digitalWrite(trigPin, LOW);
+
+  echoTime = pulseIn(echoPin, HIGH);      //use the pulsein command to see how long it takes for the
+                                          //pulse to bounce back to the sensor
+
+  calcualtedDistance = echoTime / 148.0;  //calculate the distance of the object that reflected the pulse (half the bounce time multiplied by the speed of sound)
+  
+  return calcualtedDistance;              //send back the distance that was calculated
+}
+
+void readSensor() {
+  
+}
