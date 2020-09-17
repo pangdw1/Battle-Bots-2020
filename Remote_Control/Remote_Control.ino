@@ -183,3 +183,8 @@ float getDistance()
 void readSensor() {
   
 }
+
+//Method used for the servo's to move into position.
+void servoMovment() {
+
+}
