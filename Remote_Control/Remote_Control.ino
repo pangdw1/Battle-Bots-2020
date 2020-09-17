@@ -8,15 +8,10 @@
  use this code however you'd like, just keep this license and
  attribute. Let me know if you make hugely, awesome, great changes.
  */
-<<<<<<< HEAD
-
- 
-=======
 int trigPin A7; //
 int trigPin2 A9; //
 int echoPin A8; //
 int echoPin2 A10; //
->>>>>>> 8cb508b948157b2642e79cdf780a24b0d50a9276
 int ch1; // Right stick Forward Backwards
 int ch2; // Right stick Left Right
 int ch3; // Left stick Forward Backwards
