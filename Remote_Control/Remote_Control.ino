@@ -188,3 +188,8 @@ void readSensor() {
 void servoMovement() {
 
 }
+
+//This method is used for detecting IR
+void infraRed() {
+
+}
