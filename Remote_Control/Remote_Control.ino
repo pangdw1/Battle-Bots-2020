@@ -186,5 +186,9 @@ void readSensor() {
 
 //Method used for the servo's to move into position.
 void servoMovment() {
-
+  //get servo position, '0' for the servo will be in the middle of the servos stroke.
+  //They way it will work is that when the sensors detect a forign object, the top turret
+  //will lock onto the target, It will know its locked on when the sensor that has found it
+  //stays consistantly at the same point, then the motors will turn the base of the robot 
+  //to be inline with the target.
 }
