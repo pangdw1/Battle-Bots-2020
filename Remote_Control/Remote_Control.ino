@@ -191,4 +191,9 @@ void servoMovment() {
   //will lock onto the target, It will know its locked on when the sensor that has found it
   //stays consistantly at the same point, then the motors will turn the base of the robot 
   //to be inline with the target.
+
+
+//This method is used for detecting IR
+void infraRed() {
+
 }
