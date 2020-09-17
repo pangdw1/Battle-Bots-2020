@@ -131,7 +131,7 @@ void manualControl() {
       analogWrite('leftMotorPin', leftMotor);
       analogWrite('rightMotorPin', rightMotor);
     }
-    control()
+    //servoMovment()
 }
 
 
@@ -152,6 +152,9 @@ void test(){
 void AI(){
   //have sensor input make thing do thing, and if thing hapens do other thing whilst killing other thing.
   //Automomasly
+  getDistance()
+  ReadSensor()
+
   }
   
 
