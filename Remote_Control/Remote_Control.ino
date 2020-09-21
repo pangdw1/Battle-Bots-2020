@@ -8,12 +8,12 @@
  use this code however you'd like, just keep this license and
  attribute. Let me know if you make hugely, awesome, great changes.
  */
-int trigPin 9; //
-int trigPin2 10;
-int trigPin3 11; //
-int echoPin 7; //
-int echoPin2 6; //
-int echoPin3 5;
+int trigPin = 9; //
+int trigPin2 = 10;
+int trigPin3 = 11; //
+int echoPin = 7; //
+int echoPin2 = 6; //
+int echoPin3 = 5;
 int ch1; // Right stick Forward Backwards
 int ch2; // Right stick Left Right
 int ch3; // Left stick Forward Backwards
@@ -168,10 +168,6 @@ void AI(){
   getDistance();
   readSensor();
 
- 
-  //ReadSensor()
-  //Call servoMovment method for moving turret and weapon.
-  servoMovment()
   }
   
 
