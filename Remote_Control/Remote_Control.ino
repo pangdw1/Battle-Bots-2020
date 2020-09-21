@@ -152,9 +152,12 @@ void test(){
 void AI(){
   //have sensor input make thing do thing, and if thing hapens do other thing whilst killing other thing.
   //Automomasly
-  getDistance()
-  ReadSensor()
 
+  //call getdistance method
+  getDistance()
+  //ReadSensor()
+  //Call servoMovment method for moving turret and weapon.
+  servoMovment()
   }
   
 
@@ -191,7 +194,7 @@ void servoMovment() {
   //will lock onto the target, It will know its locked on when the sensor that has found it
   //stays consistantly at the same point, then the motors will turn the base of the robot 
   //to be inline with the target.
-
+}
 
 //This method is used for detecting IR
 void infraRed() {
