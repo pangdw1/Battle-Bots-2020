@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "Battle Bots 2020",
-    "currentPage": "farmbotv2build.html",
+    "currentPage": "teambattlebots.html",
     "theme": {
       "name": "mobirise4",
       "title": "Mobirise 4",
@@ -1040,7 +1040,7 @@
             "background-color": "@bgColor"
           },
           "_name": "content8",
-          "_customHTML": "<section class=\"mbr-section content8\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"color\" title=\"Backgroud Color\" name=\"bgColor\" value=\"#465052\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"container\">\n        <div class=\"media-container-row title\">\n            <div class=\"col-12 col-md-8\">\n                <div class=\"mbr-section-btn align-center\" mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-white-outline\" href=\"battlebots.html\" data-app-placeholder=\"Type Text\">BATTLE READY</a>\n                    <a class=\"btn btn-white-outline\" href=\"teambattlebots.html\" data-app-placeholder=\"Type Text\">MEET THE TEAM</a></div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_customHTML": "<section class=\"mbr-section content8\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"color\" title=\"Backgroud Color\" name=\"bgColor\" value=\"#465052\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"container\">\n        <div class=\"media-container-row title\">\n            <div class=\"col-12 col-md-8\">\n                <div class=\"mbr-section-btn align-center\" mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-white-outline\" href=\"farmbotv2build.html\" data-app-placeholder=\"Type Text\">Farmbot V2</a>\n                    <a class=\"btn btn-white-outline\" href=\"index.html\" data-app-placeholder=\"Type Text\">Home</a></div>\n            </div>\n        </div>\n    </div>\n</section>",
           "_anchor": "content8-6",
           "_isUserblock": true,
           "_sourceTheme": "mobirise4",
@@ -4261,7 +4261,7 @@
                 "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
                 "playVideo": false,
                 "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
-                "image": "@PROJECT_PATH@/assets/images/2020-08-11-11.49.04-626x3520.jpg",
+                "image": "@PROJECT_PATH@/assets/images/2020-08-11-11.49.04-626x3524.jpg",
                 "thumb": "@PROJECT_PATH@/assets/images/2020-08-11-11.49.04-626x352-626x352.jpg",
                 "alt": "",
                 "title": "",
@@ -4339,7 +4339,7 @@
                 "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
                 "playVideo": false,
                 "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
-                "image": "@PROJECT_PATH@/assets/images/2020-08-06-09.17.53-2000x11251.jpg",
+                "image": "@PROJECT_PATH@/assets/images/2020-08-06-09.17.53-2000x11255.jpg",
                 "thumb": "@PROJECT_PATH@/assets/images/2020-08-06-09.17.53-2000x1125-800x450.jpg",
                 "alt": "",
                 "title": "",
@@ -4352,7 +4352,7 @@
                 "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
                 "playVideo": false,
                 "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
-                "image": "@PROJECT_PATH@/assets/images/2020-08-06-10.00.40-2000x11252.jpg",
+                "image": "@PROJECT_PATH@/assets/images/2020-08-06-10.00.40-2000x11256.jpg",
                 "thumb": "@PROJECT_PATH@/assets/images/2020-08-06-10.00.40-2000x1125-800x450.jpg",
                 "alt": "",
                 "title": "",
@@ -4365,7 +4365,7 @@
                 "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
                 "playVideo": false,
                 "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
-                "image": "@PROJECT_PATH@/assets/images/2020-08-06-09.59.51-2000x11253.jpg",
+                "image": "@PROJECT_PATH@/assets/images/2020-08-06-09.59.51-2000x11257.jpg",
                 "thumb": "@PROJECT_PATH@/assets/images/2020-08-06-09.59.51-2000x1125-800x450.jpg",
                 "alt": "",
                 "title": "",
