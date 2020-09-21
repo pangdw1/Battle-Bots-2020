@@ -8,10 +8,12 @@
  use this code however you'd like, just keep this license and
  attribute. Let me know if you make hugely, awesome, great changes.
  */
-int trigPin A7; //
-int trigPin2 A9; //
-int echoPin A8; //
-int echoPin2 A10; //
+int trigPin 9; //
+int trigPin2 10;
+int trigPin3 11; //
+int echoPin 7; //
+int echoPin2 6; //
+int echoPin3 5;
 int ch1; // Right stick Forward Backwards
 int ch2; // Right stick Left Right
 int ch3; // Left stick Forward Backwards
@@ -24,7 +26,15 @@ int led;
 int leftMotor;
 int rightMotor;
 long distance, duration;
+int echoTime;                   //variable to store the time it takes for a ping to bounce off an object
+int calcualtedDistance; 
 
+int distanceSensor1;
+int distanceSensor2;
+int distanceSensor3;
+int duration1;
+int duration2;
+int duration3;
 
 
 //Setup pins
@@ -37,11 +47,13 @@ void setup() {
   pinMode(A5, INPUT);
   pinMode(A6, INPUT);
   pinMode(A0, OUTPUT); 
+  //Distance Sensors
   pinMode(trigPin, OUTPUT);
   pinMode(echoPin, INPUT);
   pinMode(trigPin2, OUTPUT);
   pinMode(echoPin2, INPUT);
-
+  pinMode(trigPin3, OUTPUT);
+  pinMode(echoPin3, INPUT);
   
 //  pinMode('leftMotorPin', OUTPUT); //Analog out pin for the motor control
 //  pinMode('rightMotorPin', OUTPUT); //Analog out pin for the motor control
@@ -53,6 +65,7 @@ void setup() {
 //Baasic input control's getting data from the main channels of the 
 //joysticks  and switchs and converting them to a useable interger for functionality.
 void loop() {
+  getDistance();
   ch1 = pulseIn(A1, HIGH); // Read the pulse width of 
   ch2 = pulseIn(A2, HIGH); // each channel
   ch3 = pulseIn(A3, HIGH);
@@ -152,8 +165,8 @@ void test(){
 void AI(){
   //have sensor input make thing do thing, and if thing hapens do other thing whilst killing other thing.
   //Automomasly
-  getDistance()
-  ReadSensor()
+  getDistance();
+  readSensor();
 
   }
   
@@ -162,22 +175,18 @@ void AI(){
 //  if switch = ON manualControl = true 
 //  if switch = OFF AI = true
 //  }
-float getDistance()
+void getDistance()
 {
-  float echoTime;                   //variable to store the time it takes for a ping to bounce off an object
-  float calcualtedDistance;         //variable to store the distance calculated from the echo time
-  
-  //send out an ultrasonic pulse that's 10ms long
-  digitalWrite(trigPin, HIGH);
-  delayMicroseconds(10); 
-  digitalWrite(trigPin, LOW);
+         //variable to store the distance calculated from the echo time
 
-  echoTime = pulseIn(echoPin, HIGH);      //use the pulsein command to see how long it takes for the
-                                          //pulse to bounce back to the sensor
-
-  calcualtedDistance = echoTime / 148.0;  //calculate the distance of the object that reflected the pulse (half the bounce time multiplied by the speed of sound)
-  
-  return calcualtedDistance;              //send back the distance that was calculated
+  //Get info from sensor 2.
+  digitalWrite(trigPin2, LOW);
+  delayMicroseconds(2);
+  digitalWrite(trigPin2, HIGH);
+  delayMicroseconds(10);
+  digitalWrite(trigPin2, LOW);
+  duration2 = pulseIn(echoPin2, HIGH);
+  distanceSensor1 = (duration2/2) / 29.1;
 }
 
 void readSensor() {
@@ -191,9 +200,9 @@ void servoMovment() {
   //will lock onto the target, It will know its locked on when the sensor that has found it
   //stays consistantly at the same point, then the motors will turn the base of the robot 
   //to be inline with the target.
-
+}
 
 //This method is used for detecting IR
-void infraRed() {
+void infrared() {
 
 }
