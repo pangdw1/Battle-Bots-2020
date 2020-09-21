@@ -40,7 +40,7 @@ void setup() {
   
 //  pinMode('leftMotorPin', OUTPUT); //Analog out pin for the motor control
 //  pinMode('rightMotorPin', OUTPUT); //Analog out pin for the motor control
-  Serial.begin(9600); 
+  Serial.begin(154400); 
 
 }
 

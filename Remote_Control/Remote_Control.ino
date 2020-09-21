@@ -66,18 +66,18 @@ void setup() {
 //joysticks  and switchs and converting them to a useable interger for functionality.
 void loop() {
   getDistance();
-  ch1 = pulseIn(A1, HIGH); // Read the pulse width of 
-  ch2 = pulseIn(A2, HIGH); // each channel
-  ch3 = pulseIn(A3, HIGH);
-  ch4 = pulseIn(A4, HIGH);
-  ch5 = pulseIn(A5, HIGH);
-  ch6 = pulseIn(A6, HIGH);
-  
-  
-  ch1 = (ch1 /100) - 14; //Rounding the channel input to a -5 - 5 scale for easy of use
-  ch2 = (ch2 /100) - 14; //Joystick control reading
-  ch3 = (ch3 /100) - 14; 
-  ch4 = (ch4 /100) - 14;
+//  ch1 = pulseIn(A1, HIGH); // Read the pulse width of 
+//  ch2 = pulseIn(A2, HIGH); // each channel
+//  ch3 = pulseIn(A3, HIGH);
+//  ch4 = pulseIn(A4, HIGH);
+//  ch5 = pulseIn(A5, HIGH);
+//  ch6 = pulseIn(A6, HIGH);
+//  
+//  
+//  ch1 = (ch1 /100) - 14; //Rounding the channel input to a -5 - 5 scale for easy of use
+//  ch2 = (ch2 /100) - 14; //Joystick control reading
+//  ch3 = (ch3 /100) - 14; 
+//  ch4 = (ch4 /100) - 14;
 //  if(ch5 < 1000){//Channel 5 on off switch conversion  Switch used for switching between AI mode and maual control
 //      ch5String = "OFF";
 //      manualControl(); //Use the manual control method
@@ -122,7 +122,7 @@ void printing() {
   Serial.print("Channel 6 Right switch:");
   Serial.println(ch6String);
 
-  delay(200); 
+   
 }
 
 //Function for moving the robot around via the controller
@@ -181,9 +181,7 @@ void getDistance()
 
   //Get info from sensor 2.
   digitalWrite(trigPin2, LOW);
-  delayMicroseconds(2);
   digitalWrite(trigPin2, HIGH);
-  delayMicroseconds(10);
   digitalWrite(trigPin2, LOW);
   duration2 = pulseIn(echoPin2, HIGH);
   distanceSensor1 = (duration2/2) / 29.1;
