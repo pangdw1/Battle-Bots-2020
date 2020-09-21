@@ -187,6 +187,7 @@ void getDistance()
   digitalWrite(trigPin2, LOW);
   duration2 = pulseIn(echoPin2, HIGH);
   distanceSensor1 = (duration2/2) / 29.1;
+  Serial.println(distanceSensor1);
 }
 
 void readSensor() {

@@ -2,6 +2,6 @@
     "programmer": "AVR ISP",
     "board": "arduino:avr:mega",
     "configuration": "cpu=atmega2560",
-    "port": "COM1",
+    "port": "COM4",
     "sketch": "Remote_Control.ino"
 }
