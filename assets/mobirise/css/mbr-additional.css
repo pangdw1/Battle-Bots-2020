@@ -3885,6 +3885,197 @@ section.lazy-placeholder:after {
   -o-transform: none;
   transform: none;
 }
+.cid-sbhbeztm2P {
+  padding-top: 0px;
+  padding-bottom: 45px;
+  background-color: #465052;
+}
+.cid-sbhbeztm2P .item {
+  padding-bottom: 2rem;
+}
+.cid-sbhbeztm2P .item-wrapper {
+  height: 100%;
+}
+.cid-sbhbeztm2P .item-wrapper img {
+  height: 100%;
+  object-fit: cover;
+}
+.cid-sbhbeztm2P .carousel-control,
+.cid-sbhbeztm2P .close {
+  background: #1b1b1b;
+}
+.cid-sbhbeztm2P .carousel-control-prev {
+  margin-left: 2.5rem;
+}
+.cid-sbhbeztm2P .carousel-control-next {
+  margin-right: 2.5rem;
+}
+.cid-sbhbeztm2P .close {
+  position: fixed;
+  opacity: .5;
+  font-size: 35px;
+  font-weight: 300;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  color: #fff;
+  top: 2.5rem;
+  right: 2.5rem;
+  line-height: 70px;
+  border: none;
+  text-align: center;
+  text-shadow: none;
+  z-index: 5;
+  -webkit-transition: opacity .3s ease;
+  -moz-transition: opacity .3s ease;
+  -o-transition: opacity .3s ease;
+  transition: opacity .3s ease;
+  font-family: 'MobiriseIcons';
+}
+.cid-sbhbeztm2P .close::before {
+  content: '\e91a';
+}
+.cid-sbhbeztm2P .close:hover {
+  opacity: 1;
+  background: #000;
+  color: #fff;
+}
+.cid-sbhbeztm2P .carousel-control {
+  position: fixed;
+  width: 70px;
+  height: 70px;
+  top: 50%;
+  margin-top: -35px;
+  line-height: 70px;
+  border-radius: 50%;
+  font-size: 35px;
+  border: 0;
+  opacity: .5;
+  text-shadow: none;
+  z-index: 5;
+  color: #fff;
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  -o-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s;
+}
+.cid-sbhbeztm2P .carousel-inner > .active {
+  display: block;
+}
+.cid-sbhbeztm2P .carousel-control.left {
+  left: 0;
+  margin-left: 2.5rem;
+}
+.cid-sbhbeztm2P .carousel-control.right {
+  right: 0;
+  margin-right: 2.5rem;
+}
+.cid-sbhbeztm2P .carousel-control .icon-next,
+.cid-sbhbeztm2P .carousel-control .icon-prev {
+  margin-top: -18px;
+  font-size: 40px;
+  line-height: 27px;
+}
+.cid-sbhbeztm2P .carousel-control:hover {
+  background: #1b1b1b;
+  color: #fff;
+  opacity: 1;
+}
+@media (max-width: 768px) {
+  .cid-sbhbeztm2P .carousel-control,
+  .cid-sbhbeztm2P .carousel-indicators,
+  .cid-sbhbeztm2P .modal .close {
+    position: fixed;
+  }
+}
+@media (max-width: 767px) {
+  .cid-sbhbeztm2P .mbr-slider .carousel-control {
+    top: auto;
+    bottom: 20px;
+  }
+  .cid-sbhbeztm2P .mbr-slider > .container .carousel-control {
+    margin-bottom: 0;
+  }
+}
+.cid-sbhbeztm2P .carousel-indicators {
+  bottom: 0;
+  margin-bottom: 3px;
+}
+@media (max-width: 991px) {
+  .cid-sbhbeztm2P .carousel-indicators {
+    margin-bottom: 3.625rem !important;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
+@media (max-width: 767px) {
+  .cid-sbhbeztm2P .carousel-indicators {
+    display: none;
+  }
+}
+.cid-sbhbeztm2P .carousel-indicators .active,
+.cid-sbhbeztm2P .carousel-indicators li {
+  width: 7px;
+  height: 7px;
+  margin: 3px;
+  background: #1b1b1b;
+  opacity: .5;
+  border: 4px solid #1b1b1b;
+}
+.cid-sbhbeztm2P .carousel-indicators .active {
+  background: #fff;
+}
+.cid-sbhbeztm2P .carousel-indicators li {
+  max-width: 15px;
+  max-height: 15px;
+  border-radius: 50%;
+}
+.cid-sbhbeztm2P .modal {
+  padding-left: 0 !important;
+  position: fixed;
+  overflow: hidden;
+  padding-right: 0 !important;
+}
+.cid-sbhbeztm2P .modal-dialog {
+  margin: 0 auto;
+  max-width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.cid-sbhbeztm2P .modal-content {
+  border-radius: 0;
+  border: none;
+  background: transparent;
+}
+.cid-sbhbeztm2P .modal-body {
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+.cid-sbhbeztm2P .modal-body img {
+  width: 100%;
+  object-fit: contain;
+  max-height: calc(98.25vh);
+  height: fit-content;
+}
+.cid-sbhbeztm2P .carousel {
+  width: 100%;
+}
+.cid-sbhbeztm2P .modal-backdrop.in {
+  opacity: .8;
+}
+.cid-sbhbeztm2P .modal.fade .modal-dialog {
+  -webkit-transition: margin-top 0.3s ease-out;
+  -moz-transition: margin-top 0.3s ease-out;
+  -o-transition: margin-top 0.3s ease-out;
+  transition: margin-top 0.3s ease-out;
+}
+.cid-sbhbeztm2P .modal.fade .modal-dialog,
+.cid-sbhbeztm2P .modal.in .modal-dialog {
+  -webkit-transform: none;
+  -ms-transform: none;
+  -o-transform: none;
+  transform: none;
+}
 .cid-s9tjGj57Cn {
   padding-top: 0px;
   padding-bottom: 0px;
