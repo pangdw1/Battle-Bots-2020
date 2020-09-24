@@ -60,46 +60,23 @@ void loop() {
   ch2 = (ch2 /100) - 14; //Joystick control reading
   ch3 = (ch3 /100) - 14; 
   ch4 = (ch4 /100) - 14;
-  if(ch5 < 1000){//Channel 5 on off switch conversion
-      ch5String = "OFF";
-    }
-    else{
-      ch5String = "ON";
-    }
-  if(ch6 < 1000){//Channel 6 on off switch conversion
-      ch6String = "OFF";
-    }
-    else{
-      ch6String = "ON";
-    }
+//  if(ch5 < 1000){//Channel 5 on off switch conversion
+//      ch5String = "OFF";
+//    }
+//    else{
+//      ch5String = "ON";
+//    }
+//  if(ch6 < 1000){//Channel 6 on off switch conversion
+//      ch6String = "OFF";
+//    }
+//    else{
+//      ch6String = "ON";
+//    }
   
   
   //test();
   motorControl();
-  printing();
-}
 
-//Simple logs to console window of the input from controller
-void printing() {
-  Serial.print("Channel 1:"); // Print the value of 
-  Serial.println(ch1);        // each channel
-
-  Serial.print("Channel 2:");
-  Serial.println(ch2);
-
-  Serial.print("Channel 3:");
-  Serial.println(ch3);
-  
-  Serial.print("Channel 4:");
-  Serial.println(ch4);
-  
-  Serial.print("Channel 5 Left switch:");
-  Serial.println(ch5String);
-  
-  Serial.print("Channel 6 Right switch:");
-  Serial.println(ch6String);
-
-  delay(200); 
 }
 
 //Function for moving the robot around via the controller
@@ -111,28 +88,15 @@ void motorControl() {
    
 
     if (ch4 < 0){ //Turn left
-      leftMotorInt = ch3 * 50; //Inside wheel powered by amount of throtle given, allows for tighter or slacker turning.
+      leftMotorInt = ch4 * -50; //Inside wheel powered by amount of throtle given, allows for tighter or slacker turning.
       rightMotorInt = ch4 * 50; //Power outside wheel the amount you wish to turn.
-    motors.leftMotor(leftMotorInt);
-    motors.rightMotor(rightMotorInt);
-    }
-    else if (ch4 > 0){ //Turn Right
-      leftMotorInt = ch4 * 50; //Power the outside wheel the amount you wish to turn.
-      rightMotorInt = ch3 * 50; //Inside whjeel powered by amount of throtle given, allows for tights or slacker turning.
       motors.leftMotor(leftMotorInt);
-    motors.rightMotor(rightMotorInt);
+      motors.rightMotor(rightMotorInt);
+    }
+    else{ //Turn Right
+      leftMotorInt = ch4 * 50; //Power the outside wheel the amount you wish to turn.
+      rightMotorInt = ch4 * -50; //Inside whjeel powered by amount of throtle given, allows for tights or slacker turning.
+      motors.leftMotor(leftMotorInt);
+      motors.rightMotor(rightMotorInt);
     }
 }
-
-
-//method for basic tersting of controls via remote input
-void test(){
-  if (ch3 > 5){
-    analogWrite(A6, 255);
-    analogWrite(A7, 255);
-  }
-  else {
-     analogWrite(A6, 155);
-    analogWrite(A7, 150);
-    }
-  }

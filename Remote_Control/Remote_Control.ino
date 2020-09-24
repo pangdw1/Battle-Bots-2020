@@ -20,6 +20,8 @@ int ch3; // Left stick Forward Backwards
 int ch4; // Left stick Left and Right
 int ch5; // Far left switch
 int ch6; // Far right switch
+int IRSensor = 14; // connect ir sensor to arduino pin 2
+int IRRead;
 String ch5String;
 String ch6String;
 int led;
@@ -54,7 +56,10 @@ void setup() {
   pinMode(echoPin2, INPUT);
   pinMode(trigPin3, OUTPUT);
   pinMode(echoPin3, INPUT);
+
+  pinMode (IRSensor, INPUT); // sensor pin INPUT
   
+}
 //  pinMode('leftMotorPin', OUTPUT); //Analog out pin for the motor control
 //  pinMode('rightMotorPin', OUTPUT); //Analog out pin for the motor control
   Serial.begin(9600); 
@@ -125,7 +130,9 @@ void manualControl() {
     ch2 = (ch2 /100) - 14; //Joystick control reading
     ch3 = (ch3 /100) - 14; 
     ch4 = (ch4 /100) - 14;
-    
+
+    //Forward / Backwards movment.
+    //Set the motors to be equal power in forwards or reverse.
     leftMotor = ch3 * 50;
     rightMotor = ch3 * 50;
     analogWrite('leftMotorPin', leftMotor);
@@ -209,9 +216,11 @@ void servoMovment() {
   //to be inline with the target.
 
   
+  
 }
 
 //This method is used for detecting IR
 void infrared() {
-
+  IRRead = digitalRead(IRSensor);
+  Serial.println(IRRead); //print inferred value.
 }
