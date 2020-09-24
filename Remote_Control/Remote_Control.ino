@@ -65,19 +65,15 @@ void setup() {
 //Baasic input control's getting data from the main channels of the 
 //joysticks  and switchs and converting them to a useable interger for functionality.
 void loop() {
-  getDistance();
-//  ch1 = pulseIn(A1, HIGH); // Read the pulse width of 
-//  ch2 = pulseIn(A2, HIGH); // each channel
-//  ch3 = pulseIn(A3, HIGH);
-//  ch4 = pulseIn(A4, HIGH);
-//  ch5 = pulseIn(A5, HIGH);
-//  ch6 = pulseIn(A6, HIGH);
-//  
-//  
-//  ch1 = (ch1 /100) - 14; //Rounding the channel input to a -5 - 5 scale for easy of use
-//  ch2 = (ch2 /100) - 14; //Joystick control reading
-//  ch3 = (ch3 /100) - 14; 
-//  ch4 = (ch4 /100) - 14;
+ // getDistance();
+  ch1 = pulseIn(A1, HIGH); // Read the pulse width of 
+  ch2 = pulseIn(A2, HIGH); // each channel
+  ch3 = pulseIn(A3, HIGH);
+  ch4 = pulseIn(A4, HIGH);
+  ch5 = pulseIn(A5, HIGH);
+  ch6 = pulseIn(A6, HIGH);
+  
+
 //  if(ch5 < 1000){//Channel 5 on off switch conversion  Switch used for switching between AI mode and maual control
 //      ch5String = "OFF";
 //      manualControl(); //Use the manual control method
@@ -120,13 +116,16 @@ void printing() {
   Serial.println(ch5String);
   
   Serial.print("Channel 6 Right switch:");
-  Serial.println(ch6String);
-
-   
+  Serial.println(ch6String);  
 }
 
 //Function for moving the robot around via the controller
 void manualControl() {
+    ch1 = (ch1 /100) - 14; //Rounding the channel input to a -5 - 5 scale for easy of use
+    ch2 = (ch2 /100) - 14; //Joystick control reading
+    ch3 = (ch3 /100) - 14; 
+    ch4 = (ch4 /100) - 14;
+    
     leftMotor = ch3 * 50;
     rightMotor = ch3 * 50;
     analogWrite('leftMotorPin', leftMotor);
@@ -165,8 +164,8 @@ void test(){
 void AI(){
   //have sensor input make thing do thing, and if thing hapens do other thing whilst killing other thing.
   //Automomasly
-  getDistance();
-  readSensor();
+  // getDistance();
+  // readSensor();
 
   }
   
@@ -175,8 +174,7 @@ void AI(){
 //  if switch = ON manualControl = true 
 //  if switch = OFF AI = true
 //  }
-void getDistance()
-{
+void getDistance(){
          //variable to store the distance calculated from the echo time
 
   //Get info from sensor 2.
@@ -187,7 +185,7 @@ void getDistance()
   distanceSensor1 = (duration1/2) / 29.1;
   Serial.println(distanceSensor1);
 
-  digitalWrite(trigPin2 LOW);
+  digitalWrite(trigPin2, LOW);
   digitalWrite(trigPin2, HIGH);
   digitalWrite(trigPin2, LOW);
   duration2 = pulseIn(echoPin2, HIGH);
@@ -199,11 +197,7 @@ void getDistance()
   digitalWrite(trigPin3, LOW);
   duration3 = pulseIn(echoPin3, HIGH);
   distanceSensor3 = (duration3/2) / 29.1;
-  Serial.println(distanceSensor3);
-}
-
-void readSensor() {
-  
+  Serial.println( distanceSensor3);
 }
 
 //Method used for the servo's to move into position.
@@ -213,6 +207,8 @@ void servoMovment() {
   //will lock onto the target, It will know its locked on when the sensor that has found it
   //stays consistantly at the same point, then the motors will turn the base of the robot 
   //to be inline with the target.
+
+  
 }
 
 //This method is used for detecting IR
