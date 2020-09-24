@@ -180,12 +180,26 @@ void getDistance()
          //variable to store the distance calculated from the echo time
 
   //Get info from sensor 2.
-  digitalWrite(trigPin2, LOW);
+  digitalWrite(trigPin, LOW);
+  digitalWrite(trigPin, HIGH);
+  digitalWrite(trigPin, LOW);
+  duration1 = pulseIn(echoPin, HIGH);
+  distanceSensor1 = (duration1/2) / 29.1;
+  Serial.println(distanceSensor1);
+
+  digitalWrite(trigPin2 LOW);
   digitalWrite(trigPin2, HIGH);
   digitalWrite(trigPin2, LOW);
   duration2 = pulseIn(echoPin2, HIGH);
-  distanceSensor1 = (duration2/2) / 29.1;
-  Serial.println(distanceSensor1);
+  distanceSensor2 = (duration2/2) / 29.1;
+  Serial.println(distanceSensor2);
+
+  digitalWrite(trigPin3, LOW);
+  digitalWrite(trigPin3, HIGH);
+  digitalWrite(trigPin3, LOW);
+  duration3 = pulseIn(echoPin3, HIGH);
+  distanceSensor3 = (duration3/2) / 29.1;
+  Serial.println(distanceSensor3);
 }
 
 void readSensor() {
