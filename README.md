@@ -29,6 +29,7 @@ https://www.instructables.com/id/How-to-design-and-build-a-combat-robot/
 * ~~https://www.wheelco.co.nz/shop/Wheels/Rubber+Wheels/Zero+Pressure+Wheel+150mm+-+Offset+Hub+-+ZPM150B.html X 2~~
 * https://www.aliexpress.com/item/4000068484841.html?spm=a2g0o.productlist.0.0.724b1811dIyiSx&algo_pvid=1983561f-9e18-4c67-b603-f9775419f26e&algo_expid=1983561f-9e18-4c67-b603-f9775419f26e-20&btsid=0bb0624216003070401855415e3dde&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_ X 4
 * https://www.jaycar.co.nz/ir-temperature-sensor-module-for-arduino/p/XC4260
+* or this sensor https://www.jaycar.co.nz/arduino-compatible-ir-obstacle-avoidance-sensor-module/p/XC4524
 
 ## EPICENTRE INDUCTION (Engineering School Resources)
 Personal Links sent via email for student to complete (Mandatory induction to use machinery)
