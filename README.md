@@ -91,6 +91,8 @@ https://www.youtube.com/watch?v=V1DznNQOL4s Robot with Inexpensive Motors and Co
 https://www.instructables.com/Autonomous-Sumo-Battle-Bot-with-Pneumatic-Flipper-/?fbclid=IwAR2OSdrG9wDwjX8Jr_raP4FiZGDI92d9PpCSn2E4Z2HKiPBnwIioX4MQx2g Sumo Autonomous (sensors) <br />
 https://www.deviceplus.com/arduino/electric-skateboard/ Electric skateboard example <br />
 http://www.etotheipiplusone.net/?p=3985 Botbuild Good tips <br />
+https://drc.libraries.uc.edu/bitstream/handle/2374.UC/731848/MET2014_Shallenberger_Timothy.pdf?sequence=1 How To Battlebot <br />
+https://www.instructables.com/Combat-Robotics-Tutorial/ Combat robotics tutorial <br />
 
 ## Wiring Diagram Example
 ![wiring image](https://github.com/pangdw1/Battle-Bots-2020/blob/master/images/WiringControlsCombatRobot.jpg)
