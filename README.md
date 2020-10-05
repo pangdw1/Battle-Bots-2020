@@ -82,6 +82,15 @@ https://www.instructables.com/id/Autonomous-Sumo-Battle-Bot-with-Pneumatic-Flipp
 
 https://makezine.com/projects/combat-concepting-cardboard/?fbclid=IwAR3XP3rc87_g307p8VNTEb1fmYj9z3Wm77kpZgeivRRl63MD946CDGDcxhg <br />
 
+## Useful links 
+
+https://scriptasylum.com/rc_speed/lipo.html  Lipo Wiring Config  <br />
+https://www.youtube.com/watch?v=3BvXXBCqqfc&feature=emb_logo ESC servo tester for motors vid <br />
+https://www.youtube.com/watch?v=JQkTm-vuFGI Brushless Motor basics <br />
+https://www.youtube.com/watch?v=V1DznNQOL4s Robot with Inexpensive Motors and Components (Rumba team .Dot example) <br />
+https://www.instructables.com/Autonomous-Sumo-Battle-Bot-with-Pneumatic-Flipper-/?fbclid=IwAR2OSdrG9wDwjX8Jr_raP4FiZGDI92d9PpCSn2E4Z2HKiPBnwIioX4MQx2g Sumo Autonomous (sensors) <br />
+https://www.deviceplus.com/arduino/electric-skateboard/ Electric skateboard example <br />
+
 ## Wiring Diagram Example
 ![wiring image](https://github.com/pangdw1/Battle-Bots-2020/blob/master/images/WiringControlsCombatRobot.jpg)
 
