@@ -84,6 +84,8 @@ https://makezine.com/projects/combat-concepting-cardboard/?fbclid=IwAR3XP3rc87_g
 
 ## Useful links 
 
+https://www.youtube.com/watch?v=uQIGb8VzX08 VERY IMPORTANT!!! ESC WIRING <br />
+https://www.youtube.com/watch?v=sIgX9P8l8kw VERY IMPORTANT!!! ESC WIRING <br />
 https://scriptasylum.com/rc_speed/lipo.html  Lipo Wiring Config  <br />
 https://www.youtube.com/watch?v=3BvXXBCqqfc&feature=emb_logo ESC servo tester for motors vid <br />
 https://www.youtube.com/watch?v=JQkTm-vuFGI Brushless Motor basics <br />
