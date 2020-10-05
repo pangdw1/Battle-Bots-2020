@@ -96,6 +96,7 @@ http://www.etotheipiplusone.net/?p=3985 Botbuild Good tips <br />
 https://drc.libraries.uc.edu/bitstream/handle/2374.UC/731848/MET2014_Shallenberger_Timothy.pdf?sequence=1 How To Battlebot <br />
 https://www.instructables.com/Combat-Robotics-Tutorial/ Combat robotics tutorial <br />
 
+SENSORS https://www.jsumo.com/sensors <br />
 ## Wiring Diagram Example
 ![wiring image](https://github.com/pangdw1/Battle-Bots-2020/blob/master/images/WiringControlsCombatRobot.jpg)
 
