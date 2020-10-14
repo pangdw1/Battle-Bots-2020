@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "Battle Bots 2020",
-    "currentPage": "teambattlebots.html",
+    "currentPage": "index.html",
     "theme": {
       "name": "mobirise4",
       "title": "Mobirise 4",
@@ -64,7 +64,9 @@
     "gdpr": false,
     "dppsSwitcher": true,
     "": "on",
-    "site_lang": "undefined"
+    "site_lang": "undefined",
+    "publishType": "local",
+    "publishPath": "file:///C:/Users/djwoo/Desktop/Battle-Bots-2020"
   },
   "pages": {
     "index.html": {
@@ -72,7 +74,7 @@
         "main": true,
         "title": "Home",
         "meta_descr": "",
-        "header_custom": "<!-- Global site tag (gtag.js) - Google Analytics -->\n<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-59EQ5ZPTWN\"></script>\n<script>\n  window.dataLayer = window.dataLayer || [];\n  function gtag(){dataLayer.push(arguments);}\n  gtag('js', new Date());\n\n  gtag('config', 'G-59EQ5ZPTWN');\n</script>",
+        "header_custom": "",
         "footer_custom": "",
         "html_before": ""
       },
@@ -551,8 +553,7 @@
       "settings": {
         "meta_descr": "",
         "title": "teambattlebots",
-        "order": 4,
-        "header_custom": "<!-- Global site tag (gtag.js) - Google Analytics -->\n<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-59EQ5ZPTWN\"></script>\n<script>\n  window.dataLayer = window.dataLayer || [];\n  function gtag(){dataLayer.push(arguments);}\n  gtag('js', new Date());\n\n  gtag('config', 'G-59EQ5ZPTWN');\n</script>"
+        "order": 4
       },
       "components": [
         {
@@ -1059,9 +1060,7 @@
       "settings": {
         "meta_descr": "",
         "title": "battlebotproposal",
-        "order": 1,
-        "html_before": "",
-        "header_custom": "<!-- Global site tag (gtag.js) - Google Analytics -->\n<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-59EQ5ZPTWN\"></script>\n<script>\n  window.dataLayer = window.dataLayer || [];\n  function gtag(){dataLayer.push(arguments);}\n  gtag('js', new Date());\n\n  gtag('config', 'G-59EQ5ZPTWN');\n</script>"
+        "order": 1
       },
       "components": [
         {
@@ -2984,8 +2983,7 @@
       "settings": {
         "meta_descr": "",
         "title": "farmbotv2build",
-        "order": 3,
-        "header_custom": "<!-- Global site tag (gtag.js) - Google Analytics -->\n<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-59EQ5ZPTWN\"></script>\n<script>\n  window.dataLayer = window.dataLayer || [];\n  function gtag(){dataLayer.push(arguments);}\n  gtag('js', new Date());\n\n  gtag('config', 'G-59EQ5ZPTWN');\n</script>"
+        "order": 3
       },
       "components": [
         {
@@ -4719,8 +4717,7 @@
       "settings": {
         "meta_descr": "",
         "title": "epicentreaccess",
-        "order": 2,
-        "header_custom": "<!-- Global site tag (gtag.js) - Google Analytics -->\n<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-59EQ5ZPTWN\"></script>\n<script>\n  window.dataLayer = window.dataLayer || [];\n  function gtag(){dataLayer.push(arguments);}\n  gtag('js', new Date());\n\n  gtag('config', 'G-59EQ5ZPTWN');\n</script>"
+        "order": 2
       },
       "components": [
         {
