@@ -23,6 +23,10 @@ https://www.instructables.com/id/How-to-design-and-build-a-combat-robot/
 * https://www.jaycar.co.nz/ir-temperature-sensor-module-for-arduino/p/XC4260
 * or this sensor https://www.jaycar.co.nz/arduino-compatible-ir-obstacle-avoidance-sensor-module/p/XC4524
 * https://nicegear.nz/product/teensy-41 Faster microcontroller for running the software, with more input output pins.
+## Backup plan
+* https://www.hobbycity.nz/products/120mah-cx-g3-25c-45c-11-1v-3s-pack?_pos=3&_sid=c7240eaf7&_ss=r 3s battery for the drone mottors, and controller.
+* https://www.hobbycity.nz/collections/motors-escs/products/hacker-hc3370-mc-22a-controller-for-brushless-electromotor Drone brushless repo 
+
 * ~~4x AA Baatteries(Remote)~~
 * ~~arduino compatiable wires,~~
 * ~~https://www.mitre10.co.nz/shop/md-products-plain-aluminium-sheet-w-304mm-l-609mm/p/291140 4 x sheets Aluminium Sheet metal for body armour~~
