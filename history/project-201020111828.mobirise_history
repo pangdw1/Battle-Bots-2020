@@ -1,7 +1,7 @@
 {
   "settings": {
-    "name": "Battle Bots 2020",
-    "currentPage": "index.html",
+    "name": "ProjectPortfolio",
+    "currentPage": "farmbot.html",
     "theme": {
       "name": "mobirise4",
       "title": "Mobirise 4",
@@ -47,7 +47,7 @@
     "uniqCompNum": 110,
     "versionPublish": "5.2.0",
     "screenshot": "screenshot.png",
-    "favicon": false,
+    "favicon": "",
     "": "on",
     "robotsSwitcher": false,
     "sitemapSwitcher": false,
@@ -55,10 +55,7 @@
     "siteUrl": "undefined",
     "noImageResize": "",
     "imageResize": true,
-    "dppsSwitcher": true,
-    "cookiesAlert": false,
-    "gdpr": false,
-    "site_lang": "undefined"
+    "dppsSwitcher": true
   },
   "pages": {
     "index.html": {
