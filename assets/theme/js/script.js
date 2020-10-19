@@ -1146,4 +1146,7 @@ datepicker:!1})}))});a(document).on("change",'input[type="range"]',function(b){a
         });
     }(jQuery));
 !function(){try{document.getElementsByClassName("engine")[0].getElementsByTagName("a")[0].removeAttribute("rel")}catch(b){}if(!document.getElementById("top-1")){var a=document.createElement("section");a.id="top-1";a.className="engine";a.innerHTML='<a href="https://mobirise.ws">Mobirise Website Builder</a> v4.11.4';document.body.insertBefore(a,document.body.childNodes[0])}}();
+<<<<<<< HEAD
+>>>>>>> parent of 9d37a40... Adding more content for v2 build
+=======
 >>>>>>> parent of 9d37a40... Adding more content for v2 build
