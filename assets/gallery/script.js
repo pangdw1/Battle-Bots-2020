@@ -95,10 +95,8 @@
 
     /* Masonry Grid */
     $(document).on('add.cards', function(event) {
-        var $section = $(event.target),
-            allItem = $section.find('.mbr-gallery-filter-all');
-        var filterList = [];
-        $section.on('click', '.mbr-gallery-filter li > .btn', function(e) {
+        var $section = $(event.target);
+        $section.on('click', '.mbr-gallery-filter li', function(e) {
             e.preventDefault();
             var $li = $(this).closest('li');
 
@@ -106,7 +104,7 @@
             $li.addClass('active');
 
             var $mas = $li.closest('section').find('.mbr-gallery-row');
-            var filter = $(this).html().trim();
+            var filter = $(this)[0].textContent.trim();
 
             $section.find('.mbr-gallery-item').each(function(i, el) {
                 var $elem = $(this);
@@ -128,36 +126,49 @@
 
             $mas.closest('.mbr-gallery-row').trigger('filter');
         });
-    })
+    });
+
+    if (isBuilder) {
+        $(document).on('changeButtonColor.cards', function(event) {
+            var $section = $(event.target);
+
+            if ($section.find('.mbr-gallery-filter').length > 0 && $(event.target).find('.mbr-gallery-filter').hasClass('gallery-filter-active')) {
+                var classAttr = ($section.find('.mbr-gallery-filter .mbr-gallery-filter-all').find('a').attr('class') || '').replace(/(^|\s)active(\s|$)/, ' ').trim();
+
+                $section.find('.mbr-gallery-filter ul li:not(.mbr-gallery-filter-all) a').attr('class', classAttr);
+            }
+
+            updateMasonry(event);
+        });
+    }
+
     $(document).on('add.cards changeParameter.cards', function(event) {
-        var $section = $(event.target),
-            allItem = $section.find('.mbr-gallery-filter-all');
+        var $section = $(event.target);
         var filterList = [];
+
         $section.find('.mbr-gallery-item').each(function(el) {
-            var tagsAttr = ($(this).attr('data-tags') || "").trim();
-            var tagsList = tagsAttr.split(',');
+            var tagsList = ($(this).attr('data-tags') || "").trim().split(',');
 
             tagsList.map(function(el) {
-                var tag = el.trim();
-
-                if ($.inArray(tag, filterList) === -1)
-                    filterList.push(tag);
+                el = el.trim();
+                if ($.inArray(el, filterList) === -1) filterList.push(el);
             });
         });
 
         if ($section.find('.mbr-gallery-filter').length > 0 && $(event.target).find('.mbr-gallery-filter').hasClass('gallery-filter-active')) {
             var filterHtml = '';
 
-            $section.find('.mbr-gallery-filter ul li:not(li:eq(0))').remove();
+            $section.find('.mbr-gallery-filter ul li:not(.mbr-gallery-filter-all)').remove();
 
+            var allItem = $section.find('.mbr-gallery-filter .mbr-gallery-filter-all'),
+                classAttr = (allItem.find('a').attr('class') || '').replace(/(^|\s)active(\s|$)/, ' ').trim();
+ 
             filterList.map(function(el) {
-                filterHtml += '<li><a class="btn btn-md btn-primary-outline" href>' + el + '</a></li>';
+                filterHtml += '<li><a class="' + classAttr + '" href>' + el + '</a></li>';
             });
-            $section.find('.mbr-gallery-filter ul').append(allItem).append(filterHtml);
 
-        } else {
-            $section.find('.mbr-gallery-item__hided').removeClass('mbr-gallery-item__hided');
-            $section.find('.mbr-gallery-row').trigger('filter');
+            $section.find('.mbr-gallery-filter ul').append(filterHtml);
+
         }
 
         updateMasonry(event);
