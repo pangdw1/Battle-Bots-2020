@@ -22,6 +22,11 @@ https://www.instructables.com/id/How-to-design-and-build-a-combat-robot/
 * https://www.aliexpress.com/item/4000068484841.html?spm=a2g0o.productlist.0.0.724b1811dIyiSx&algo_pvid=1983561f-9e18-4c67-b603-f9775419f26e&algo_expid=1983561f-9e18-4c67-b603-f9775419f26e-20&btsid=0bb0624216003070401855415e3dde&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_ X 4
 * https://www.jaycar.co.nz/ir-temperature-sensor-module-for-arduino/p/XC4260
 * or this sensor https://www.jaycar.co.nz/arduino-compatible-ir-obstacle-avoidance-sensor-module/p/XC4524
+* https://nicegear.nz/product/teensy-41 Faster microcontroller for running the software, with more input output pins.
+## Backup plan
+* https://www.hobbycity.nz/products/120mah-cx-g3-25c-45c-11-1v-3s-pack?_pos=3&_sid=c7240eaf7&_ss=r 3s battery for the drone mottors, and controller.
+* https://www.hobbycity.nz/collections/motors-escs/products/hacker-hc3370-mc-22a-controller-for-brushless-electromotor Drone brushless repo 
+
 * ~~4x AA Baatteries(Remote)~~
 * ~~arduino compatiable wires,~~
 * ~~https://www.mitre10.co.nz/shop/md-products-plain-aluminium-sheet-w-304mm-l-609mm/p/291140 4 x sheets Aluminium Sheet metal for body armour~~
@@ -30,6 +35,8 @@ https://www.instructables.com/id/How-to-design-and-build-a-combat-robot/
 * ~~https://nz.dhgate.com/product/n6354-270kv-brushless-motor-high-power-for/561882570.html?skuid=749433543700910080#s1-20-1;nz|1215720175 These are the more powerful mototrs x3~~
 * ~~https://mecha4makers.co.nz/product/2020-profile-v-slot-aluminium-construction-extrusion/ 5 x 500mm 2020 extrusion pieces (MICO METALS?)~~
 * ~~https://www.wheelco.co.nz/shop/Wheels/Rubber+Wheels/Zero+Pressure+Wheel+150mm+-+Offset+Hub+-+ZPM150B.html X 2~~
+
+
 
 
 ## EPICENTRE INDUCTION (Engineering School Resources)
