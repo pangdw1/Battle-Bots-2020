@@ -18,6 +18,7 @@ https://combatrobotics.co.nz/
 https://www.instructables.com/id/How-to-design-and-build-a-combat-robot/
 
 ## Shopping list
+* https://www.hobbycity.nz/products/hyperion-hp-wr-fu300y-standard-servo-y-connector-harness-300mm-futaba?_pos=1&_sid=1b7ca440b&_ss=r Servo Y Connector Harness (controllers to reciever)
 * https://mecha4makers.co.nz/product/2020-internal-corner-bracket-2-x-m5/ X 20 corner angle brackets
 * https://www.aliexpress.com/item/4000068484841.html?spm=a2g0o.productlist.0.0.724b1811dIyiSx&algo_pvid=1983561f-9e18-4c67-b603-f9775419f26e&algo_expid=1983561f-9e18-4c67-b603-f9775419f26e-20&btsid=0bb0624216003070401855415e3dde&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_ X 4
 * https://www.jaycar.co.nz/ir-temperature-sensor-module-for-arduino/p/XC4260
