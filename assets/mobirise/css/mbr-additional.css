@@ -1074,32 +1074,30 @@ section.lazy-placeholder:after {
 .cid-s6Pq13j6kX .dropdown-item:hover {
   color: #c1c1c1 !important;
 }
-.cid-s6Q6qu5sAO {
-  background: #465052;
-  padding-top: 120px;
-  padding-bottom: 120px;
+.cid-sezB6TPV6Z {
+  padding-top: 6rem;
+  padding-bottom: 2rem;
+  background-color: #465052;
 }
-.cid-s6Q6qu5sAO .image-block {
-  margin: auto;
-}
-.cid-s6Q6qu5sAO .mbr-figure {
-  margin: 0 auto;
-}
-.cid-s6Q6qu5sAO figcaption {
-  position: relative;
-}
-.cid-s6Q6qu5sAO figcaption div {
-  position: absolute;
-  bottom: 0;
+.cid-sezB6TPV6Z .image-wrap img {
   width: 100%;
 }
-@media (max-width: 768px) {
-  .cid-s6Q6qu5sAO .image-block {
-    width: 100% !important;
+@media (min-width: 992px) {
+  .cid-sezB6TPV6Z .image-wrap img {
+    display: block;
+    margin: auto;
+    width: 100%;
   }
 }
+.cid-sezB6TPV6Z .mbr-section-title {
+  color: #ffffff;
+}
+.cid-sezB6TPV6Z .mbr-text,
+.cid-sezB6TPV6Z .mbr-section-btn {
+  color: #ffffff;
+}
 .cid-s6Q61WEXYN {
-  padding-top: 15px;
+  padding-top: 0px;
   padding-bottom: 120px;
   background-color: #465052;
 }
