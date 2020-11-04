@@ -85,7 +85,9 @@ https://www.instructables.com/id/Autonomous-Sumo-Battle-Bot-with-Pneumatic-Flipp
 https://makezine.com/projects/combat-concepting-cardboard/?fbclid=IwAR3XP3rc87_g307p8VNTEb1fmYj9z3Wm77kpZgeivRRl63MD946CDGDcxhg <br />
 
 ## Useful links 
-
+http://queenhobby.com/imageupload/3661/CAR%20ZD/manual%20ESC/ZD%20ESC%20for%20Car%20Manual.pdf -------> QUEENHOBBY 120A ESC BEEP SHEET <br />
+https://www.youtube.com/watch?v=lQtKgiv70DQ ------> IMPORTANT FACTS BATTERY CHARGING <br />
+https://hobbystation.co.nz/lipo-life-nimh-battery-charger-b450ac/ ------> BATTERY CHARGING <br />
 https://www.youtube.com/watch?v=uQIGb8VzX08 VERY IMPORTANT!!! ESC WIRING <br />
 https://www.youtube.com/watch?v=sIgX9P8l8kw VERY IMPORTANT!!! ESC WIRING <br />
 https://scriptasylum.com/rc_speed/lipo.html  Lipo Wiring Config  <br />
