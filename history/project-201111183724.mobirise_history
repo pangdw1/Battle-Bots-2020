@@ -86,7 +86,9 @@
     "witsec-mailform-recaptcha-score": "0.5",
     "witsec-mailform-disable-button": false,
     "witsec-mailform": false,
-    "gdpr": false
+    "gdpr": false,
+    "publishType": "local",
+    "publishPath": "file:///C:/Users/djwoo/Desktop/Battle-Bots-2020"
   },
   "pages": {
     "index.html": {
