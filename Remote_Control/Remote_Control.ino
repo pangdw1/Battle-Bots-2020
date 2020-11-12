@@ -30,6 +30,10 @@ int rightMotor;
 long distance, duration;
 int echoTime;                   //variable to store the time it takes for a ping to bounce off an object
 int calcualtedDistance; 
+int leftMotorOut = A8; //Left motor output value pin
+int rightMotorOut =  A9; //right motor value output pin
+int leftMotorValue;
+int rightMotorValue;
 
 int distanceSensor1;
 int distanceSensor2;
@@ -49,6 +53,10 @@ void setup() {
   pinMode(A5, INPUT);
   pinMode(A6, INPUT);
   pinMode(A0, OUTPUT); 
+
+  pinMode(leftMotorOut, OUTPUT); //Motor left and right output pins
+  pinMode(rightMotorOut, OUTPUT);
+  
   //Distance Sensors
   pinMode(trigPin, OUTPUT);
   pinMode(echoPin, INPUT);
@@ -57,9 +65,10 @@ void setup() {
   pinMode(trigPin3, OUTPUT);
   pinMode(echoPin3, INPUT);
 
+  
   pinMode (IRSensor, INPUT); // sensor pin INPUT
   
-}
+
 //  pinMode('leftMotorPin', OUTPUT); //Analog out pin for the motor control
 //  pinMode('rightMotorPin', OUTPUT); //Analog out pin for the motor control
   Serial.begin(9600); 
@@ -79,28 +88,29 @@ void loop() {
   ch6 = pulseIn(A6, HIGH);
   
 
-//  if(ch5 < 1000){//Channel 5 on off switch conversion  Switch used for switching between AI mode and maual control
-//      ch5String = "OFF";
-//      manualControl(); //Use the manual control method
-//      Serial.println("Assuming manual control");
-//    }
-//    else{
-//      ch5String = "ON";
-//      AI(); // Call the AI method
-//      Serial.println("Assuming Artifical control");
-//      
-//    }
-//  if(ch6 < 1000){//Channel 6 on off switch conversion
-//      ch6String = "OFF";
-//    }
-//    else{ 
-//      ch6String = "ON";
-//    }
-//  
+  if(ch5 < 1005){//Channel 5 on off switch conversion  Switch used for switching between AI mode and maual control
+      ch5String = "OFF";
+      manualControl(); //Use the manual control method
+      Serial.println("Assuming manual control");
+    }
+    else{
+      ch5String = "ON";
+      AI(); // Call the AI method
+      Serial.println("Assuming Artifical control");
+      
+    }
+  if(ch6 < 1001){//Channel 6 on off switch conversion
+      ch6String = "OFF";
+    }
+    else{ 
+      ch6String = "ON";
+    }
+  
   
   //test();
   //manualControl();
-  //printing();
+  
+  printing();
 }
 
 //Simple logs to console window of the input from controller
@@ -122,33 +132,52 @@ void printing() {
   
   Serial.print("Channel 6 Right switch:");
   Serial.println(ch6String);  
+
+  Serial.print("Left Motor Out");
+  Serial.println(leftMotorValue);
+  Serial.print("Right Motor Out");
+  Serial.println(rightMotorValue);
 }
 
 //Function for moving the robot around via the controller
 void manualControl() {
-    ch1 = (ch1 /100) - 14; //Rounding the channel input to a -5 - 5 scale for easy of use
-    ch2 = (ch2 /100) - 14; //Joystick control reading
-    ch3 = (ch3 /100) - 14; 
-    ch4 = (ch4 /100) - 14;
-
+  //This roung code may be unneccercary with the new esc's that the big robot is using for power.
+//    ch1 = (ch1 /100) - 14; //Rounding the channel input to a -5 - 5 scale for easy of use
+//    ch2 = (ch2 /100) - 14; //Joystick control reading
+//    ch3 = (ch3 /100) - 14; 
+//    ch4 = (ch4 /100) - 14;
+//    Serial.print("Channel 4:");
+//    Serial.println(ch4);
+    
+   
     //Forward / Backwards movment.
     //Set the motors to be equal power in forwards or reverse.
-    leftMotor = ch3 * 50;
-    rightMotor = ch3 * 50;
-    analogWrite('leftMotorPin', leftMotor);
-    analogWrite('rightMotorPin', rightMotor);
-
-    if (ch4 < 0){ //Turn left
-      leftMotor = ch3 * 50; //Inside wheel powered by amount of throtle given, allows for tighter or slacker turning.
-      rightMotor = ch4 * 50; //Power outside wheel the amount you wish to turn.
-      analogWrite('leftMotorPin', leftMotor);
-      analogWrite('rightMotorPin', rightMotor);
+    
+    
+    if (ch4 < 1450){ //Turn left
+      leftMotorValue = ch3 - 2000; //Inside wheel powered by amount of throtle given, allows for tighter or slacker turning.
+      rightMotorValue = ch4; //Power outside wheel the amount you wish to turn.
+      analogWrite(leftMotorOut, leftMotorValue);
+      analogWrite(rightMotorOut, rightMotorValue);
+      Serial.println("Turning left");
+      delay(10);
     }
-    else if (ch4 > 0){ //Turn Right
-      leftMotor = ch4 * 50; //Power the outside wheel the amount you wish to turn.
-      rightMotor = ch3 * 50; //Inside whjeel powered by amount of throtle given, allows for tights or slacker turning.
-      analogWrite('leftMotorPin', leftMotor);
-      analogWrite('rightMotorPin', rightMotor);
+    else if(ch4 > 1550){ //Turn Right
+      leftMotorValue = ch4; //Power the outside wheel the amount you wish to turn.
+      rightMotorValue = ch3 - 2000; //Inside whjeel powered by amount of throtle given, allows for tights or slacker turning.
+      analogWrite(leftMotorOut, leftMotorValue);
+      analogWrite(rightMotorOut, rightMotorValue);
+      Serial.println("Turing Right");
+      delay(10);
+    }
+    else {
+      leftMotorValue = ch3;
+      rightMotorValue = ch3;
+      analogWrite(leftMotorOut, leftMotorValue);
+      analogWrite(rightMotorOut, rightMotorValue);
+      Serial.println("Moving forwards");
+      delay(10);
+      
     }
     //servoMovment()
 }
@@ -156,14 +185,14 @@ void manualControl() {
 
 //method for basic tersting of controls via remote input
 void test(){
-  if (ch3 > 5){
-    analogWrite(A6, 255);
-    analogWrite(A7, 255);
-  }
-  else {
-     analogWrite(A6, 155);
-    analogWrite(A7, 150);
-    }
+//  if (ch3 > 5){
+//    analogWrite(A6, 255);
+//    analogWrite(A7, 255);
+//  }
+//  else {
+//     analogWrite(A6, 155);
+//    analogWrite(A7, 150);
+//    }
   }
 
 
@@ -185,26 +214,26 @@ void getDistance(){
          //variable to store the distance calculated from the echo time
 
   //Get info from sensor 2.
-  digitalWrite(trigPin, LOW);
-  digitalWrite(trigPin, HIGH);
-  digitalWrite(trigPin, LOW);
-  duration1 = pulseIn(echoPin, HIGH);
-  distanceSensor1 = (duration1/2) / 29.1;
-  Serial.println(distanceSensor1);
-
-  digitalWrite(trigPin2, LOW);
-  digitalWrite(trigPin2, HIGH);
-  digitalWrite(trigPin2, LOW);
-  duration2 = pulseIn(echoPin2, HIGH);
-  distanceSensor2 = (duration2/2) / 29.1;
-  Serial.println(distanceSensor2);
-
-  digitalWrite(trigPin3, LOW);
-  digitalWrite(trigPin3, HIGH);
-  digitalWrite(trigPin3, LOW);
-  duration3 = pulseIn(echoPin3, HIGH);
-  distanceSensor3 = (duration3/2) / 29.1;
-  Serial.println( distanceSensor3);
+//  digitalWrite(trigPin, LOW);
+//  digitalWrite(trigPin, HIGH);
+//  digitalWrite(trigPin, LOW);
+//  duration1 = pulseIn(echoPin, HIGH);
+//  distanceSensor1 = (duration1/2) / 29.1;
+//  Serial.println(distanceSensor1);
+//
+//  digitalWrite(trigPin2, LOW);
+//  digitalWrite(trigPin2, HIGH);
+//  digitalWrite(trigPin2, LOW);
+//  duration2 = pulseIn(echoPin2, HIGH);
+//  distanceSensor2 = (duration2/2) / 29.1;
+//  Serial.println(distanceSensor2);
+//
+//  digitalWrite(trigPin3, LOW);
+//  digitalWrite(trigPin3, HIGH);
+//  digitalWrite(trigPin3, LOW);
+//  duration3 = pulseIn(echoPin3, HIGH);
+//  distanceSensor3 = (duration3/2) / 29.1;
+//  Serial.println( distanceSensor3);
 }
 
 //Method used for the servo's to move into position.
@@ -221,6 +250,6 @@ void servoMovment() {
 
 //This method is used for detecting IR
 void infrared() {
-  IRRead = digitalRead(IRSensor);
-  Serial.println(IRRead); //print inferred value.
+//  IRRead = digitalRead(IRSensor);
+//  Serial.println(IRRead); //print inferred value.
 }

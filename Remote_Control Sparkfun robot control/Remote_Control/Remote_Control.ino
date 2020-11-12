@@ -40,7 +40,7 @@ void setup() {
   
 //  pinMode('leftMotorPin', OUTPUT); //Analog out pin for the motor control
 //  pinMode('rightMotorPin', OUTPUT); //Analog out pin for the motor control
-  Serial.begin(154400); 
+  Serial.begin(9600); 
 
 }
 
@@ -75,28 +75,33 @@ void loop() {
   
   
   //test();
-  motorControl();
+//  motorControl();
+
+Serial.print('ch1');
+Serial.print('ch2');
+Serial.print('ch3');
+Serial.print('ch4');
 
 }
-
-//Function for moving the robot around via the controller
-void motorControl() {
-    leftMotorInt = ch3 * 50;
-    rightMotorInt = ch3 * 50;
-    motors.leftMotor(leftMotorInt);
-    motors.rightMotor(rightMotorInt);
-   
-
-    if (ch4 < 0){ //Turn left
-      leftMotorInt = ch4 * -50; //Inside wheel powered by amount of throtle given, allows for tighter or slacker turning.
-      rightMotorInt = ch4 * 50; //Power outside wheel the amount you wish to turn.
-      motors.leftMotor(leftMotorInt);
-      motors.rightMotor(rightMotorInt);
-    }
-    else{ //Turn Right
-      leftMotorInt = ch4 * 50; //Power the outside wheel the amount you wish to turn.
-      rightMotorInt = ch4 * -50; //Inside whjeel powered by amount of throtle given, allows for tights or slacker turning.
-      motors.leftMotor(leftMotorInt);
-      motors.rightMotor(rightMotorInt);
-    }
-}
+//
+////Function for moving the robot around via the controller
+//void motorControl() {
+//    leftMotorInt = ch3 * 50;
+//    rightMotorInt = ch3 * 50;
+//    motors.leftMotor(leftMotorInt);
+//    motors.rightMotor(rightMotorInt);
+//   
+//
+//    if (ch4 < 0){ //Turn left
+//      leftMotorInt = ch4 * -50; //Inside wheel powered by amount of throtle given, allows for tighter or slacker turning.
+//      rightMotorInt = ch4 * 50; //Power outside wheel the amount you wish to turn.
+//      motors.leftMotor(leftMotorInt);
+//      motors.rightMotor(rightMotorInt);
+//    }
+//    else{ //Turn Right
+//      leftMotorInt = ch4 * 50; //Power the outside wheel the amount you wish to turn.
+//      rightMotorInt = ch4 * -50; //Inside whjeel powered by amount of throtle given, allows for tights or slacker turning.
+//      motors.leftMotor(leftMotorInt);
+//      motors.rightMotor(rightMotorInt);
+//    }
+//}
