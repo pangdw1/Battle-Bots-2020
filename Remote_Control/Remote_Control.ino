@@ -110,7 +110,7 @@ void loop() {
   //test();
   //manualControl();
   
-  printing();
+ // printing();
 }
 
 //Simple logs to console window of the input from controller
@@ -142,37 +142,44 @@ void printing() {
 //Function for moving the robot around via the controller
 void manualControl() {
   //This roung code may be unneccercary with the new esc's that the big robot is using for power.
-//    ch1 = (ch1 /100) - 14; //Rounding the channel input to a -5 - 5 scale for easy of use
-//    ch2 = (ch2 /100) - 14; //Joystick control reading
-//    ch3 = (ch3 /100) - 14; 
-//    ch4 = (ch4 /100) - 14;
+    ch1 = (ch1 /100) - 15; //Rounding the channel input to a -5 - 5 scale for easy of use
+    ch2 = (ch2 /100) - 15; //Joystick control reading
+    ch3 = (ch3 /100) - 15; 
+    ch4 = (ch4 /100) - 15;
 //    Serial.print("Channel 4:");
 //    Serial.println(ch4);
-    
+//    ch1 = ch1 / 7.9; //Rounding the channel input to a 0 - 255 scale for easy of use
+//    ch2 = ch2 / 7.9; //Joystick control reading
+//    ch3 = ch3 / 7.9; 
+//    ch4 = ch4 / 7.9;
+    Serial.println("ch3String");  
+    Serial.println(ch3 * 51);
+    Serial.println("ch4String");  
+    Serial.println(ch4 *51);
    
     //Forward / Backwards movment.
     //Set the motors to be equal power in forwards or reverse.
     
     
-    if (ch4 < 1450){ //Turn left
-      leftMotorValue = ch3 - 2000; //Inside wheel powered by amount of throtle given, allows for tighter or slacker turning.
-      rightMotorValue = ch4; //Power outside wheel the amount you wish to turn.
+    if (ch4 < 0){ //Turn left
+      leftMotorValue = ch3 * 51 ; //Inside wheel powered by amount of throtle given, allows for tighter or slacker turning.
+      rightMotorValue = ch4 * 51 ; //Power outside wheel the amount you wish to turn.
       analogWrite(leftMotorOut, leftMotorValue);
       analogWrite(rightMotorOut, rightMotorValue);
       Serial.println("Turning left");
       delay(10);
     }
-    else if(ch4 > 1550){ //Turn Right
-      leftMotorValue = ch4; //Power the outside wheel the amount you wish to turn.
-      rightMotorValue = ch3 - 2000; //Inside whjeel powered by amount of throtle given, allows for tights or slacker turning.
+    else if(ch4 > 0){ //Turn Right
+      leftMotorValue = ch4 * 51; //Power the outside wheel the amount you wish to turn.
+      rightMotorValue = ch3 * 51; //Inside whjeel powered by amount of throtle given, allows for tights or slacker turning.
       analogWrite(leftMotorOut, leftMotorValue);
       analogWrite(rightMotorOut, rightMotorValue);
       Serial.println("Turing Right");
       delay(10);
     }
     else {
-      leftMotorValue = ch3;
-      rightMotorValue = ch3;
+      leftMotorValue = ch3 * 51;
+      rightMotorValue = ch3 * 51;
       analogWrite(leftMotorOut, leftMotorValue);
       analogWrite(rightMotorOut, rightMotorValue);
       Serial.println("Moving forwards");
