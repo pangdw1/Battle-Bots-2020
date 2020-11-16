@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "Battle Bots 2020",
-    "currentPage": "farmbotv2build.html",
+    "currentPage": "index.html",
     "theme": {
       "name": "mobirise4",
       "title": "Mobirise 4",
@@ -53,7 +53,7 @@
         "url": "https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i"
       }
     ],
-    "uniqCompNum": 170,
+    "uniqCompNum": 166,
     "versionPublish": "5.2.0",
     "screenshot": "screenshot.png",
     "imageResize": true,
@@ -86,7 +86,9 @@
     "witsec-mailform-recaptcha-score": "0.5",
     "witsec-mailform-disable-button": false,
     "witsec-mailform": true,
-    "gdpr": false
+    "gdpr": false,
+    "publishType": "local",
+    "publishPath": "@PROJECT_PATH@"
   },
   "pages": {
     "index.html": {
@@ -722,7 +724,7 @@
             }
           },
           "_name": "design-block",
-          "_customHTML": "<section class=\"mbr-section content4\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#465052\">\n      \n\n      <input type=\"image\" title=\"Image 1\" name=\"bgImgBe\" value=\"@PROJECT_PATH@/assets/images/2020-11-12-09.38.58-2000x1125.jpg\">\n      <input type=\"image\" title=\"Image 2\" name=\"bgImgAf\" value=\"@PROJECT_PATH@/assets/images/2020-03-09-13.06.52-2000x1125.jpg\">\n\n      <input type=\"range\" title=\"Height Tunning\" name=\"Heightcon\" min=\"100\" max=\"1300\" step=\"1\" value=\"637\">\n      <input type=\"range\" title=\"Width Tunning\" name=\"Widthcon\" min=\"100\" max=\"1300\" step=\"1\" value=\"1096\">\n\n              <select inline title=\"Comparision Style\" name=\"comparlogo\">\n            <option value=\" \">Nothing</option>\n            <option value=\"https://www.unsitepourtous.be/mobi/comparision.png\" selected>Round</option>\n            <option value=\"https://www.unsitepourtous.be/mobi/comparision2.png\">Arrow</option>\n                       <option value=\"https://www.unsitepourtous.be/mobi/comparision3.png\">Carré</option>\n        </select>\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"title col-12 col-md-8\">\n                <h2 mbr-if=\"showTitle\" class=\"align-center pb-3 mbr-fonts-style\" mbr-theme-style=\"display-2\">Farmbot to Battlebot</h2>\n                <h3 mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" class=\"mbr-section-subtitle align-center mbr-light mbr-fonts-style\" mbr-theme-style=\"display-7\">Use slider to see transformation</h3>\n                <div class=\"mbr-section-btn align-center py-4\" mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\">\n                    <a class=\"btn btn-primary\" href=\"https://mobirise.co\">EN SAVOIR PLUS</a>\n                    <a class=\"btn btn-black-outline\" href=\"https://mobirise.co\">DÉMO LIVE</a>\n                </div>\n            </div>\n        </div>\n    </div>\n<div class=\"container2\">\n  <figure>\n    <div id=\"compare2\"></div>\n  </figure>\n  <input oninput=\"beforeAfter2()\" onchange=\"beforeAfter2()\" type=\"range\" min=\"0\" max=\"100\" value=\"50\" id=\"slider2\">\n</div>\n<script type=\"text/javascript\">\nfunction beforeAfter2() {\n  document.getElementById('compare2').style.width = document.getElementById('slider2').value + \"%\";\n}\n</script>\n</section>",
+          "_customHTML": "<section class=\"mbr-section content4\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#465052\">\n      \n\n      <input type=\"image\" title=\"Image 1\" name=\"bgImgBe\" value=\"@PROJECT_PATH@/assets/images/2020-11-12%2009.38.58-2000x1125.jpg\">\n      <input type=\"image\" title=\"Image 2\" name=\"bgImgAf\" value=\"@PROJECT_PATH@/assets/images/2020-03-09-13.06.52-2000x1125.jpg\">\n\n      <input type=\"range\" title=\"Height Tunning\" name=\"Heightcon\" min=\"100\" max=\"1300\" step=\"1\" value=\"637\">\n      <input type=\"range\" title=\"Width Tunning\" name=\"Widthcon\" min=\"100\" max=\"1300\" step=\"1\" value=\"1096\">\n\n              <select inline title=\"Comparision Style\" name=\"comparlogo\">\n            <option value=\" \">Nothing</option>\n            <option value=\"https://www.unsitepourtous.be/mobi/comparision.png\" selected>Round</option>\n            <option value=\"https://www.unsitepourtous.be/mobi/comparision2.png\">Arrow</option>\n                       <option value=\"https://www.unsitepourtous.be/mobi/comparision3.png\">Carré</option>\n        </select>\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"title col-12 col-md-8\">\n                <h2 mbr-if=\"showTitle\" class=\"align-center pb-3 mbr-fonts-style\" mbr-theme-style=\"display-2\">Farmbot to Battlebot</h2>\n                <h3 mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" class=\"mbr-section-subtitle align-center mbr-light mbr-fonts-style\" mbr-theme-style=\"display-7\">Use slider to see transformation</h3>\n                <div class=\"mbr-section-btn align-center py-4\" mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\">\n                    <a class=\"btn btn-primary\" href=\"https://mobirise.co\">EN SAVOIR PLUS</a>\n                    <a class=\"btn btn-black-outline\" href=\"https://mobirise.co\">DÉMO LIVE</a>\n                </div>\n            </div>\n        </div>\n    </div>\n<div class=\"container2\">\n  <figure>\n    <div id=\"compare2\"></div>\n  </figure>\n  <input oninput=\"beforeAfter2()\" onchange=\"beforeAfter2()\" type=\"range\" min=\"0\" max=\"100\" value=\"50\" id=\"slider2\">\n</div>\n<script type=\"text/javascript\">\nfunction beforeAfter2() {\n  document.getElementById('compare2').style.width = document.getElementById('slider2').value + \"%\";\n}\n</script>\n</section>",
           "_cid": "RDmni8YKyR",
           "_anchor": "design-block-RDmni8YKyR",
           "_protectedParams": [],
@@ -1354,7 +1356,7 @@
           },
           "_name": "header11",
           "_sourceTheme": "mobirise5",
-          "_customHTML": "<section class=\"header11\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline name=\"imageWidth\" title=\"Image\" min=\"4\" max=\"8\" step=\"1\" value=\"6\">\n        <input type=\"checkbox\" title=\"Reverse\" name=\"reverseContent\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background7.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#465052\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-12 col-md-{{imageWidth}} image-wrapper\">\n                <img class=\"w-100\" src=\"@PROJECT_PATH@/assets/images/2020-11-12-13.44.08-1080x810.jpg\" alt=\"Mobirise\">\n            </div>\n            <div class=\"col-12 col-md\">\n                <div class=\"text-wrapper text-center\">\n                    <h1 class=\"mbr-section-title mbr-fonts-style mb-3\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\">\n                        Robotics 2020</h1>\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Woody<br>Ants<br>Damian<br>Vaughn (Head of Robotics Project)</p>\n                    <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn mt-3\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-white-outline\" href=\"index.html\" data-app-placeholder=\"Type Text\">Home</a></div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_customHTML": "<section class=\"header11\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline name=\"imageWidth\" title=\"Image\" min=\"4\" max=\"8\" step=\"1\" value=\"6\">\n        <input type=\"checkbox\" title=\"Reverse\" name=\"reverseContent\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background7.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#465052\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-12 col-md-{{imageWidth}} image-wrapper\">\n                <img class=\"w-100\" src=\"@PROJECT_PATH@/assets/images/2020-11-12%2013.44.08-1080x810.jpg\" alt=\"Mobirise\">\n            </div>\n            <div class=\"col-12 col-md\">\n                <div class=\"text-wrapper text-center\">\n                    <h1 class=\"mbr-section-title mbr-fonts-style mb-3\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\">\n                        Robotics 2020</h1>\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Woody<br>Ants<br>Damian<br>Vaughn (Head of Robotics Project)</p>\n                    <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn mt-3\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-white-outline\" href=\"index.html\" data-app-placeholder=\"Type Text\">Home</a></div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
           "_cid": "sg5PzNXV44",
           "_anchor": "header11-4l",
           "_protectedParams": [],
@@ -4244,197 +4246,426 @@
           "_styles": {
             "padding-top": "(@paddingTop * 15px)",
             "padding-bottom": "(@paddingBottom * 15px)",
-            "background-color": "@bgColor",
-            "overflow": "hidden",
-            "box-sizing": "border-box",
-            ".mbr-slider .carousel-control": {
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@noSpacing)": {
+              ".row": {
+                "margin-left": "0",
+                "margin-right": "0"
+              },
+              ".item": {
+                "padding-left": "0",
+                "padding-right": "0"
+              }
+            },
+            "& when not (@noSpacing)": {
+              ".item": {
+                "padding-bottom": "2rem"
+              }
+            },
+            "& when (@autoSize)": {
+              ".item-wrapper": {
+                "height": "100%",
+                "img": {
+                  "height": "100%",
+                  "object-fit": "cover"
+                }
+              }
+            },
+            ".carousel-control, .close": {
               "background": "#1b1b1b"
             },
-            ".mbr-slider .carousel-control-prev": {
+            ".carousel-control-prev": {
+              "margin-left": "2.5rem"
+            },
+            ".carousel-control-next": {
+              "margin-right": "2.5rem"
+            },
+            ".close": {
+              "position": "fixed",
+              "opacity": ".5",
+              "font-size": "35px",
+              "font-weight": "300",
+              "width": "70px",
+              "height": "70px",
+              "border-radius": "50%",
+              "color": "#fff",
+              "top": "2.5rem",
+              "right": "2.5rem",
+              "line-height": "70px",
+              "border": "none",
+              "text-align": "center",
+              "text-shadow": "none",
+              "z-index": "5",
+              "-webkit-transition": "opacity .3s ease",
+              "-moz-transition": "opacity .3s ease",
+              "-o-transition": "opacity .3s ease",
+              "transition": "opacity .3s ease",
+              "font-family": "'MobiriseIcons'",
+              "&::before": {
+                "content": "'\\e91a'"
+              },
+              "&:hover": {
+                "opacity": "1",
+                "background": "#000",
+                "color": "#fff"
+              }
+            },
+            ".carousel-control": {
+              "position": "fixed",
+              "width": "70px",
+              "height": "70px",
+              "top": "50%",
+              "margin-top": "-35px",
+              "line-height": "70px",
+              "border-radius": "50%",
+              "font-size": "35px",
+              "border": "0",
+              "opacity": ".5",
+              "text-shadow": "none",
+              "z-index": "5",
+              "color": "#fff",
+              "-webkit-transition": "all 0.2s ease-in-out 0s",
+              "-o-transition": "all 0.2s ease-in-out 0s",
+              "transition": "all 0.2s ease-in-out 0s"
+            },
+            ".carousel-inner > .active": {
+              "display": "block"
+            },
+            ".carousel-control.left": {
               "left": "0",
               "margin-left": "2.5rem"
             },
-            ".mbr-slider .carousel-control-next": {
+            ".carousel-control.right": {
               "right": "0",
               "margin-right": "2.5rem"
             },
-            ".mbr-slider .modal-body .close": {
-              "background": "#1b1b1b"
+            ".carousel-control .icon-next, .carousel-control .icon-prev": {
+              "margin-top": "-18px",
+              "font-size": "40px",
+              "line-height": "27px"
             },
-            ".mbr-gallery-item > div::before": {
-              "content": "''",
-              "position": "absolute",
-              "left": "0",
-              "top": "0",
-              "width": "100%",
-              "height": "100%",
-              "background": "@overlayColor",
-              "opacity": "0",
-              "-webkit-transition": "0.2s opacity ease-in-out",
-              "transition": "0.2s opacity ease-in-out",
-              "& when (@gradOverlay)": {
-                "background": "linear-gradient(to left, @overlayColor, @overlayColor2) !important"
-              }
-            },
-            ".mbr-gallery-item > div:hover": {
-              ".mbr-gallery-title::before": {
-                "background": "transparent !important"
-              },
-              "&:before": {
-                "opacity": "@overlayOpacity !important"
-              }
-            },
-            ".mbr-gallery-title": {
-              "font-size": ".9em",
-              "position": "absolute",
-              "display": "block",
-              "width": "100%",
-              "bottom": "0",
-              "padding": "1rem",
+            ".carousel-control:hover": {
+              "background": "#1b1b1b",
               "color": "#fff",
-              "z-index": "2",
-              "&:before": {
-                "content": "\" \"",
-                "width": "100%",
-                "height": "100%",
-                "top": "0",
-                "left": "0",
-                "z-index": "-1",
-                "position": "absolute",
-                "background": "@overlayColor !important",
-                "opacity": "@overlayOpacity",
-                "-webkit-transition": "0.2s background ease-in-out",
-                "transition": "0.2s background ease-in-out",
-                "& when (@gradOverlay)": {
-                  "background": "linear-gradient(to left, @overlayColor, @overlayColor2) !important"
-                }
+              "opacity": "1"
+            },
+            "@media (max-width: 768px)": {
+              ".carousel-control, .carousel-indicators, .modal .close": {
+                "position": "fixed"
               }
+            },
+            "@media (max-width: 767px)": {
+              ".mbr-slider .carousel-control": {
+                "top": "auto",
+                "bottom": "20px"
+              },
+              ".mbr-slider > .container .carousel-control": {
+                "margin-bottom": "0"
+              }
+            },
+            ".carousel-indicators": {
+              "bottom": "0",
+              "margin-bottom": "3px",
+              "@media (max-width: 991px)": {
+                "margin-bottom": "3.625rem !important",
+                "padding-left": "2.5rem",
+                "padding-right": "2.5rem"
+              },
+              "@media (max-width: 767px)": {
+                "display": "none"
+              }
+            },
+            ".carousel-indicators .active, .carousel-indicators li": {
+              "width": "7px",
+              "height": "7px",
+              "margin": "3px",
+              "background": "#1b1b1b",
+              "opacity": ".5",
+              "border": "4px solid #1b1b1b"
+            },
+            ".carousel-indicators .active": {
+              "background": "#fff"
+            },
+            ".carousel-indicators li": {
+              "max-width": "15px",
+              "max-height": "15px",
+              "border-radius": "50%"
+            },
+            ".modal": {
+              "padding-left": "0 !important",
+              "position": "fixed",
+              "overflow": "hidden",
+              "padding-right": "0 !important"
+            },
+            ".modal-dialog": {
+              "margin": "0 auto",
+              "max-width": "100%",
+              "padding-left": "1rem",
+              "padding-right": "1rem"
+            },
+            ".modal-content": {
+              "border-radius": "0",
+              "border": "none",
+              "background": "transparent"
+            },
+            ".modal-body": {
+              "padding": "0",
+              "display": "flex",
+              "align-items": "center",
+              "img": {
+                "width": "100%",
+                "object-fit": "contain",
+                "max-height": "calc(100vh - 1.75rem)",
+                "height": "fit-content"
+              }
+            },
+            ".carousel": {
+              "width": "100%"
+            },
+            ".modal-backdrop.in": {
+              "opacity": ".8"
+            },
+            ".modal.fade .modal-dialog": {
+              "-webkit-transition": "margin-top 0.3s ease-out",
+              "-moz-transition": "margin-top 0.3s ease-out",
+              "-o-transition": "margin-top 0.3s ease-out",
+              "transition": "margin-top 0.3s ease-out"
+            },
+            ".modal.fade .modal-dialog, .modal.in .modal-dialog": {
+              "-webkit-transform": "none",
+              "-ms-transform": "none",
+              "-o-transform": "none",
+              "transform": "none"
             }
           },
-          "_name": "gallery2",
+          "_name": "gallery5",
+          "_customHTML": "<section class=\"mbr-gallery gallery5\" group=\"Gallery\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"3\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\">\n        <header>Images</header>\n        <input type=\"checkbox\" title=\"Auto Size\" name=\"autoSize\" checked>\n        <input type=\"checkbox\" title=\"No Spacing\" name=\"noSpacing\">\n        <!-- <input type=\"range\" title=\"Spacing\" name=\"spacing\" min=\"0\" max=\"3\" step=\"0.1\" value=\"1\"> -->\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/background5.jpg\" parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#465052\" selected>\n            <input type=\"video\" title=\"Background Video\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n        </fieldset>\n        <header condition=\"bg.type!==color\">Overlay</header>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#efefef\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container\">\n        <h3 class=\"mbr-section-title align-center mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\">\n            Gallery\n        </h3>\n        <h4 class=\"mbr-section-subtitle align-center pb-4 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showSubtitle\">\n            Enter Gallery Subtitle here.\n        </h4>\n        <div class=\"row mbr-gallery\" data-toggle=\"modal\" data-target=\"#{{idGallery}}Modal\">\n            <div class=\"col-sm-6 col-md-4 col-lg-3 item gallery-image\">\n                <div class=\"item-wrapper\">\n                    <img class=\"w-100\" src=\"@PROJECT_PATH@/assets/images/2020-09-21-09.46.43-510x287.jpg\" alt data-target=\"#lb-{{idGallery}}\" data-slide-to=\"0\" title>\n                </div>\n            </div>\n            <div class=\"col-sm-6 col-md-4 col-lg-3 item gallery-image\">\n                <div class=\"item-wrapper\">\n                    <img class=\"w-100\" src=\"@PROJECT_PATH@/assets/images/2020-09-21-09.46.32-510x287.jpg\" alt data-target=\"#lb-{{idGallery}}\" data-slide-to=\"1\" title>\n                </div>\n            </div>\n            <div class=\"col-sm-6 col-md-4 col-lg-3 item gallery-image\">\n                <div class=\"item-wrapper\">\n                    <img class=\"w-100\" src=\"@PROJECT_PATH@/assets/images/2020-09-21-09.29.53-510x287.jpg\" alt data-target=\"#lb-{{idGallery}}\" data-slide-to=\"2\" title>\n                </div>\n            </div>\n            <div class=\"col-sm-6 col-md-4 col-lg-3 item gallery-image\">\n                <div class=\"item-wrapper\">\n                    <img class=\"w-100\" src=\"@PROJECT_PATH@/assets/images/2020-09-23-11.56.13-510x287.jpg\" alt data-target=\"#lb-{{idGallery}}\" data-slide-to=\"3\" title>\n                </div>\n            </div>\n        </div>\n\n        <div class=\"modal mbr-slider fade\" id=\"{{idGallery}}Modal\" tabindex=\"-1\" role=\"dialog\" aria-hidden=\"true\">\n            <div class=\"modal-dialog\" role=\"document\">\n                <div class=\"modal-content\">\n                    <div class=\"modal-body\">\n                        <div id=\"lb-{{idGallery}}\" class=\"carousel slide\" data-ride=\"carousel\">\n                            <div class=\"carousel-inner\">\n                                <div class=\"carousel-item active\">\n                                    <img class=\"d-block w-100\" src=\"@PROJECT_PATH@/assets/images/background1.jpg\" alt>\n                                </div>\n                                <div class=\"carousel-item\">\n                                    <img class=\"d-block w-100\" src=\"@PROJECT_PATH@/assets/images/background2.jpg\" alt>\n                                </div>\n                                <div class=\"carousel-item\">\n                                    <img class=\"d-block w-100\" src=\"@PROJECT_PATH@/assets/images/background3.jpg\" alt>\n                                </div>\n                                <div class=\"carousel-item\">\n                                    <img class=\"d-block w-100\" src=\"@PROJECT_PATH@/assets/images/background4.jpg\" alt>\n                                </div>\n                            </div>\n                            <ol class=\"carousel-indicators\">\n                                <li data-target=\"#lb-{{idGallery}}\" data-slide-to=\"0\" class=\"active\"></li>\n                                <li data-target=\"#lb-{{idGallery}}\" data-slide-to=\"1\"></li>\n                                <li data-target=\"#lb-{{idGallery}}\" data-slide-to=\"2\"></li>\n                                <li data-target=\"#lb-{{idGallery}}\" data-slide-to=\"3\"></li>\n                            </ol>\n                            <a role=\"button\" href class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\">\n                            </a>\n                            <a class=\"carousel-control-prev carousel-control\" href=\"#lb-{{idGallery}}\" role=\"button\" data-slide=\"prev\">\n                                <span class=\"mbri-left mbr-iconfont\" aria-hidden=\"true\"></span>\n                                <span class=\"sr-only\">Previous</span>\n                            </a>\n                            <a class=\"carousel-control-next carousel-control\" href=\"#lb-{{idGallery}}\" role=\"button\" data-slide=\"next\">\n                                <span class=\"mbri-right mbr-iconfont\" aria-hidden=\"true\"></span>\n                                <span class=\"sr-only\">Next</span>\n                            </a>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_anchor": "gallery5-2h",
+          "_isUserblock": true,
           "_sourceTheme": "mobirise4",
-          "_customHTML": "<section class=\"mbr-gallery mbr-slider-carousel\" group=\"Sliders & Gallery\" plugins=\"Masonry,BootstrapCarouselSwipe,Gallery,VimeoPlayer,SliderVideo\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" inline>\n        <input type=\"range\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" inline>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#554346\">\n        <input type=\"checkbox\" title=\"Gradient Overlay\" name=\"gradOverlay\" checked>\n        <input type=\"color\" title=\"Overlay Color 2\" name=\"overlayColor2\" value=\"#45505b\" condition=\"gradOverlay\">\n        <input type=\"range\" title=\"Overlay Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" inline>\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#465052\">\n\n        <input type=\"gallery\" title=\"Gallery\" name=\"gallery\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div mbr-class=\"{'container': !fullWidth}\">\n        <div mbr-gallery=\"gallery\" mbr-gallery-spacing=\"2\"></div>\n    </div>\n\n</section>",
-          "_cid": "sgtpAKInrG",
-          "_protectedParams": [
-            "text_all",
-            "gallery__filtersTextStyle",
-            "gallery__filtersBtnStyle",
-            "gallery"
-          ],
+          "_cid": "sbb27XN0V7",
+          "_protectedParams": [],
           "_global": false,
           "_once": false,
-          "_params": {
-            "text_all": "All",
-            "gallery__filtersTextStyle": "display-7",
-            "gallery__filtersBtnStyle": "btn-primary-outline",
-            "gallery": [
-              {
-                "tags": "Awesome",
-                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
-                "playVideo": false,
-                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
-                "image": "@PROJECT_PATH@/assets/images/2020-09-21-09.46.43-510x287.jpg",
-                "thumb": "@PROJECT_PATH@/assets/images/2020-09-21-09.46.43-510x287-510x287.jpg",
-                "alt": "",
-                "title": "",
-                "customStyle1": "display-7",
-                "caption": "Type caption here",
-                "active": true
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@noSpacing)": {
+              ".row": {
+                "margin-left": "0",
+                "margin-right": "0"
               },
-              {
-                "tags": "Responsive",
-                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
-                "playVideo": false,
-                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
-                "image": "@PROJECT_PATH@/assets/images/2020-09-21-09.46.32-510x287.jpg",
-                "thumb": "@PROJECT_PATH@/assets/images/2020-09-21-09.46.32-510x287-510x287.jpg",
-                "alt": "",
-                "title": "",
-                "customStyle1": "display-7",
-                "caption": "Type caption here",
-                "active": false
-              },
-              {
-                "tags": "Creative",
-                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
-                "playVideo": false,
-                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
-                "image": "@PROJECT_PATH@/assets/images/2020-09-21-09.29.53-510x287.jpg",
-                "thumb": "@PROJECT_PATH@/assets/images/2020-09-21-09.29.53-510x287-510x287.jpg",
-                "alt": "",
-                "title": "",
-                "customStyle1": "display-7",
-                "caption": "Type caption here",
-                "active": false
-              },
-              {
-                "tags": "Animated",
-                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
-                "playVideo": false,
-                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
-                "image": "@PROJECT_PATH@/assets/images/2020-09-23-11.56.13-510x287.jpg",
-                "thumb": "@PROJECT_PATH@/assets/images/2020-09-23-11.56.13-510x287-510x287.jpg",
-                "alt": "",
-                "title": "",
-                "customStyle1": "display-7",
-                "caption": "Type caption here",
-                "active": false
-              },
-              {
-                "tags": "Awesome",
-                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
-                "playVideo": false,
-                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
-                "image": "@PROJECT_PATH@/assets/images/2020-09-22-10.00.11-510x287.jpg",
-                "thumb": "@PROJECT_PATH@/assets/images/2020-09-22-10.00.11-510x287-510x287.jpg",
-                "alt": "",
-                "title": "",
-                "customStyle1": "display-7",
-                "caption": "Type caption here",
-                "active": false
-              },
-              {
-                "tags": "Awesome",
-                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
-                "playVideo": false,
-                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
-                "image": "@PROJECT_PATH@/assets/images/2020-09-22-11.00.44-510x287.jpg",
-                "thumb": "@PROJECT_PATH@/assets/images/2020-09-22-11.00.44-510x287-510x287.jpg",
-                "alt": "",
-                "title": "",
-                "customStyle1": "display-7",
-                "caption": "Type caption here",
-                "active": false
-              },
-              {
-                "tags": "Responsive",
-                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
-                "playVideo": false,
-                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
-                "image": "@PROJECT_PATH@/assets/images/2020-09-22-11.24.47-510x287.jpg",
-                "thumb": "@PROJECT_PATH@/assets/images/2020-09-22-11.24.47-510x287-510x287.jpg",
-                "alt": "",
-                "title": "",
-                "customStyle1": "display-7",
-                "caption": "Type caption here",
-                "active": false
-              },
-              {
-                "tags": "Animated",
-                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
-                "playVideo": false,
-                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
-                "image": "@PROJECT_PATH@/assets/images/2020-10-23-13.29.46-2000x1125.jpg",
-                "thumb": "@PROJECT_PATH@/assets/images/2020-10-23-13.29.46-2000x1125-800x450.jpg",
-                "alt": "",
-                "title": "",
-                "customStyle1": "display-7",
-                "caption": "Type caption here",
-                "active": false
+              ".item": {
+                "padding-left": "0",
+                "padding-right": "0"
               }
-            ]
+            },
+            "& when not (@noSpacing)": {
+              ".item": {
+                "padding-bottom": "2rem"
+              }
+            },
+            "& when (@autoSize)": {
+              ".item-wrapper": {
+                "height": "100%",
+                "img": {
+                  "height": "100%",
+                  "object-fit": "cover"
+                }
+              }
+            },
+            ".carousel-control, .close": {
+              "background": "#1b1b1b"
+            },
+            ".carousel-control-prev": {
+              "margin-left": "2.5rem"
+            },
+            ".carousel-control-next": {
+              "margin-right": "2.5rem"
+            },
+            ".close": {
+              "position": "fixed",
+              "opacity": ".5",
+              "font-size": "35px",
+              "font-weight": "300",
+              "width": "70px",
+              "height": "70px",
+              "border-radius": "50%",
+              "color": "#fff",
+              "top": "2.5rem",
+              "right": "2.5rem",
+              "line-height": "70px",
+              "border": "none",
+              "text-align": "center",
+              "text-shadow": "none",
+              "z-index": "5",
+              "-webkit-transition": "opacity .3s ease",
+              "-moz-transition": "opacity .3s ease",
+              "-o-transition": "opacity .3s ease",
+              "transition": "opacity .3s ease",
+              "font-family": "'MobiriseIcons'",
+              "&::before": {
+                "content": "'\\e91a'"
+              },
+              "&:hover": {
+                "opacity": "1",
+                "background": "#000",
+                "color": "#fff"
+              }
+            },
+            ".carousel-control": {
+              "position": "fixed",
+              "width": "70px",
+              "height": "70px",
+              "top": "50%",
+              "margin-top": "-35px",
+              "line-height": "70px",
+              "border-radius": "50%",
+              "font-size": "35px",
+              "border": "0",
+              "opacity": ".5",
+              "text-shadow": "none",
+              "z-index": "5",
+              "color": "#fff",
+              "-webkit-transition": "all 0.2s ease-in-out 0s",
+              "-o-transition": "all 0.2s ease-in-out 0s",
+              "transition": "all 0.2s ease-in-out 0s"
+            },
+            ".carousel-inner > .active": {
+              "display": "block"
+            },
+            ".carousel-control.left": {
+              "left": "0",
+              "margin-left": "2.5rem"
+            },
+            ".carousel-control.right": {
+              "right": "0",
+              "margin-right": "2.5rem"
+            },
+            ".carousel-control .icon-next, .carousel-control .icon-prev": {
+              "margin-top": "-18px",
+              "font-size": "40px",
+              "line-height": "27px"
+            },
+            ".carousel-control:hover": {
+              "background": "#1b1b1b",
+              "color": "#fff",
+              "opacity": "1"
+            },
+            "@media (max-width: 768px)": {
+              ".carousel-control, .carousel-indicators, .modal .close": {
+                "position": "fixed"
+              }
+            },
+            "@media (max-width: 767px)": {
+              ".mbr-slider .carousel-control": {
+                "top": "auto",
+                "bottom": "20px"
+              },
+              ".mbr-slider > .container .carousel-control": {
+                "margin-bottom": "0"
+              }
+            },
+            ".carousel-indicators": {
+              "bottom": "0",
+              "margin-bottom": "3px",
+              "@media (max-width: 991px)": {
+                "margin-bottom": "3.625rem !important",
+                "padding-left": "2.5rem",
+                "padding-right": "2.5rem"
+              },
+              "@media (max-width: 767px)": {
+                "display": "none"
+              }
+            },
+            ".carousel-indicators .active, .carousel-indicators li": {
+              "width": "7px",
+              "height": "7px",
+              "margin": "3px",
+              "background": "#1b1b1b",
+              "opacity": ".5",
+              "border": "4px solid #1b1b1b"
+            },
+            ".carousel-indicators .active": {
+              "background": "#fff"
+            },
+            ".carousel-indicators li": {
+              "max-width": "15px",
+              "max-height": "15px",
+              "border-radius": "50%"
+            },
+            ".modal": {
+              "padding-left": "0 !important",
+              "position": "fixed",
+              "overflow": "hidden",
+              "padding-right": "0 !important"
+            },
+            ".modal-dialog": {
+              "margin": "0 auto",
+              "max-width": "100%",
+              "padding-left": "1rem",
+              "padding-right": "1rem"
+            },
+            ".modal-content": {
+              "border-radius": "0",
+              "border": "none",
+              "background": "transparent"
+            },
+            ".modal-body": {
+              "padding": "0",
+              "display": "flex",
+              "align-items": "center",
+              "img": {
+                "width": "100%",
+                "object-fit": "contain",
+                "max-height": "calc(100vh - 1.75rem)",
+                "height": "fit-content"
+              }
+            },
+            ".carousel": {
+              "width": "100%"
+            },
+            ".modal-backdrop.in": {
+              "opacity": ".8"
+            },
+            ".modal.fade .modal-dialog": {
+              "-webkit-transition": "margin-top 0.3s ease-out",
+              "-moz-transition": "margin-top 0.3s ease-out",
+              "-o-transition": "margin-top 0.3s ease-out",
+              "transition": "margin-top 0.3s ease-out"
+            },
+            ".modal.fade .modal-dialog, .modal.in .modal-dialog": {
+              "-webkit-transform": "none",
+              "-ms-transform": "none",
+              "-o-transform": "none",
+              "transform": "none"
+            }
           },
-          "_anchor": "gallery2-4p"
+          "_name": "gallery5",
+          "_customHTML": "<section class=\"mbr-gallery gallery5\" group=\"Gallery\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"3\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\">\n        <header>Images</header>\n        <input type=\"checkbox\" title=\"Auto Size\" name=\"autoSize\" checked>\n        <input type=\"checkbox\" title=\"No Spacing\" name=\"noSpacing\">\n        <!-- <input type=\"range\" title=\"Spacing\" name=\"spacing\" min=\"0\" max=\"3\" step=\"0.1\" value=\"1\"> -->\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/background5.jpg\" parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#465052\" selected>\n            <input type=\"video\" title=\"Background Video\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n        </fieldset>\n        <header condition=\"bg.type!==color\">Overlay</header>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#efefef\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container\">\n        <h3 class=\"mbr-section-title align-center mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\">\n            Gallery\n        </h3>\n        <h4 class=\"mbr-section-subtitle align-center pb-4 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showSubtitle\">\n            Enter Gallery Subtitle here.\n        </h4>\n        <div class=\"row mbr-gallery\" data-toggle=\"modal\" data-target=\"#{{idGallery}}Modal\">\n            <div class=\"col-sm-6 col-md-4 col-lg-3 item gallery-image\">\n                <div class=\"item-wrapper\">\n                    <img class=\"w-100\" src=\"@PROJECT_PATH@/assets/images/2020-09-22-10.00.11-510x287.jpg\" alt data-target=\"#lb-{{idGallery}}\" data-slide-to=\"0\" title>\n                </div>\n            </div>\n            <div class=\"col-sm-6 col-md-4 col-lg-3 item gallery-image\">\n                <div class=\"item-wrapper\">\n                    <img class=\"w-100\" src=\"@PROJECT_PATH@/assets/images/2020-09-22-11.00.44-510x287.jpg\" alt data-target=\"#lb-{{idGallery}}\" data-slide-to=\"1\" title>\n                </div>\n            </div>\n            <div class=\"col-sm-6 col-md-4 col-lg-3 item gallery-image\">\n                <div class=\"item-wrapper\">\n                    <img class=\"w-100\" src=\"@PROJECT_PATH@/assets/images/2020-09-22-11.24.47-510x287.jpg\" alt data-target=\"#lb-{{idGallery}}\" data-slide-to=\"2\" title>\n                </div>\n            </div>\n            <div class=\"col-sm-6 col-md-4 col-lg-3 item gallery-image\">\n                <div class=\"item-wrapper\">\n                    <img class=\"w-100\" src=\"@PROJECT_PATH@/assets/images/2020-09-23-11.43.14-510x287.jpg\" alt data-target=\"#lb-{{idGallery}}\" data-slide-to=\"3\" title>\n                </div>\n            </div>\n        </div>\n\n        <div class=\"modal mbr-slider fade\" id=\"{{idGallery}}Modal\" tabindex=\"-1\" role=\"dialog\" aria-hidden=\"true\">\n            <div class=\"modal-dialog\" role=\"document\">\n                <div class=\"modal-content\">\n                    <div class=\"modal-body\">\n                        <div id=\"lb-{{idGallery}}\" class=\"carousel slide\" data-ride=\"carousel\">\n                            <div class=\"carousel-inner\">\n                                <div class=\"carousel-item active\">\n                                    <img class=\"d-block w-100\" src=\"@PROJECT_PATH@/assets/images/background1.jpg\" alt>\n                                </div>\n                                <div class=\"carousel-item\">\n                                    <img class=\"d-block w-100\" src=\"@PROJECT_PATH@/assets/images/background2.jpg\" alt>\n                                </div>\n                                <div class=\"carousel-item\">\n                                    <img class=\"d-block w-100\" src=\"@PROJECT_PATH@/assets/images/background3.jpg\" alt>\n                                </div>\n                                <div class=\"carousel-item\">\n                                    <img class=\"d-block w-100\" src=\"@PROJECT_PATH@/assets/images/background4.jpg\" alt>\n                                </div>\n                            </div>\n                            <ol class=\"carousel-indicators\">\n                                <li data-target=\"#lb-{{idGallery}}\" data-slide-to=\"0\" class=\"active\"></li>\n                                <li data-target=\"#lb-{{idGallery}}\" data-slide-to=\"1\"></li>\n                                <li data-target=\"#lb-{{idGallery}}\" data-slide-to=\"2\"></li>\n                                <li data-target=\"#lb-{{idGallery}}\" data-slide-to=\"3\"></li>\n                            </ol>\n                            <a role=\"button\" href class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\">\n                            </a>\n                            <a class=\"carousel-control-prev carousel-control\" href=\"#lb-{{idGallery}}\" role=\"button\" data-slide=\"prev\">\n                                <span class=\"mbri-left mbr-iconfont\" aria-hidden=\"true\"></span>\n                                <span class=\"sr-only\">Previous</span>\n                            </a>\n                            <a class=\"carousel-control-next carousel-control\" href=\"#lb-{{idGallery}}\" role=\"button\" data-slide=\"next\">\n                                <span class=\"mbri-right mbr-iconfont\" aria-hidden=\"true\"></span>\n                                <span class=\"sr-only\">Next</span>\n                            </a>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_anchor": "gallery5-2j",
+          "_isUserblock": true,
+          "_sourceTheme": "mobirise4",
+          "_cid": "sbhbeztm2P",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
         },
         {
           "alias": false,
@@ -4859,7 +5090,7 @@
           },
           "_name": "image2",
           "_sourceTheme": "mobirise5",
-          "_customHTML": "<section class=\"image2\" group=\"Images & Videos\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" name=\"textWidth\" title=\"Image\" min=\"4\" max=\"8\" step=\"1\" value=\"7\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Description\" name=\"showDescription\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\" parallax>\n            <input type=\"color\" title=\"Color\" value=\"#465052\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div mbr-class=\"{'container': !fullWidth}\">\n        <div class=\"row align-items-center\">\n            <div class=\"col-12 col-lg-{{textWidth}}\">\n                <div class=\"image-wrapper\">\n                    <img src=\"@PROJECT_PATH@/assets/images/2020-11-12-11.02.22-1270x714.jpg\" alt=\"Mobirise\">\n                    <p class=\"mbr-description mbr-fonts-style mt-2 align-center\" mbr-theme-style=\"display-4\" mbr-if=\"showDescription\" data-app-selector=\".mbr-description\">\n                        Image Description</p>\n                </div>\n            </div>\n            <div class=\"col-12\" mbr-class=\"{'col-lg' : !fullWidth, 'col-lg-4' : fullWidth &amp;&amp; textWidth >= 6, 'col-lg-6' : fullWidth &amp;&amp; textWidth <= 5}\">\n                <div class=\"text-wrapper\">\n                    <h3 class=\"mbr-section-title mbr-fonts-style mb-3\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\"><b>Autonomous Mode</b></h3>\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">Besides having user control via RC, we wanted to add another mode by 'flicking' the channel to enable autonomous mode.\n<br>This mode would trigger sensors to either avoid an obstacle or some other function (AI).</p>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_customHTML": "<section class=\"image2\" group=\"Images & Videos\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" name=\"textWidth\" title=\"Image\" min=\"4\" max=\"8\" step=\"1\" value=\"7\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Description\" name=\"showDescription\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\" parallax>\n            <input type=\"color\" title=\"Color\" value=\"#465052\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div mbr-class=\"{'container': !fullWidth}\">\n        <div class=\"row align-items-center\">\n            <div class=\"col-12 col-lg-{{textWidth}}\">\n                <div class=\"image-wrapper\">\n                    <img src=\"@PROJECT_PATH@/assets/images/2020-11-12%2011.02.22-1270x714.jpg\" alt=\"Mobirise\">\n                    <p class=\"mbr-description mbr-fonts-style mt-2 align-center\" mbr-theme-style=\"display-4\" mbr-if=\"showDescription\" data-app-selector=\".mbr-description\">\n                        Image Description</p>\n                </div>\n            </div>\n            <div class=\"col-12\" mbr-class=\"{'col-lg' : !fullWidth, 'col-lg-4' : fullWidth &amp;&amp; textWidth >= 6, 'col-lg-6' : fullWidth &amp;&amp; textWidth <= 5}\">\n                <div class=\"text-wrapper\">\n                    <h3 class=\"mbr-section-title mbr-fonts-style mb-3\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\"><b>Autonomous Mode</b></h3>\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">Besides having user control via RC, we wanted to add another mode by 'flicking' the channel to enable autonomous mode.\n<br>This mode would trigger sensors to either avoid an obstacle or some other function (AI).</p>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
           "_cid": "sfOEwX5hz9",
           "_anchor": "image2-3e",
           "_protectedParams": [],
@@ -5435,7 +5666,7 @@
                 "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
                 "playVideo": false,
                 "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
-                "image": "@PROJECT_PATH@/assets/images/2020-11-12-09.38.58-2000x1125.jpg",
+                "image": "@PROJECT_PATH@/assets/images/2020-11-12%2009.38.58-2000x1125.jpg",
                 "thumb": "@PROJECT_PATH@/assets/images/2020-11-12-09.38.58-2000x1125-800x450.jpg",
                 "alt": "",
                 "title": "",
@@ -5448,7 +5679,7 @@
                 "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
                 "playVideo": false,
                 "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
-                "image": "@PROJECT_PATH@/assets/images/2020-11-12-09.39.04-2000x1125.jpg",
+                "image": "@PROJECT_PATH@/assets/images/2020-11-12%2009.39.04-2000x1125.jpg",
                 "thumb": "@PROJECT_PATH@/assets/images/2020-11-12-09.39.04-2000x1125-800x450.jpg",
                 "alt": "",
                 "title": "",
@@ -5461,7 +5692,7 @@
                 "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
                 "playVideo": false,
                 "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
-                "image": "@PROJECT_PATH@/assets/images/2020-11-12-09.39.14-2000x1125.jpg",
+                "image": "@PROJECT_PATH@/assets/images/2020-11-12%2009.39.14-2000x1125.jpg",
                 "thumb": "@PROJECT_PATH@/assets/images/2020-11-12-09.39.14-2000x1125-800x450.jpg",
                 "alt": "",
                 "title": "",
@@ -5474,7 +5705,7 @@
                 "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
                 "playVideo": false,
                 "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
-                "image": "@PROJECT_PATH@/assets/images/2020-11-12-09.39.35-2000x1125.jpg",
+                "image": "@PROJECT_PATH@/assets/images/2020-11-12%2009.39.35-2000x1125.jpg",
                 "thumb": "@PROJECT_PATH@/assets/images/2020-11-12-09.39.35-2000x1125-800x450.jpg",
                 "alt": "",
                 "title": "",
@@ -5487,7 +5718,7 @@
                 "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
                 "playVideo": false,
                 "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
-                "image": "@PROJECT_PATH@/assets/images/2020-11-12-09.39.45-2000x1125.jpg",
+                "image": "@PROJECT_PATH@/assets/images/2020-11-12%2009.39.45-2000x1125.jpg",
                 "thumb": "@PROJECT_PATH@/assets/images/2020-11-12-09.39.45-2000x1125-800x450.jpg",
                 "alt": "",
                 "title": "",
@@ -5500,7 +5731,7 @@
                 "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
                 "playVideo": false,
                 "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
-                "image": "@PROJECT_PATH@/assets/images/2020-11-12-09.43.01-2000x1125.jpg",
+                "image": "@PROJECT_PATH@/assets/images/2020-11-12%2009.43.01-2000x1125.jpg",
                 "thumb": "@PROJECT_PATH@/assets/images/2020-11-12-09.43.01-2000x1125-800x450.jpg",
                 "alt": "",
                 "title": "",
@@ -5513,7 +5744,7 @@
                 "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
                 "playVideo": false,
                 "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
-                "image": "@PROJECT_PATH@/assets/images/2020-11-12-09.18.34-2000x1125.jpg",
+                "image": "@PROJECT_PATH@/assets/images/2020-11-12%2009.18.34-2000x1125.jpg",
                 "thumb": "@PROJECT_PATH@/assets/images/2020-11-12-09.18.34-2000x1125-800x450.jpg",
                 "alt": "",
                 "title": "",
@@ -5526,7 +5757,7 @@
                 "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
                 "playVideo": false,
                 "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
-                "image": "@PROJECT_PATH@/assets/images/2020-11-12-09.18.54-2000x1125.jpg",
+                "image": "@PROJECT_PATH@/assets/images/2020-11-12%2009.18.54-2000x1125.jpg",
                 "thumb": "@PROJECT_PATH@/assets/images/2020-11-12-09.18.54-2000x1125-800x450.jpg",
                 "alt": "",
                 "title": "",
@@ -5539,7 +5770,7 @@
                 "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
                 "playVideo": false,
                 "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
-                "image": "@PROJECT_PATH@/assets/images/2020-11-06-11.31.59-2000x1125.jpg",
+                "image": "@PROJECT_PATH@/assets/images/2020-11-06%2011.31.59-2000x1125.jpg",
                 "thumb": "@PROJECT_PATH@/assets/images/2020-11-06-11.31.59-2000x1125-800x450.jpg",
                 "alt": "",
                 "title": "",
@@ -5552,7 +5783,7 @@
                 "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
                 "playVideo": false,
                 "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
-                "image": "@PROJECT_PATH@/assets/images/2020-11-12-10.02.57-2000x1125.jpg",
+                "image": "@PROJECT_PATH@/assets/images/2020-11-12%2010.02.57-2000x1125.jpg",
                 "thumb": "@PROJECT_PATH@/assets/images/2020-11-12-10.02.57-2000x1125-800x450.jpg",
                 "alt": "",
                 "title": "",
@@ -5565,7 +5796,7 @@
                 "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
                 "playVideo": false,
                 "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
-                "image": "@PROJECT_PATH@/assets/images/2020-11-09-13.53.06-2000x1125.jpg",
+                "image": "@PROJECT_PATH@/assets/images/2020-11-09%2013.53.06-2000x1125.jpg",
                 "thumb": "@PROJECT_PATH@/assets/images/2020-11-09-13.53.06-2000x1125-800x450.jpg",
                 "alt": "",
                 "title": "",
@@ -5731,85 +5962,6 @@
           "_customHTML": "<section class=\"mbr-section article content12\">\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"checkbox\" title=\"Stylized Counters\" name=\"stylizedCounters\" checked>\n        <input type=\"color\" title=\"Counter Color\" name=\"counterColor\" value=\"#ffffff\" condition=\"stylizedCounters\">\n        <input type=\"checkbox\" title=\"Stylized Counters\" name=\"stylizedCounters\" checked>\n        <input type=\"checkbox\" title=\"Mark\" name=\"mark\" checked condition=\"stylizedCounters\">\n        <select title=\"Counters Type\" name=\"countersType\" condition=\"stylizedCounters\">\n            <option value=\"default\" selected>Сircle Fill</option>\n            <option value=\"circle\">Circle</option>\n            <option value=\"square\">Square</option>\n        </select>   \n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#465052\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"mbr-text counter-container col-12 col-md-8 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" data-multiline mbr-article>\n                <ul>\n                    <li>Arduino Uno</li><li>Teenzy board</li>\n                    <li>Flysky FS-I6 X 6ch reciever</li>\n                    <li>Queenhobby 120a motor controller X 2</li><li>N6354 270KV Brushless Motor High Power X 2</li><li>Dinogy Graphene 4s 1400mAh 14.8V Lipo Battery X 2</li><li>LiPo Battery Charger</li><li>Ultra sensors X 4 (Autonomous Mode)</li><li>Duinotech IR Obstacle Avoidance Sensor Module (Autonomous Mode)</li><li>150mm Wheels X 2</li>\n                </ul>\n            </div>\n        </div>\n    </div>\n</section>",
           "_cid": "sby9TJLRXC",
           "_anchor": "content12-2m",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
-        },
-        {
-          "alias": false,
-          "_styles": {
-            "& when not (@fullScreen)": {
-              "padding-top": "(@paddingTop * 15px)",
-              "padding-bottom": "(@paddingBottom * 15px)"
-            },
-            "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value"
-            },
-            "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)"
-            },
-            ".mbr-media span": {
-              "font-size": "48px",
-              "cursor": "pointer",
-              "background-color": "#ffffff",
-              "border-radius": "50%",
-              "width": "6rem",
-              "height": "6rem",
-              "line-height": "6rem",
-              "position": "relative",
-              "display": "inline-block",
-              "transition": "all 0.25s",
-              "color": "#353535",
-              "&.mbri-play:before": {
-                "position": "absolute",
-                "left": "50%",
-                "-webkit-transform": "translateX(-35%)",
-                "-moz-transform": "translateX(-35%)",
-                "-ms-transform": "translateX(-35%)",
-                "-o-transform": "translateX(-35%)",
-                "transform": "translateX(-35%)"
-              }
-            },
-            ".modalWindow": {
-              "position": "fixed",
-              "z-index": "5000",
-              "left": "0",
-              "top": "0",
-              "background-color": "rgba(61, 61, 61, 0.65)",
-              "width": "100%",
-              "height": "100%",
-              ".modalWindow-container": {
-                "display": "table-cell",
-                "vertical-align": "middle"
-              },
-              ".modalWindow-video": {
-                "height": "calc(80vw / 1.778)",
-                "width": "80vw",
-                "margin": "0 auto"
-              }
-            },
-            "a.close": {
-              "position": "absolute",
-              "right": "4vw",
-              "top": "4vh",
-              "color": "#ffffff",
-              "z-index": "5000000",
-              "font-size": "37px",
-              "background": "#000",
-              "padding": "20px",
-              "border-radius": "50%",
-              "&:hover": {
-                "color": "#ffffff"
-              }
-            }
-          },
-          "_name": "header8",
-          "_sourceTheme": "mobirise4",
-          "_customHTML": "<section class=\"header8\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" plugins=\"PlayerVimeo\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\">\n        <input type=\"checkbox\" title=\"Show Video PopUp\" name=\"showVideoPopUp\">\n        <input type=\"text\" title=\"Modal Video\" name=\"modalVideo\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\" condition=\"showVideoPopUp\">\n        <input type=\"checkbox\" title=\"Show Description\" name=\"showDescription\" condition=\"showVideoPopUp\">\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" value=\"@PROJECT_PATH@/assets/images/background4-1.jpg\" title=\"Background Image\" parallax>\n            <input type=\"color\" value=\"#7f1933\" title=\"Background Color\">\n            <input type=\"video\" value=\"https://youtu.be/QTekHIJrWbM\" title=\"Background Video\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#879a9f\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.4\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container align-center\">\n        <div class=\"row justify-content-md-center\">\n            <div class=\"mbr-white col-md-10\">\n                <h1 class=\"mbr-section-title align-center py-2 mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\">\n                        INTRO WITH VIDEO POPUP\n                </h1>\n                <p class=\"mbr-text align-center py-2 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showText\">\n                        Full-screen intro with background image and video popup.\n                </p>\n                <div class=\"mbr-media show-modal align-center py-2\" mbr-if=\"showVideoPopUp\" data-modal=\".modalWindow\">\n                         <span mbr-icon class=\"mbr-iconfont mbri-play\" style=\"color: rgb(20, 157, 204); fill: rgb(20, 157, 204);\"></span>\n                </div>\n                <div mbr-text class=\"icon-description align-center font-italic pb-3 mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showDescription && showVideoPopUp\" data-app-selector=\".icon-description\">\n                        Icon's descriptions\n                </div>\n                <div class=\"mbr-section-btn text-center\" mbr-buttons mbr-theme-style=\"display-4\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-md btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">MORE</a></div>\n            </div>\n        </div>\n    </div>\n    <div mbr-if=\"showVideoPopUp\">\n        <div class=\"modalWindow\" style=\"display: none;\">\n            <div class=\"modalWindow-container\">\n                <div class=\"modalWindow-video-container\">\n                    <div class=\"modalWindow-video\">\n                        <iframe width=\"100%\" height=\"100%\" data-src=\"{{modalVideo}}\" frameborder=\"0\" allowfullscreen=\"1\"></iframe>\n                    </div>\n                    <a class=\"close\" role=\"button\" data-dismiss=\"modal\">\n                        <span aria-hidden=\"true\" class=\"mbri-close mbr-iconfont closeModal\"></span>\n                        <span class=\"sr-only\">Close</span>\n                    </a>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
-          "_anchor": "header8-4m",
-          "_isUserblock": true,
-          "_cid": "sgsKsGY3m9",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
@@ -7692,7 +7844,7 @@
           },
           "_name": "prettify",
           "_sourceTheme": "mobirise4",
-          "_customHTML": "<section class=\"mbr-section article content10\" group=\"Article\" plugins=\"prettify\" mbr-class=\"{\n         'mbr-fullscreen': fullScreen}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Plein écran\" name=\"fullScreen\">\n        <input type=\"range\" inline title=\"Haut\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bas\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Largeur du texte\" name=\"innerWidth\" min=\"50\" max=\"100\" step=\"5\" value=\"65\">\n        <input type=\"checkbox\" title=\"Show Line #\" name=\"showLineNums\">\n        <input type=\"hidden\" name=\"showLines\" value=\"prettyprint lang-html linenums\">\n        <input type=\"color\" title=\"Code color\" name=\"codeColor\" value=\"#149dcc\">\n        <input type=\"color\" title=\"Box color\" name=\"boxColor\" value=\"#000000\">\n        <input type=\"color\" title=\"Background color\" name=\"bgColor\" value=\"#465052\">\n    <select title=\"Code language\" name=\"codeLang\">\n        <option value=\"lang-html\">HTML</option>\n        <option value=\"lang-js\" selected>JavaScript</option>\n        <option value=\"lang-xhtml\">xhtml</option>\n    </select>\n    <!-- End block parameters -->\n    </mbr-parameters> \n    <div class=\"container\">\n        <div class=\"inner-container\" mbr-style=\"{'width': innerWidth + '%'}\">\n            <div class=\"section-text align-left mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".section-text\">\n               <pre mbr-text=\"height: 1000px; overflow: scroll;\" mbr-class=\"[{'prettyprint': true, 'linenums': showLineNums}, codeLang]\">     \n<div>/*\n</div><div> RC PulseIn Serial Read out\n</div><div> By: Nick Poole\n</div><div> SparkFun Electronics\n</div><div> Date: 5\n</div><div> License: CC-BY SA 3.0 - Creative commons share-alike 3.0\n</div><div> use this code however you'd like, just keep this license and\n</div><div> attribute. Let me know if you make hugely, awesome, great changes.\n</div><div> */\n</div><div>int trigPin = 9; //\n</div><div>int trigPin2 = 10;\n</div><div>int trigPin3 = 11; //\n</div><div>int echoPin = 7; //\n</div><div>int echoPin2 = 6; //\n</div><div>int echoPin3 = 5;\n</div><div>int ch1; // Right stick Forward Backwards\n</div><div>int ch2; // Right stick Left Right\n</div><div>int ch3; // Left stick Forward Backwards\n</div><div>int ch4; // Left stick Left and Right\n</div><div>int ch5; // Far left switch\n</div><div>int ch6; // Far right switch\n</div><div>int IRSensor = 14; // connect ir sensor to arduino pin 2\n</div><div>int IRRead;\n</div><div>String ch5String;\n</div><div>String ch6String;\n</div><div>int led;\n</div><div>int leftMotor;\n</div><div>int rightMotor;\n</div><div>long distance, duration;\n</div><div>int echoTime;                   //variable to store the time it takes for a ping to bounce off an object\n</div><div>int calcualtedDistance; \n</div><div>int leftMotorOut = A8; //Left motor output value pin\n</div><div>int rightMotorOut =  A9; //right motor value output pin\n</div><div>int leftMotorValue;\n</div><div>int rightMotorValue;\n</div><div>\n</div><div>int distanceSensor1;\n</div><div>int distanceSensor2;\n</div><div>int distanceSensor3;\n</div><div>int duration1;\n</div><div>int duration2;\n</div><div>int duration3;\n</div><div>\n</div><div>\n</div><div>//Setup pins\n</div><div>void setup() {\n</div><div>\n</div><div>  pinMode(A1, INPUT); // Set our input pins as such\n</div><div>  pinMode(A2, INPUT);\n</div><div>  pinMode(A3, INPUT);\n</div><div>  pinMode(A4, INPUT);\n</div><div>  pinMode(A5, INPUT);\n</div><div>  pinMode(A6, INPUT);\n</div><div>  pinMode(A0, OUTPUT); \n</div><div>\n</div><div>  pinMode(leftMotorOut, OUTPUT); //Motor left and right output pins\n</div><div>  pinMode(rightMotorOut, OUTPUT);\n</div><div>  \n</div><div>  //Distance Sensors\n</div><div>  pinMode(trigPin, OUTPUT);\n</div><div>  pinMode(echoPin, INPUT);\n</div><div>  pinMode(trigPin2, OUTPUT);\n</div><div>  pinMode(echoPin2, INPUT);\n</div><div>  pinMode(trigPin3, OUTPUT);\n</div><div>  pinMode(echoPin3, INPUT);\n</div><div>\n</div><div>  \n</div><div>  pinMode (IRSensor, INPUT); // sensor pin INPUT\n</div><div>  \n</div><div>\n</div><div>//  pinMode('leftMotorPin', OUTPUT); //Analog out pin for the motor control\n</div><div>//  pinMode('rightMotorPin', OUTPUT); //Analog out pin for the motor control\n</div><div>  Serial.begin(9600); \n</div><div>\n</div><div>}\n</div><div>\n</div><div>\n</div><div>//Baasic input control's getting data from the main channels of the \n</div><div>//joysticks  and switches and converting them to a usable integer for functionality.\n</div><div>void loop() {\n</div><div> // getDistance();\n</div><div>  ch1 = pulseIn(A1, HIGH); // Read the pulse width of \n</div><div>  ch2 = pulseIn(A2, HIGH); // each channel\n</div><div>  ch3 = pulseIn(A3, HIGH);\n</div><div>  ch4 = pulseIn(A4, HIGH);\n</div><div>  ch5 = pulseIn(A5, HIGH);\n</div><div>  ch6 = pulseIn(A6, HIGH);\n</div><div>  \n</div><div>\n</div><div>  if(ch5 &lt; 1005){//Channel 5 on off switch conversion  Switch used for switching between AI mode and manual control\n</div><div>      ch5String = \"OFF\";\n</div><div>      manualControl(); //Use the manual control method\n</div><div>      Serial.println(\"Assuming manual control\");\n</div><div>    }\n</div><div>    else{\n</div><div>      ch5String = \"ON\";\n</div><div>      AI(); // Call the AI method\n</div><div>      Serial.println(\"Assuming Artificial control\");\n</div><div>      \n</div><div>    }\n</div><div>  if(ch6 &lt; 1001){//Channel 6 on off switch conversion\n</div><div>      ch6String = \"OFF\";\n</div><div>    }\n</div><div>    else{ \n</div><div>      ch6String = \"ON\";\n</div><div>    }\n</div><div>  \n</div><div>  \n</div><div>  //test();\n</div><div>  //manualControl();\n</div><div>  \n</div><div>  printing();\n</div><div>}\n</div><div>\n</div><div>//Simple logs to console window of the input from controller\n</div><div>void printing() {\n</div><div>  Serial.print(\"Channel 1:\"); // Print the value of \n</div><div>  Serial.println(ch1);        // each channel\n</div><div>\n</div><div>  Serial.print(\"Channel 2:\");\n</div><div>  Serial.println(ch2);\n</div><div>\n</div><div>  Serial.print(\"Channel 3:\");\n</div><div>  Serial.println(ch3);\n</div><div>  \n</div><div>  Serial.print(\"Channel 4:\");\n</div><div>  Serial.println(ch4);\n</div><div>  \n</div><div>  Serial.print(\"Channel 5 Left switch:\");\n</div><div>  Serial.println(ch5String);\n</div><div>  \n</div><div>  Serial.print(\"Channel 6 Right switch:\");\n</div><div>  Serial.println(ch6String);  \n</div><div>\n</div><div>  Serial.print(\"Left Motor Out\");\n</div><div>  Serial.println(leftMotorValue);\n</div><div>  Serial.print(\"Right Motor Out\");\n</div><div>  Serial.println(rightMotorValue);\n</div><div>}\n</div><div>\n</div><div>//Function for moving the robot around via the controller\n</div><div>void manualControl() {\n</div><div>  //This code may be unnecessary with the new esc's that the big robot is using for power.\n</div><div>//    ch1 = (ch1 /100) - 14; //Rounding the channel input to a -5 - 5 scale for easy of use\n</div><div>//    ch2 = (ch2 /100) - 14; //Joystick control reading\n</div><div>//    ch3 = (ch3 /100) - 14; \n</div><div>//    ch4 = (ch4 /100) - 14;\n</div><div>//    Serial.print(\"Channel 4:\");\n</div><div>//    Serial.println(ch4);\n</div><div>    \n</div><div>   \n</div><div>    //Forward / Backwards movement.\n</div><div>    //Set the motors to be equal power in forwards or reverse.\n</div><div>    \n</div><div>    \n</div><div>    if (ch4 &lt; 1450){ //Turn left\n</div><div>      leftMotorValue = ch3 - 2000; //Inside wheel powered by amount of throtle given, allows for tighter or slacker turning.\n</div><div>      rightMotorValue = ch4; //Power outside wheel the amount you wish to turn.\n</div><div>      analogWrite(leftMotorOut, leftMotorValue);\n</div><div>      analogWrite(rightMotorOut, rightMotorValue);\n</div><div>      Serial.println(\"Turning left\");\n</div><div>      delay(10);\n</div><div>    }\n</div><div>    else if(ch4 &gt; 1550){ //Turn Right\n</div><div>      leftMotorValue = ch4; //Power the outside wheel the amount you wish to turn.\n</div><div>      rightMotorValue = ch3 - 2000; //Inside whjeel powered by amount of throtle given, allows for tights or slacker turning.\n</div><div>      analogWrite(leftMotorOut, leftMotorValue);\n</div><div>      analogWrite(rightMotorOut, rightMotorValue);\n</div><div>      Serial.println(\"Turing Right\");\n</div><div>      delay(10);\n</div><div>    }\n</div><div>    else {\n</div><div>      leftMotorValue = ch3;\n</div><div>      rightMotorValue = ch3;\n</div><div>      analogWrite(leftMotorOut, leftMotorValue);\n</div><div>      analogWrite(rightMotorOut, rightMotorValue);\n</div><div>      Serial.println(\"Moving forwards\");\n</div><div>      delay(10);\n</div><div>      \n</div><div>    }\n</div><div>    //servoMovment()\n</div><div>}\n</div><div>\n</div><div>\n</div><div>//method for basic testing of controls via remote input\n</div><div>void test(){\n</div><div>//  if (ch3 &gt; 5){\n</div><div>//    analogWrite(A6, 255);\n</div><div>//    analogWrite(A7, 255);\n</div><div>//  }\n</div><div>//  else {\n</div><div>//     analogWrite(A6, 155);\n</div><div>//    analogWrite(A7, 150);\n</div><div>//    }\n</div><div>  }\n</div><div>\n</div><div>\n</div><div>//Method for AI.\n</div><div>void AI(){\n</div><div>  //have sensor input make thing do thing, and if thing happens do other thing whilst killing other thing.\n</div><div>  //Automomasly\n</div><div>  // getDistance();\n</div><div>  // readSensor();\n</div><div>\n</div><div>  }\n</div><div>  \n</div><div>\n</div><div>//void control() {\n</div><div>//  if switch = ON manualControl = true \n</div><div>//  if switch = OFF AI = true\n</div><div>//  }\n</div><div>void getDistance(){\n</div><div>         //variable to store the distance calculated from the echo time\n</div><div>\n</div><div>  //Get info from sensor 2.\n</div><div>//  digitalWrite(trigPin, LOW);\n</div><div>//  digitalWrite(trigPin, HIGH);\n</div><div>//  digitalWrite(trigPin, LOW);\n</div><div>//  duration1 = pulseIn(echoPin, HIGH);\n</div><div>//  distanceSensor1 = (duration1/2) / 29.1;\n</div><div>//  Serial.println(distanceSensor1);\n</div><div>//\n</div><div>//  digitalWrite(trigPin2, LOW);\n</div><div>//  digitalWrite(trigPin2, HIGH);\n</div><div>//  digitalWrite(trigPin2, LOW);\n</div><div>//  duration2 = pulseIn(echoPin2, HIGH);\n</div><div>//  distanceSensor2 = (duration2/2) / 29.1;\n</div><div>//  Serial.println(distanceSensor2);\n</div><div>//\n</div><div>//  digitalWrite(trigPin3, LOW);\n</div><div>//  digitalWrite(trigPin3, HIGH);\n</div><div>//  digitalWrite(trigPin3, LOW);\n</div><div>//  duration3 = pulseIn(echoPin3, HIGH);\n</div><div>//  distanceSensor3 = (duration3/2) / 29.1;\n</div><div>//  Serial.println( distanceSensor3);\n</div><div>}\n</div><div>\n</div><div>//Method used for the servo's to move into position.\n</div><div>void servoMovment() {\n</div><div>  //get servo position, '0' for the servo will be in the middle of the servos stroke.\n</div><div>  //They way it will work is that when the sensors detect a foreign object, the top turret\n</div><div>  //will lock onto the target, It will know its locked on when the sensor that has found it\n</div><div>  //stays consistently at the same point, then the motors will turn the base of the robot \n</div><div>  //to be inline with the target.\n</div><div>\n</div><div>  \n</div><div>  \n</div><div>}\n</div><div>\n</div><div>//This method is used for detecting IR\n</div><div>void infrared() {\n</div><div>//  IRRead = digitalRead(IRSensor);\n</div><div>//  Serial.println(IRRead); //print inferred value.\n</div><div>}</div></pre>\n           </div>\n       </div>\n   </div>\n</section>",
+          "_customHTML": "<section class=\"mbr-section article content10\" group=\"Article\" plugins=\"prettify\" mbr-class=\"{\n         'mbr-fullscreen': fullScreen}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Plein écran\" name=\"fullScreen\">\n        <input type=\"range\" inline title=\"Haut\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bas\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Largeur du texte\" name=\"innerWidth\" min=\"50\" max=\"100\" step=\"5\" value=\"65\">\n        <input type=\"checkbox\" title=\"Show Line #\" name=\"showLineNums\">\n        <input type=\"hidden\" name=\"showLines\" value=\"prettyprint lang-html linenums\">\n        <input type=\"color\" title=\"Code color\" name=\"codeColor\" value=\"#149dcc\">\n        <input type=\"color\" title=\"Box color\" name=\"boxColor\" value=\"#000000\">\n        <input type=\"color\" title=\"Background color\" name=\"bgColor\" value=\"#465052\">\n    <select title=\"Code language\" name=\"codeLang\">\n        <option value=\"lang-html\">HTML</option>\n        <option value=\"lang-js\" selected>JavaScript</option>\n        <option value=\"lang-xhtml\">xhtml</option>\n    </select>\n    <!-- End block parameters -->\n    </mbr-parameters> \n    <div class=\"container\">\n        <div class=\"inner-container\" mbr-style=\"{'width': innerWidth + '%'}\">\n            <div class=\"section-text align-left mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".section-text\">\n               <pre mbr-text=\"height: 1000px; overflow: scroll;\" mbr-class=\"[{'prettyprint': true, 'linenums': showLineNums}, codeLang]\">     \n<div>/*\n</div><div> RC PulseIn Serial Read out\n</div><div> By: Nick Poole\n</div><div> SparkFun Electronics\n</div><div> Date: 5\n</div><div> License: CC-BY SA 3.0 - Creative commons share-alike 3.0\n</div><div> use this code however you'd like, just keep this license and\n</div><div> attribute. Let me know if you make hugely, awesome, great changes.\n</div><div> */\n</div><div>int trigPin = 9; //\n</div><div>int trigPin2 = 10;\n</div><div>int trigPin3 = 11; //\n</div><div>int echoPin = 7; //\n</div><div>int echoPin2 = 6; //\n</div><div>int echoPin3 = 5;\n</div><div>int ch1; // Right stick Forward Backwards\n</div><div>int ch2; // Right stick Left Right\n</div><div>int ch3; // Left stick Forward Backwards\n</div><div>int ch4; // Left stick Left and Right\n</div><div>int ch5; // Far left switch\n</div><div>int ch6; // Far right switch\n</div><div>int IRSensor = 14; // connect ir sensor to Arduino pin 2\n</div><div>int IRRead;\n</div><div>String ch5String;\n</div><div>String ch6String;\n</div><div>int led;\n</div><div>int leftMotor;\n</div><div>int rightMotor;\n</div><div>long distance, duration;\n</div><div>int echoTime;                   //variable to store the time it takes for a ping to bounce off an object\n</div><div>int calcualtedDistance; \n</div><div>\n</div><div>int distanceSensor1;\n</div><div>int distanceSensor2;\n</div><div>int distanceSensor3;\n</div><div>int duration1;\n</div><div>int duration2;\n</div><div>int duration3;\n</div><div>\n</div><div>\n</div><div>//Setup pins\n</div><div>void setup() {\n</div><div>\n</div><div>  pinMode(A1, INPUT); // Set our input pins as such\n</div><div>  pinMode(A2, INPUT);\n</div><div>  pinMode(A3, INPUT);\n</div><div>  pinMode(A4, INPUT);\n</div><div>  pinMode(A5, INPUT);\n</div><div>  pinMode(A6, INPUT);\n</div><div>  pinMode(A0, OUTPUT); \n</div><div>  //Distance Sensors\n</div><div>  pinMode(trigPin, OUTPUT);\n</div><div>  pinMode(echoPin, INPUT);\n</div><div>  pinMode(trigPin2, OUTPUT);\n</div><div>  pinMode(echoPin2, INPUT);\n</div><div>  pinMode(trigPin3, OUTPUT);\n</div><div>  pinMode(echoPin3, INPUT);\n</div><div>\n</div><div>  pinMode (IRSensor, INPUT); // sensor pin INPUT\n</div><div>  \n</div><div>}\n</div><div>//  pinMode('leftMotorPin', OUTPUT); //Analog out pin for the motor control\n</div><div>//  pinMode('rightMotorPin', OUTPUT); //Analog out pin for the motor control\n</div><div>  Serial.begin(9600); \n</div><div>\n</div><div>}\n</div><div>\n</div><div>\n</div><div>//Basic input control's getting data from the main channels of the \n</div><div>//joysticks  and switches and converting them to a usable integer for functionality.\n</div><div>void loop() {\n</div><div> // getDistance();\n</div><div>  ch1 = pulseIn(A1, HIGH); // Read the pulse width of \n</div><div>  ch2 = pulseIn(A2, HIGH); // each channel\n</div><div>  ch3 = pulseIn(A3, HIGH);\n</div><div>  ch4 = pulseIn(A4, HIGH);\n</div><div>  ch5 = pulseIn(A5, HIGH);\n</div><div>  ch6 = pulseIn(A6, HIGH);\n</div><div>  \n</div><div>\n</div><div>//  if(ch5 &lt; 1000){//Channel 5 on off switch conversion  Switch used for switching between AI mode and manual control\n</div><div>//      ch5String = \"OFF\";\n</div><div>//      manualControl(); //Use the manual control method\n</div><div>//      Serial.println(\"Assuming manual control\");\n</div><div>//    }\n</div><div>//    else{\n</div><div>//      ch5String = \"ON\";\n</div><div>//      AI(); // Call the AI method\n</div><div>//      Serial.println(\"Assuming Artificial control\");\n</div><div>//      \n</div><div>//    }\n</div><div>//  if(ch6 &lt; 1000){//Channel 6 on off switch conversion\n</div><div>//      ch6String = \"OFF\";\n</div><div>//    }\n</div><div>//    else{ \n</div><div>//      ch6String = \"ON\";\n</div><div>//    }\n</div><div>//  \n</div><div>  \n</div><div>  //test();\n</div><div>  //manualControl();\n</div><div>  //printing();\n</div><div>}\n</div><div>\n</div><div>//Simple logs to console window of the input from controller\n</div><div>void printing() {\n</div><div>  Serial.print(\"Channel 1:\"); // Print the value of \n</div><div>  Serial.println(ch1);        // each channel\n</div><div>\n</div><div>  Serial.print(\"Channel 2:\");\n</div><div>  Serial.println(ch2);\n</div><div>\n</div><div>  Serial.print(\"Channel 3:\");\n</div><div>  Serial.println(ch3);\n</div><div>  \n</div><div>  Serial.print(\"Channel 4:\");\n</div><div>  Serial.println(ch4);\n</div><div>  \n</div><div>  Serial.print(\"Channel 5 Left switch:\");\n</div><div>  Serial.println(ch5String);\n</div><div>  \n</div><div>  Serial.print(\"Channel 6 Right switch:\");\n</div><div>  Serial.println(ch6String);  \n</div><div>}\n</div><div>\n</div><div>//Function for moving the robot around via the controller\n</div><div>void manualControl() {\n</div><div>    ch1 = (ch1 /100) - 14; //Rounding the channel input to a -5 - 5 scale for easy of use\n</div><div>    ch2 = (ch2 /100) - 14; //Joystick control reading\n</div><div>    ch3 = (ch3 /100) - 14; \n</div><div>    ch4 = (ch4 /100) - 14;\n</div><div>\n</div><div>    //Forward / Backwards movement.\n</div><div>    //Set the motors to be equal power in forwards or reverse.\n</div><div>    leftMotor = ch3 * 50;\n</div><div>    rightMotor = ch3 * 50;\n</div><div>    analogWrite('leftMotorPin', leftMotor);\n</div><div>    analogWrite('rightMotorPin', rightMotor);\n</div><div>\n</div><div>    if (ch4 &lt; 0){ //Turn left\n</div><div>      leftMotor = ch3 * 50; //Inside wheel powered by amount of throttle given, allows for tighter or slacker turning.\n</div><div>      rightMotor = ch4 * 50; //Power outside wheel the amount you wish to turn.\n</div><div>      analogWrite('leftMotorPin', leftMotor);\n</div><div>      analogWrite('rightMotorPin', rightMotor);\n</div><div>    }\n</div><div>    else if (ch4 &gt; 0){ //Turn Right\n</div><div>      leftMotor = ch4 * 50; //Power the outside wheel the amount you wish to turn.\n</div><div>      rightMotor = ch3 * 50; //Inside wheel powered by amount of throttle given, allows for tights or slacker turning.\n</div><div>      analogWrite('leftMotorPin', leftMotor);\n</div><div>      analogWrite('rightMotorPin', rightMotor);\n</div><div>    }\n</div><div>    //servoMovment()\n</div><div>}\n</div><div>\n</div><div>\n</div><div>//method for basic testing of controls via remote input\n</div><div>void test(){\n</div><div>  if (ch3 &gt; 5){\n</div><div>    analogWrite(A6, 255);\n</div><div>    analogWrite(A7, 255);\n</div><div>  }\n</div><div>  else {\n</div><div>     analogWrite(A6, 155);\n</div><div>    analogWrite(A7, 150);\n</div><div>    }\n</div><div>  }\n</div><div>\n</div><div>\n</div><div>//Method for AI.\n</div><div>void AI(){\n</div><div>  //have sensor input make thing do thing, and if thing happens do other thing whilst killing other thing.\n</div><div>  //Automomasly\n</div><div>  // getDistance();\n</div><div>  // readSensor();\n</div><div>\n</div><div>  }\n</div><div>  \n</div><div>\n</div><div>//void control() {\n</div><div>//  if switch = ON manualControl = true \n</div><div>//  if switch = OFF AI = true\n</div><div>//  }\n</div><div>void getDistance(){\n</div><div>         //variable to store the distance calculated from the echo time\n</div><div>\n</div><div>  //Get info from sensor 2.\n</div><div>  digitalWrite(trigPin, LOW);\n</div><div>  digitalWrite(trigPin, HIGH);\n</div><div>  digitalWrite(trigPin, LOW);\n</div><div>  duration1 = pulseIn(echoPin, HIGH);\n</div><div>  distanceSensor1 = (duration1/2) / 29.1;\n</div><div>  Serial.println(distanceSensor1);\n</div><div>\n</div><div>  digitalWrite(trigPin2, LOW);\n</div><div>  digitalWrite(trigPin2, HIGH);\n</div><div>  digitalWrite(trigPin2, LOW);\n</div><div>  duration2 = pulseIn(echoPin2, HIGH);\n</div><div>  distanceSensor2 = (duration2/2) / 29.1;\n</div><div>  Serial.println(distanceSensor2);\n</div><div>\n</div><div>  digitalWrite(trigPin3, LOW);\n</div><div>  digitalWrite(trigPin3, HIGH);\n</div><div>  digitalWrite(trigPin3, LOW);\n</div><div>  duration3 = pulseIn(echoPin3, HIGH);\n</div><div>  distanceSensor3 = (duration3/2) / 29.1;\n</div><div>  Serial.println( distanceSensor3);\n</div><div>}\n</div><div>\n</div><div>//Method used for the servo's to move into position.\n</div><div>void servoMovment() {\n</div><div>  //get servo position, '0' for the servo will be in the middle of the servos stroke.\n</div><div>  //They way it will work is that when the sensors detect a foreign object, the top turret\n</div><div>  //will lock onto the target, It will know its locked on when the sensor that has found it\n</div><div>  //stays consistently at the same point, then the motors will turn the base of the robot \n</div><div>  //to be inline with the target.\n</div><div>\n</div><div>  \n</div><div>  \n</div><div>}\n</div><div>\n</div><div>//This method is used for detecting IR\n</div><div>void infrared() {\n</div><div>  IRRead = digitalRead(IRSensor);\n</div><div>  Serial.println(IRRead); //print inferred value.\n</div><div>}\n</div><div><br></div></pre>\n           </div>\n       </div>\n   </div>\n</section>",
           "_JSplaceholders": [],
           "_PHPplaceholders": [],
           "_anchor": "prettify-46",
@@ -8219,14 +8371,11 @@
             },
             ".mbr-text": {
               "color": "#ffffff"
-            },
-            ".mbr-description": {
-              "color": "#ffffff"
             }
           },
           "_name": "image1",
           "_sourceTheme": "mobirise5",
-          "_customHTML": "<section class=\"image1\" group=\"Images & Videos\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" name=\"textWidth\" title=\"Image\" min=\"4\" max=\"8\" step=\"1\" value=\"7\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Description\" name=\"showDescription\" checked>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#465052\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div mbr-class=\"{'container': !fullWidth}\">\n        <div class=\"row align-items-center\">\n            <div class=\"col-12 col-lg-{{textWidth}}\">\n                <div class=\"image-wrapper\">\n                    <img src=\"@PROJECT_PATH@/assets/images/2020-11-12-09.39.35-1080x608.jpg\" alt=\"Mobirise\">\n                    <p class=\"mbr-description mbr-fonts-style pt-2 align-center\" mbr-theme-style=\"display-5\" mbr-if=\"showDescription\" data-app-selector=\".mbr-description\">\n                    GraveDigger The BattleBot</p>\n                </div>\n            </div>\n            <div class=\"col-12\" mbr-class=\"{'col-lg' : !fullWidth, 'col-lg-4' : fullWidth &amp;&amp; textWidth >= 6, 'col-lg-6' : fullWidth &amp;&amp; textWidth <= 5}\">\n                <div class=\"text-wrapper\">\n                    <h3 class=\"mbr-section-title mbr-fonts-style mb-3\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\">\n                        <b>Links</b></h3>\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\"><b><br>EPICentre (Otago Engineering School) </b><br><b>(Ken, William and Fred)</b><br><a href=\"https://www.op.ac.nz/students/support/epicentre/\" class=\"text-primary\" target=\"_blank\">https://www.op.ac.nz/students/support/epicentre/</a><br><br><b>Extreme Hobbies Dunedin</b>&nbsp;(Jason)<b><br></b><a href=\"http://www.extremebobbies.co.nz\" class=\"text-primary\" target=\"_blank\">www.extremebobbies.co.nz</a><br><br><b>BATTLEBOT VIDS PLAYLIST</b><br><a href=\"https://www.youtube.com/playlist?list=PLg8S4Ty4sblha2fHt6bVGpTDBs2e5qt7T\" class=\"text-primary\" target=\"_blank\">https://www.youtube.com/playlist?list=PLg8S4Ty4sblha2fHt6bVGpTDBs2e5qt7T</a><a href=\"https://www.youtube.com/playlist?list=PLg8S4Ty4sblha2fHt6bVGpTDBs2e5qt7T\" class=\"text-primary\" target=\"_blank\"><br></a><br><b>Combat robotics tutorial</b><br><a href=\"https://www.instructables.com/Combat-Robotics-Tutorial/ \" class=\"text-primary\" target=\"_blank\">https://www.instructables.com/Combat-Robotics-Tutorial/&nbsp;</a><br><br><b>How To Battlebot</b><br><a href=\"https://drc.libraries.uc.edu/bitstream/handle/2374.UC/731848/MET2014_Shallenberger_Timothy.pdf?sequence=1\" class=\"text-primary\" target=\"_blank\">https://drc.libraries.uc.edu/bitstream/handle/2374.UC/731848/MET2014_Shallenberger_Timothy.pdf?sequence=1</a><br><br><b>Botbuild Good tips</b><br><a href=\"https://www.deviceplus.com/arduino/electric-skateboard/ Electric skateboard example  http://www.etotheipiplusone.net/?p=3985\" class=\"text-primary\" target=\"_blank\">https://www.deviceplus.com/arduino/electric-skateboard/ Electric skateboard example\n</a><br><a href=\"https://www.deviceplus.com/arduino/electric-skateboard/ Electric skateboard example  http://www.etotheipiplusone.net/?p=3985\" class=\"text-primary\" target=\"_blank\">http://www.etotheipiplusone.net/?p=3985</a><br><br><b>Electric skateboard example</b><br><a href=\"https://www.deviceplus.com/arduino/electric-skateboard/\" class=\"text-primary\" target=\"_blank\">https://www.deviceplus.com/arduino/electric-skateboard/</a>&nbsp;<br><br><b>QUEENHOBBY 120A ESC BEEP SHEET</b><br><a href=\"http://queenhobby.com/imageupload/3661/CAR%20ZD/manual%20ESC/ZD%20ESC%20for%20Car%20Manual.pdf\" class=\"text-primary\" target=\"_blank\">http://queenhobby.com/imageupload/3661/CAR%20ZD/manual%20ESC/ZD%20ESC%20for%20Car%20Manual.pdf</a><br><br><b>IMPORTANT FACTS BATTERY</b><br><a href=\"https://www.youtube.com/watch?v=lQtKgiv70DQ\" class=\"text-primary\" target=\"_blank\">https://www.youtube.com/watch?v=lQtKgiv70DQ</a><br><br><b>BATTERY CHARGING</b><br><a href=\"https://hobbystation.co.nz/lipo-life-nimh-battery-charger-b450ac/ \" class=\"text-primary\" target=\"_blank\">https://hobbystation.co.nz/lipo-life-nimh-battery-charger-b450ac/&nbsp;</a><br><br><b>ESC WIRING</b><br><a href=\"https://www.youtube.com/watch?v=uQIGb8VzX08 https://www.youtube.com/watch?v=sIgX9P8l8kw \" class=\"text-primary\" target=\"_blank\">https://www.youtube.com/watch?v=uQIGb8VzX08</a><br><a href=\"https://www.youtube.com/watch?v=uQIGb8VzX08 https://www.youtube.com/watch?v=sIgX9P8l8kw \" class=\"text-primary\" target=\"_blank\">https://www.youtube.com/watch?v=sIgX9P8l8kw&nbsp;</a><br><br><b>ESC servo tester for motors&nbsp;</b><br><a href=\"https://www.youtube.com/watch?v=3BvXXBCqqfc&feature=emb_logo\" class=\"text-primary\" target=\"_blank\">https://www.youtube.com/watch?v=3BvXXBCqqfc&amp;feature=emb_logo</a><br><br><br></p>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_customHTML": "<section class=\"image1\" group=\"Images & Videos\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" name=\"textWidth\" title=\"Image\" min=\"4\" max=\"8\" step=\"1\" value=\"7\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Description\" name=\"showDescription\" checked>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#465052\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div mbr-class=\"{'container': !fullWidth}\">\n        <div class=\"row align-items-center\">\n            <div class=\"col-12 col-lg-{{textWidth}}\">\n                <div class=\"image-wrapper\">\n                    <img src=\"@PROJECT_PATH@/assets/images/2020-11-12%2009.39.35-1080x608.jpg\" alt=\"Mobirise\">\n                    <p class=\"mbr-description mbr-fonts-style pt-2 align-center\" mbr-theme-style=\"display-4\" mbr-if=\"showDescription\" data-app-selector=\".mbr-description\">\n                    Image Description</p>\n                </div>\n            </div>\n            <div class=\"col-12\" mbr-class=\"{'col-lg' : !fullWidth, 'col-lg-4' : fullWidth &amp;&amp; textWidth >= 6, 'col-lg-6' : fullWidth &amp;&amp; textWidth <= 5}\">\n                <div class=\"text-wrapper\">\n                    <h3 class=\"mbr-section-title mbr-fonts-style mb-3\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\">\n                        <b>Links</b></h3>\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\"><b><br>EPICentre (Otago Engineering School) </b><br><b>(Ken, William and Fred)</b><br><a href=\"https://www.op.ac.nz/students/support/epicentre/\" class=\"text-primary\" target=\"_blank\">https://www.op.ac.nz/students/support/epicentre/</a><br><br><b>Extreme Hobbies Dunedin</b>&nbsp;(Jason)<b><br></b><a href=\"http://www.extremebobbies.co.nz\" class=\"text-primary\" target=\"_blank\">www.extremebobbies.co.nz</a><br><br><b>BATTLEBOT VIDS PLAYLIST</b><br><a href=\"https://www.youtube.com/playlist?list=PLg8S4Ty4sblha2fHt6bVGpTDBs2e5qt7T\" class=\"text-primary\" target=\"_blank\">https://www.youtube.com/playlist?list=PLg8S4Ty4sblha2fHt6bVGpTDBs2e5qt7T</a><a href=\"https://www.youtube.com/playlist?list=PLg8S4Ty4sblha2fHt6bVGpTDBs2e5qt7T\" class=\"text-primary\" target=\"_blank\"><br></a><br><b>Combat robotics tutorial</b><br><a href=\"https://www.instructables.com/Combat-Robotics-Tutorial/ \" class=\"text-primary\" target=\"_blank\">https://www.instructables.com/Combat-Robotics-Tutorial/&nbsp;</a><br><br><b>How To Battlebot</b><br><a href=\"https://drc.libraries.uc.edu/bitstream/handle/2374.UC/731848/MET2014_Shallenberger_Timothy.pdf?sequence=1\" class=\"text-primary\" target=\"_blank\">https://drc.libraries.uc.edu/bitstream/handle/2374.UC/731848/MET2014_Shallenberger_Timothy.pdf?sequence=1</a><br><br><b>Botbuild Good tips</b><br><a href=\"https://www.deviceplus.com/arduino/electric-skateboard/ Electric skateboard example  http://www.etotheipiplusone.net/?p=3985\" class=\"text-primary\" target=\"_blank\">https://www.deviceplus.com/arduino/electric-skateboard/ Electric skateboard example\n</a><br><a href=\"https://www.deviceplus.com/arduino/electric-skateboard/ Electric skateboard example  http://www.etotheipiplusone.net/?p=3985\" class=\"text-primary\" target=\"_blank\">http://www.etotheipiplusone.net/?p=3985</a><br><br><b>Electric skateboard example</b><br><a href=\"https://www.deviceplus.com/arduino/electric-skateboard/\" class=\"text-primary\" target=\"_blank\">https://www.deviceplus.com/arduino/electric-skateboard/</a>&nbsp;<br><br><b>QUEENHOBBY 120A ESC BEEP SHEET</b><br><a href=\"http://queenhobby.com/imageupload/3661/CAR%20ZD/manual%20ESC/ZD%20ESC%20for%20Car%20Manual.pdf\" class=\"text-primary\" target=\"_blank\">http://queenhobby.com/imageupload/3661/CAR%20ZD/manual%20ESC/ZD%20ESC%20for%20Car%20Manual.pdf</a><br><br><b>IMPORTANT FACTS BATTERY</b><br><a href=\"https://www.youtube.com/watch?v=lQtKgiv70DQ\" class=\"text-primary\" target=\"_blank\">https://www.youtube.com/watch?v=lQtKgiv70DQ</a><br><br><b>BATTERY CHARGING</b><br><a href=\"https://hobbystation.co.nz/lipo-life-nimh-battery-charger-b450ac/ \" class=\"text-primary\" target=\"_blank\">https://hobbystation.co.nz/lipo-life-nimh-battery-charger-b450ac/&nbsp;</a><br><br><b>ESC WIRING</b><br><a href=\"https://www.youtube.com/watch?v=uQIGb8VzX08 https://www.youtube.com/watch?v=sIgX9P8l8kw \" class=\"text-primary\" target=\"_blank\">https://www.youtube.com/watch?v=uQIGb8VzX08</a><br><a href=\"https://www.youtube.com/watch?v=uQIGb8VzX08 https://www.youtube.com/watch?v=sIgX9P8l8kw \" class=\"text-primary\" target=\"_blank\">https://www.youtube.com/watch?v=sIgX9P8l8kw&nbsp;</a><br><br><b>ESC servo tester for motors&nbsp;</b><br><a href=\"https://www.youtube.com/watch?v=3BvXXBCqqfc&feature=emb_logo\" class=\"text-primary\" target=\"_blank\">https://www.youtube.com/watch?v=3BvXXBCqqfc&amp;feature=emb_logo</a><br><br><br></p>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
           "_cid": "sg4X58QCQu",
           "_anchor": "image1-4h",
           "_protectedParams": [],
