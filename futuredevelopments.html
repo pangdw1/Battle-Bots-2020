@@ -162,7 +162,7 @@
 </div><div>int ch4; // Left stick Left and Right
 </div><div>int ch5; // Far left switch
 </div><div>int ch6; // Far right switch
-</div><div>int IRSensor = 14; // connect ir sensor to Arduino pin 2
+</div><div>int IRSensor = 14; // connect ir sensor to arduino pin 2
 </div><div>int IRRead;
 </div><div>String ch5String;
 </div><div>String ch6String;
@@ -172,6 +172,10 @@
 </div><div>long distance, duration;
 </div><div>int echoTime;                   //variable to store the time it takes for a ping to bounce off an object
 </div><div>int calcualtedDistance; 
+</div><div>int leftMotorOut = A8; //Left motor output value pin
+</div><div>int rightMotorOut =  A9; //right motor value output pin
+</div><div>int leftMotorValue;
+</div><div>int rightMotorValue;
 </div><div>
 </div><div>int distanceSensor1;
 </div><div>int distanceSensor2;
@@ -191,6 +195,10 @@
 </div><div>  pinMode(A5, INPUT);
 </div><div>  pinMode(A6, INPUT);
 </div><div>  pinMode(A0, OUTPUT); 
+</div><div>
+</div><div>  pinMode(leftMotorOut, OUTPUT); //Motor left and right output pins
+</div><div>  pinMode(rightMotorOut, OUTPUT);
+</div><div>  
 </div><div>  //Distance Sensors
 </div><div>  pinMode(trigPin, OUTPUT);
 </div><div>  pinMode(echoPin, INPUT);
@@ -199,9 +207,10 @@
 </div><div>  pinMode(trigPin3, OUTPUT);
 </div><div>  pinMode(echoPin3, INPUT);
 </div><div>
+</div><div>  
 </div><div>  pinMode (IRSensor, INPUT); // sensor pin INPUT
 </div><div>  
-</div><div>}
+</div><div>
 </div><div>//  pinMode('leftMotorPin', OUTPUT); //Analog out pin for the motor control
 </div><div>//  pinMode('rightMotorPin', OUTPUT); //Analog out pin for the motor control
 </div><div>  Serial.begin(9600); 
@@ -209,7 +218,7 @@
 </div><div>}
 </div><div>
 </div><div>
-</div><div>//Basic input control's getting data from the main channels of the 
+</div><div>//Baasic input control's getting data from the main channels of the 
 </div><div>//joysticks  and switches and converting them to a usable integer for functionality.
 </div><div>void loop() {
 </div><div> // getDistance();
@@ -221,28 +230,29 @@
 </div><div>  ch6 = pulseIn(A6, HIGH);
 </div><div>  
 </div><div>
-</div><div>//  if(ch5 &lt; 1000){//Channel 5 on off switch conversion  Switch used for switching between AI mode and manual control
-</div><div>//      ch5String = "OFF";
-</div><div>//      manualControl(); //Use the manual control method
-</div><div>//      Serial.println("Assuming manual control");
-</div><div>//    }
-</div><div>//    else{
-</div><div>//      ch5String = "ON";
-</div><div>//      AI(); // Call the AI method
-</div><div>//      Serial.println("Assuming Artificial control");
-</div><div>//      
-</div><div>//    }
-</div><div>//  if(ch6 &lt; 1000){//Channel 6 on off switch conversion
-</div><div>//      ch6String = "OFF";
-</div><div>//    }
-</div><div>//    else{ 
-</div><div>//      ch6String = "ON";
-</div><div>//    }
-</div><div>//  
+</div><div>  if(ch5 &lt; 1005){//Channel 5 on off switch conversion  Switch used for switching between AI mode and manual control
+</div><div>      ch5String = "OFF";
+</div><div>      manualControl(); //Use the manual control method
+</div><div>      Serial.println("Assuming manual control");
+</div><div>    }
+</div><div>    else{
+</div><div>      ch5String = "ON";
+</div><div>      AI(); // Call the AI method
+</div><div>      Serial.println("Assuming Artificial control");
+</div><div>      
+</div><div>    }
+</div><div>  if(ch6 &lt; 1001){//Channel 6 on off switch conversion
+</div><div>      ch6String = "OFF";
+</div><div>    }
+</div><div>    else{ 
+</div><div>      ch6String = "ON";
+</div><div>    }
+</div><div>  
 </div><div>  
 </div><div>  //test();
 </div><div>  //manualControl();
-</div><div>  //printing();
+</div><div>  
+</div><div>  printing();
 </div><div>}
 </div><div>
 </div><div>//Simple logs to console window of the input from controller
@@ -264,33 +274,52 @@
 </div><div>  
 </div><div>  Serial.print("Channel 6 Right switch:");
 </div><div>  Serial.println(ch6String);  
+</div><div>
+</div><div>  Serial.print("Left Motor Out");
+</div><div>  Serial.println(leftMotorValue);
+</div><div>  Serial.print("Right Motor Out");
+</div><div>  Serial.println(rightMotorValue);
 </div><div>}
 </div><div>
 </div><div>//Function for moving the robot around via the controller
 </div><div>void manualControl() {
-</div><div>    ch1 = (ch1 /100) - 14; //Rounding the channel input to a -5 - 5 scale for easy of use
-</div><div>    ch2 = (ch2 /100) - 14; //Joystick control reading
-</div><div>    ch3 = (ch3 /100) - 14; 
-</div><div>    ch4 = (ch4 /100) - 14;
-</div><div>
+</div><div>  //This code may be unnecessary with the new esc's that the big robot is using for power.
+</div><div>//    ch1 = (ch1 /100) - 14; //Rounding the channel input to a -5 - 5 scale for easy of use
+</div><div>//    ch2 = (ch2 /100) - 14; //Joystick control reading
+</div><div>//    ch3 = (ch3 /100) - 14; 
+</div><div>//    ch4 = (ch4 /100) - 14;
+</div><div>//    Serial.print("Channel 4:");
+</div><div>//    Serial.println(ch4);
+</div><div>    
+</div><div>   
 </div><div>    //Forward / Backwards movement.
 </div><div>    //Set the motors to be equal power in forwards or reverse.
-</div><div>    leftMotor = ch3 * 50;
-</div><div>    rightMotor = ch3 * 50;
-</div><div>    analogWrite('leftMotorPin', leftMotor);
-</div><div>    analogWrite('rightMotorPin', rightMotor);
-</div><div>
-</div><div>    if (ch4 &lt; 0){ //Turn left
-</div><div>      leftMotor = ch3 * 50; //Inside wheel powered by amount of throttle given, allows for tighter or slacker turning.
-</div><div>      rightMotor = ch4 * 50; //Power outside wheel the amount you wish to turn.
-</div><div>      analogWrite('leftMotorPin', leftMotor);
-</div><div>      analogWrite('rightMotorPin', rightMotor);
+</div><div>    
+</div><div>    
+</div><div>    if (ch4 &lt; 1450){ //Turn left
+</div><div>      leftMotorValue = ch3 - 2000; //Inside wheel powered by amount of throtle given, allows for tighter or slacker turning.
+</div><div>      rightMotorValue = ch4; //Power outside wheel the amount you wish to turn.
+</div><div>      analogWrite(leftMotorOut, leftMotorValue);
+</div><div>      analogWrite(rightMotorOut, rightMotorValue);
+</div><div>      Serial.println("Turning left");
+</div><div>      delay(10);
 </div><div>    }
-</div><div>    else if (ch4 &gt; 0){ //Turn Right
-</div><div>      leftMotor = ch4 * 50; //Power the outside wheel the amount you wish to turn.
-</div><div>      rightMotor = ch3 * 50; //Inside wheel powered by amount of throttle given, allows for tights or slacker turning.
-</div><div>      analogWrite('leftMotorPin', leftMotor);
-</div><div>      analogWrite('rightMotorPin', rightMotor);
+</div><div>    else if(ch4 &gt; 1550){ //Turn Right
+</div><div>      leftMotorValue = ch4; //Power the outside wheel the amount you wish to turn.
+</div><div>      rightMotorValue = ch3 - 2000; //Inside whjeel powered by amount of throtle given, allows for tights or slacker turning.
+</div><div>      analogWrite(leftMotorOut, leftMotorValue);
+</div><div>      analogWrite(rightMotorOut, rightMotorValue);
+</div><div>      Serial.println("Turing Right");
+</div><div>      delay(10);
+</div><div>    }
+</div><div>    else {
+</div><div>      leftMotorValue = ch3;
+</div><div>      rightMotorValue = ch3;
+</div><div>      analogWrite(leftMotorOut, leftMotorValue);
+</div><div>      analogWrite(rightMotorOut, rightMotorValue);
+</div><div>      Serial.println("Moving forwards");
+</div><div>      delay(10);
+</div><div>      
 </div><div>    }
 </div><div>    //servoMovment()
 </div><div>}
@@ -298,14 +327,14 @@
 </div><div>
 </div><div>//method for basic testing of controls via remote input
 </div><div>void test(){
-</div><div>  if (ch3 &gt; 5){
-</div><div>    analogWrite(A6, 255);
-</div><div>    analogWrite(A7, 255);
-</div><div>  }
-</div><div>  else {
-</div><div>     analogWrite(A6, 155);
-</div><div>    analogWrite(A7, 150);
-</div><div>    }
+</div><div>//  if (ch3 &gt; 5){
+</div><div>//    analogWrite(A6, 255);
+</div><div>//    analogWrite(A7, 255);
+</div><div>//  }
+</div><div>//  else {
+</div><div>//     analogWrite(A6, 155);
+</div><div>//    analogWrite(A7, 150);
+</div><div>//    }
 </div><div>  }
 </div><div>
 </div><div>
@@ -327,26 +356,26 @@
 </div><div>         //variable to store the distance calculated from the echo time
 </div><div>
 </div><div>  //Get info from sensor 2.
-</div><div>  digitalWrite(trigPin, LOW);
-</div><div>  digitalWrite(trigPin, HIGH);
-</div><div>  digitalWrite(trigPin, LOW);
-</div><div>  duration1 = pulseIn(echoPin, HIGH);
-</div><div>  distanceSensor1 = (duration1/2) / 29.1;
-</div><div>  Serial.println(distanceSensor1);
-</div><div>
-</div><div>  digitalWrite(trigPin2, LOW);
-</div><div>  digitalWrite(trigPin2, HIGH);
-</div><div>  digitalWrite(trigPin2, LOW);
-</div><div>  duration2 = pulseIn(echoPin2, HIGH);
-</div><div>  distanceSensor2 = (duration2/2) / 29.1;
-</div><div>  Serial.println(distanceSensor2);
-</div><div>
-</div><div>  digitalWrite(trigPin3, LOW);
-</div><div>  digitalWrite(trigPin3, HIGH);
-</div><div>  digitalWrite(trigPin3, LOW);
-</div><div>  duration3 = pulseIn(echoPin3, HIGH);
-</div><div>  distanceSensor3 = (duration3/2) / 29.1;
-</div><div>  Serial.println( distanceSensor3);
+</div><div>//  digitalWrite(trigPin, LOW);
+</div><div>//  digitalWrite(trigPin, HIGH);
+</div><div>//  digitalWrite(trigPin, LOW);
+</div><div>//  duration1 = pulseIn(echoPin, HIGH);
+</div><div>//  distanceSensor1 = (duration1/2) / 29.1;
+</div><div>//  Serial.println(distanceSensor1);
+</div><div>//
+</div><div>//  digitalWrite(trigPin2, LOW);
+</div><div>//  digitalWrite(trigPin2, HIGH);
+</div><div>//  digitalWrite(trigPin2, LOW);
+</div><div>//  duration2 = pulseIn(echoPin2, HIGH);
+</div><div>//  distanceSensor2 = (duration2/2) / 29.1;
+</div><div>//  Serial.println(distanceSensor2);
+</div><div>//
+</div><div>//  digitalWrite(trigPin3, LOW);
+</div><div>//  digitalWrite(trigPin3, HIGH);
+</div><div>//  digitalWrite(trigPin3, LOW);
+</div><div>//  duration3 = pulseIn(echoPin3, HIGH);
+</div><div>//  distanceSensor3 = (duration3/2) / 29.1;
+</div><div>//  Serial.println( distanceSensor3);
 </div><div>}
 </div><div>
 </div><div>//Method used for the servo's to move into position.
@@ -363,10 +392,9 @@
 </div><div>
 </div><div>//This method is used for detecting IR
 </div><div>void infrared() {
-</div><div>  IRRead = digitalRead(IRSensor);
-</div><div>  Serial.println(IRRead); //print inferred value.
-</div><div>}
-</div><div><br></div></pre>
+</div><div>//  IRRead = digitalRead(IRSensor);
+</div><div>//  Serial.println(IRRead); //print inferred value.
+</div><div>}</div></pre>
            </div>
        </div>
    </div>
