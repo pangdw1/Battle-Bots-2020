@@ -1,13 +1,32 @@
      
-/*
- RC PulseIn Serial Read out
- By: Nick Poole
- SparkFun Electronics
- Date: 5
- License: CC-BY SA 3.0 - Creative commons share-alike 3.0
- use this code however you'd like, just keep this license and
- attribute. Let me know if you make hugely, awesome, great changes.
- */
+// Code base for FarmBot mark 2. 
+
+// Contributor's: 
+// - Anthony Lock
+// - Damian Pang
+// - James Woods
+
+// Initial Idea:
+// Goal is to have the Farmbot drive aroud from using the RC control, then to flick a leaver on the 
+// control (top left leaver -  channel 5 on remote), then the robot will go into automious mode where 
+// it will scan the room by sweeping its turret left and right, then find a heat source by using the 
+// IR sensor on top in combination with a distance sensor, then lock taget and try to eliminate. There 
+// are distance sensors around the parimator of the robot so that when in Auto mode it oshould be 
+// coded to not crash into anything.
+
+// Weapon for turret
+// - Make your own :)   (Gun??, fire??, Paint??, BIG chopper??)
+
+// Important info about code:
+// - Apon investigation when trying to pass the reciver information through the 
+// teensy arduino, then output to the ESC, the value ios not being read properly. 
+// A potential fix for this is to use the servo libary within arduino to be able 
+// to output the correct signals.
+// - All the methods for intended functionality are setup and ready for code to be implimented.
+// 
+//
+
+
 int trigPin = 9; //
 int trigPin2 = 10;
 int trigPin3 = 11; //
