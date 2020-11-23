@@ -7102,6 +7102,20 @@ section.lazy-placeholder:after {
   padding-bottom: 0px;
   background-color: #465052;
 }
+.cid-sh8qDKjBcz {
+  background: #465052;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background: linear-gradient(0deg, #465052, #465052);
+}
+.cid-sh8qDKjBcz .video-block {
+  margin: auto;
+}
+@media (max-width: 768px) {
+  .cid-sh8qDKjBcz .video-block {
+    width: 100% !important;
+  }
+}
 .cid-sgPyd7N28W {
   background: #465052;
   padding-top: 60px;
